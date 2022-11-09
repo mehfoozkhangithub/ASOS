@@ -33,37 +33,48 @@
 ## Installation and setup instruction
 
 ## Tool Used
+
 - ### **Frontend**
 - ### **Backend**
 
 - ### **Integration**
 
-## 🤝 ***Collaborators***
+## 🤝 **_Collaborators_**
 
 # 🧔🏻 **Sanket Patil** `Project Manager`
-- Github: 
-- Twitter: 
-- Linkedin: 
-- Email: 
+
+- Github:[@sanket](https://github.com/sanketpatil05)
+- Linkedin:[Sanket Patil](https://www.linkedin.com/in/sanket-patil-455700188/)
+- Email: (patilsanket209@gmail.com)
+
 # 👨🏻 **Mehfooz Khan** `Team Leader`
+
 - Github: [@mehfooz](https://github.com/mehfoozkhangithub)
 - Linkedin: [Mehfooz Khan](https://www.linkedin.com/in/mehfoozkhan51/)
 - Email: (mehfoozshaik51@gmail.com)
+
 # 🧑🏻‍🦰 **Mohammad Ali**
+
 - Github:[@md_ali](https://github.com/mdali-11)
 - Linkedin: [Mohammad Ali](https://www.linkedin.com/in/md-ali11/)
 - Email: (mdali91935@gmail.com)
+
 # 👱🏻‍♂️ **Rahul Singh**
-- Github: 
-- Twitter: 
-- Linkedin: 
-- Email: 
+
+- Github:
+- Twitter:
+- Linkedin:
+- Email:
+
 # 🧑🏻 **Ashish Bajaj**
+
 - Github: [@ashish](https://github.com/abajaj655)
 - Linkedin: [Ashish Bajaj](https://www.linkedin.com/in/ashish-bajaj-7299a3235/)
 - Email: (abajaj655@gmail.com)
+
 # 🧒🏻 **Bhupendra Kumar chandrakar**
-- Github: 
-- Twitter: 
-- Linkedin: 
-- Email: 
+
+- Github:
+- Twitter:
+- Linkedin:
+- Email:
