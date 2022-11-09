@@ -61,10 +61,9 @@
 
 # 👱🏻‍♂️ **Rahul Singh**
 
-- Github:
-- Twitter:
-- Linkedin:
-- Email:
+- Github:[@rahul](https://github.com/Srahul2244)
+- Linkedin:[Rahul Singh](https://www.linkedin.com/in/rahul-singh-17b20a1b4/)
+- Email: (ranafd9984@gmail.com)
 
 # 🧑🏻 **Ashish Bajaj**
 
@@ -74,7 +73,6 @@
 
 # 🧒🏻 **Bhupendra Kumar chandrakar**
 
-- Github:
-- Twitter:
-- Linkedin:
-- Email:
+- Github:[@Bhupendra](https://github.com/bkcjanta)
+- Linkedin:[Bhupendra](https://www.linkedin.com/mwlite/in/bhupendra-kumar-chandrakar)
+- Email: (bhupendrafbook@gmail.com)
