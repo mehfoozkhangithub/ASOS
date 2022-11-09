@@ -1,78 +1,68 @@
-# _ASOS_ (Clone)
+## Netlify Link:- https://famous-yeot-9daac6.netlify.app/
 
-**ASOS is an online fashion retailer which sells clothes online, from its own home lines and from a variety of different brands. In this article we will conduct a brief website analysis of the ASOS website.**
+# ASOS
 
-**User can `sign` in or `sign` up using `google sign in` or through `email verification`.**
+ASOS is a British online fashion and cosmetic retailer. The company was founded in 2000 in London, primarily aimed at young adults.
 
-## Project look like this
+# ASOS CLone
 
-```javascript
-// here we have to put the ss of the project
+This is the clone of ASOS website which we have done during our Unit 4 construct week at Masai. Its functional clone of the website. 
+## Technologies used
+
+- HTML
+- Javascript
+- CSS
+- React
+- Chakra UI
+- Json Server
+
+## Functional things
+
+- User signup page and login page with form validation and data managed with  json server
+- Home page
+- 3 product pages with data managed with json server
+- Sorting and Filtering functionality
+- Cart Page with size & quantity updation
+- Checkout page 
+- Payment page with payment confirmation
+
+
+## Run Locally
+
+Pre-Requisite : 
+VS Code
+
+Clone the project
+
+```bash
+#   https://github.com/aakarsh604/Asos-Clone
+#   run json server on local host on port 8080
 ```
 
-## Build with
 
-<table  align=center>
-  <tr>
- <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"  height=100   width=150 ></td>
-     <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" height=100   ></td>
-    <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"  height=100   width=150 ></td>
-     <td align=center> <img src="https://img.icons8.com/nolan/64/wikipedia.png"  height=100  ></td>
-  </tr><tr><td align=center>  <img src="https://img.icons8.com/color/48/null/chakra-ui.png"   width=100  ></td>
-   <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"  height=100    ></td>
-  <td align=center> <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"  height=100  ></td>
-  <td align=center> <img src="https://img.icons8.com/plasticine/100/null/github.png"  height=100  ></td>
-  </tr>
+## Website Flow
 
-</table>
+- Signup & Login pages by Rovin and Deepanshu
+![](./src//assets/LoginPage.png)
 
-<hr/>
+- Homepage, Men & Women pages by Aakarsh
+![](./src//assets/Menpage.png)
 
-## Functionalities
+- Product pages by Manish Singh
+![](./src//assets/ProductsPage.png)
 
-## Installation and setup instruction
+- Product Details & Cart pages by Saurav
+![](./src//assets/ProductDetailsPage.png)
+![](./src//assets/CartPage.png)
 
-## Tool Used
+-  Checkout and Payment pages by Deepanshu
+![](./src//assets/CheckoutPage.png)
+![](./src//assets/PaymentPage.png)
 
-- ### **Frontend**
-- ### **Backend**
+## Authors
 
-- ### **Integration**
-
-## 🤝 **_Collaborators_**
-
-# 🧔🏻 **Sanket Patil** `Project Manager`
-
-- Github:[@sanket](https://github.com/sanketpatil05)
-- Linkedin:[Sanket Patil](https://www.linkedin.com/in/sanket-patil-455700188/)
-- Email: (patilsanket209@gmail.com)
-
-# 👨🏻 **Mehfooz Khan** `Team Leader`
-
-- Github: [@mehfooz](https://github.com/mehfoozkhangithub)
-- Linkedin: [Mehfooz Khan](https://www.linkedin.com/in/mehfoozkhan51/)
-- Email: (mehfoozshaik51@gmail.com)
-
-# 🧑🏻‍🦰 **Mohammad Ali**
-
-- Github:[@md_ali](https://github.com/mdali-11)
-- Linkedin: [Mohammad Ali](https://www.linkedin.com/in/md-ali11/)
-- Email: (mdali91935@gmail.com)
-
-# 👱🏻‍♂️ **Rahul Singh**
-
-- Github:[@rahul](https://github.com/Srahul2244)
-- Linkedin:[Rahul Singh](https://www.linkedin.com/in/rahul-singh-17b20a1b4/)
-- Email: (ranafd9984@gmail.com)
-
-# 🧑🏻 **Ashish Bajaj**
-
-- Github: [@ashish](https://github.com/abajaj655)
-- Linkedin: [Ashish Bajaj](https://www.linkedin.com/in/ashish-bajaj-7299a3235/)
-- Email: (abajaj655@gmail.com)
-
-# 🧒🏻 **Bhupendra Kumar chandrakar**
-
-- Github:[@Bhupendra](https://github.com/bkcjanta)
-- Linkedin:[Bhupendra](https://www.linkedin.com/mwlite/in/bhupendra-kumar-chandrakar)
-- Email: (bhupendrafbook@gmail.com)
+- [Aakarsh](https://github.com/aakarsh604)
+- [Deepanshu Chug](https://github.com/DeepanshuChugh)
+- [Saurav Samui](https://github.com/sauravsamui)
+- [Manish Singh](https://github.com/ManishSingh64)
+- [Rovin Singh](https://github.com/rovin-singh)
