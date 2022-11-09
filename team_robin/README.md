@@ -47,7 +47,7 @@
 - Email: 
 # 👨🏻 **Mehfooz Khan** `Team Leader`
 - Github: [@mehfooz](https://github.com/mehfoozkhangithub)
-- Linkedin: [Mehfooz Khan](www.linkedin.com/in/mehfoozkhan51)
+- Linkedin: [Mehfooz Khan](https://www.linkedin.com/in/mehfoozkhan51/)
 - Email: (mehfoozshaik51@gmail.com)
 # 🧑🏻‍🦰 **Mohammad Ali**
 - Github:[@md_ali](https://github.com/mdali-11)
