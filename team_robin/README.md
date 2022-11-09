@@ -46,25 +46,22 @@
 - Linkedin: 
 - Email: 
 # 👨🏻 **Mehfooz Khan** `Team Leader`
-- Github: 
-- Twitter: 
-- Linkedin: 
-- Email: 
+- Github: [@mehfooz](https://github.com/mehfoozkhangithub)
+- Linkedin: [Mehfooz Khan](www.linkedin.com/in/mehfoozkhan51)
+- Email: (mehfoozshaik51@gmail.com)
 # 🧑🏻‍🦰 **Mohammad Ali**
-- Github: 
-- Twitter: 
-- Linkedin: 
-- Email: 
+- Github:[@md_ali](https://github.com/mdali-11)
+- Linkedin: [Mohammad Ali](https://www.linkedin.com/in/md-ali11/)
+- Email: (mdali91935@gmail.com)
 # 👱🏻‍♂️ **Rahul Singh**
 - Github: 
 - Twitter: 
 - Linkedin: 
 - Email: 
 # 🧑🏻 **Ashish Bajaj**
-- Github: 
-- Twitter: 
-- Linkedin: 
-- Email: 
+- Github: [@ashish](https://github.com/abajaj655)
+- Linkedin: [Ashish Bajaj](https://www.linkedin.com/in/ashish-bajaj-7299a3235/)
+- Email: (abajaj655@gmail.com)
 # 🧒🏻 **Bhupendra Kumar chandrakar**
 - Github: 
 - Twitter: 
