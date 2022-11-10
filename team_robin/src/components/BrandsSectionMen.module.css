@@ -1,0 +1,25 @@
+.brandSecCont {
+    /* border: 1px solid red; */
+    /* height: 250px; */
+    margin-top: 40px;
+    width: 1250px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+.brandImg{
+    /* border: 1px solid teal; */
+    /* height: 150px; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.brandImg > div{
+    /* border: 1px solid black; */
+    /* height: 100%; */
+}
+
+.brandImg > div > img{
+    width: 100%;
+}
