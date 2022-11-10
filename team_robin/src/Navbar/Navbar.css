@@ -47,7 +47,7 @@
 /* //second nav div starts here */
 .nav_second_div{
     width: 100%;
-    height: 85px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,6 +164,7 @@ outline-offset: -2px;
 .drop_dwn{
 
     width: 100%;
+    height: 70px;
     /* margin: auto; */
     display: flex;justify-content: center;
     align-items: center;

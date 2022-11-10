@@ -113,10 +113,46 @@
     align-items: center;
   }
 
+  .shopByEdit1{
+    width: 100%;
+    /* border: 5px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 25px;
+    gap:"25px";
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   .shopByEdit img{
     width: 50%;
     margin: auto;
     border-radius: 100%;
+  }
+
+  .clothing{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: 10px 0px;
+    text-align: center;
+
+
+  }
+
+  .clothing p{
+    display: flex;
+    justify-content: center;align-items: center;
+
+  }
+
+  .clothing img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: auto;
   }
 
 

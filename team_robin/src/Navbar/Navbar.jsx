@@ -74,7 +74,7 @@ export default function NavbarTop() {
                 <div className="nav_mid">
 
                     <div id="nav_logo">
-                        <div onClick={brandOnclick}>ASOS</div>
+                        <div onClick={brandOnclick}><img width="100px" height="50px" src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/src/Navbar/Black%20White%20Circle%20Double%20Logo.png?raw=true" alt=""/></div>
                         <div><h4 style={{ backgroundColor: btnBg1 ? "#525050" : "transparent" }} onClick={buttonColor1Onclick}>WOMEN</h4></div>
                         <div><h4 style={{ backgroundColor: btnBg2 ? "#525050" : "transparent" }} onClick={buttonColor2Onclick}>MEN</h4></div>
                     </div>
