@@ -6,7 +6,7 @@
     font-family: Arial;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* grid-template-columns: repeat(14,1fr); */
   }
@@ -41,7 +41,8 @@
   }
   
   /* Add a red background color to navbar links on hover */
-  .navbar button:hover, .dropdown:hover .dropbtn {
+  .navbar button:hover, .dropdown:hover, .dropdown-content {
+    transition: all 0.5s ease;
     background-color:#f9f9f9;
     color: black;
   }
@@ -49,7 +50,10 @@
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
+
     position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-out;
     background-color:  black;
     width: 85%;
     left: 0;
@@ -65,8 +69,9 @@
   } */
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content{
     display: block;
+    opacity: 1;
     margin-left: 125px;
     margin-right: 125px;
 

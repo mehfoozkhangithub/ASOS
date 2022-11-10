@@ -101,7 +101,7 @@
   display: block;
 }
 
-#nav-icons{
+.header #nav-icons{
     cursor: pointer;
     width: 30%;
     display: flex;

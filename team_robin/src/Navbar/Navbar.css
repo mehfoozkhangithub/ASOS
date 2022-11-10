@@ -208,13 +208,6 @@ outline-offset: -2px;
         display: none;
     }
 
-    #nav-icons{
-        cursor: pointer;
-        width: 30%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
 
 .drop_dwn{
     display: none;
