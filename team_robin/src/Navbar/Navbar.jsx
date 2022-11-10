@@ -16,9 +16,10 @@ import {
     // MenuDivider,
 } from '@chakra-ui/react'
 
-import { Button } from "@chakra-ui/react"
-import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons"
-import { Image } from "@chakra-ui/react";
+// import { Button } from "@chakra-ui/react"
+// import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons"
+// import { Image } from "@chakra-ui/react";
+import DropDown from "./NavbarDropDown";
 
 
 // div --> 3 div  
@@ -27,11 +28,11 @@ export default function NavbarTop() {
     const [btnBg1, setButtonBg1] = useState(false)
     const [btnBg2, setButtonBg2] = useState(false)
     const { isOpen, onOpen, onClose } = useDisclosure()
-   
 
-    useEffect(()=>{
+
+    useEffect(() => {
         buttonColor1Onclick();
-    },[])
+    }, [])
 
     const navigate = useNavigate();
 
@@ -88,6 +89,7 @@ export default function NavbarTop() {
                                 background={"transparent"}
                                 color="white"
                                 py={[1, 2, 2]}
+                                cursor="pointer"
                                 // px={4}
                                 // borderRadius={5}
                                 // _hover={{ bg: ("gray.100", "gray.700") }}
@@ -100,10 +102,14 @@ export default function NavbarTop() {
                                     size={23} />
                             </MenuButton>
                             <MenuList width={200} onMouseEnter={onOpen} onMouseLeave={onClose}>
-                                <MenuItem height={50} color="black">Menu Item 1</MenuItem>
-                                <MenuItem height={50} color="black">Menu Item 2</MenuItem>
-                                <MenuItem height={50} color="black">Menu Item 3</MenuItem>
-                                <MenuItem height={50} color="black">Menu Item 3</MenuItem>
+                                <div style={{width:"auto",height:"35px",display:"flex",justifyContent:"flex-start",alignItems:"center", gap:"20px",position:"relative",backgroundColor:"white",color:"black",paddingLeft:"10px",zIndex:"2px"}}>
+                                    <p>Sign In</p>
+                                    <p>Join</p>
+                                </div>
+                                <MenuItem paddingLeft={10} height={50} color="black">My Account</MenuItem>
+                                <MenuItem paddingLeft={10} height={50} color="black">My Orders</MenuItem>
+                                <MenuItem paddingLeft={10} height={50} color="black">Return Information</MenuItem>
+                                <MenuItem paddingLeft={10} height={50} color="black">Contact Preferences</MenuItem>
                             </MenuList>
                         </Menu>
                         <div>
@@ -122,32 +128,36 @@ export default function NavbarTop() {
             </div>
 
 
-            <div className="nav_third_div">
+            {/* <div className="nav_third_div">
 
-            <div className="nav_hover_div">
-                <ol>
-                    <li><p className="red_bg_nav">Sale</p></li>
-                    <li><p>New In</p></li>
-                    <li><p>Clothing</p></li>
-                    <li><p>Dresses</p></li>
-                    <li><p>Shoes</p></li>
-                    <li><p>Sportswear</p></li>
-                    <li><p>Accessories</p></li>
-                    <li><p>Autumn</p></li>
-                    <li><p>Gifting</p></li>
-                    <li><p>TopShop</p></li>
-                    <li><p>Face + Body</p></li>
-                    <li><p>Brands</p></li>
-                    <li><p className="red_bg_nav">Outlet</p></li>
-                    <li><p>Marketplace</p></li>
+                <div className="nav_hover_div">
+                    <ol>
+                        <li><p className="red_bg_nav">Sale</p>
+                        </li>
+                        <li><p>New In</p>
+                        </li>
+                        <li><p>Clothing</p></li>
+                        <li><p>Dresses</p></li>
+                        <li><p>Shoes</p></li>
+                        <li><p>Sportswear</p></li>
+                        <li><p>Accessories</p></li>
+                        <li><p>Autumn</p></li>
+                        <li><p>Gifting</p></li>
+                        <li><p>TopShop</p></li>
+                        <li><p>Face + Body</p></li>
+                        <li><p>Brands</p></li>
+                        <li><p className="red_bg_nav">Outlet</p></li>
+                        <li><p>Marketplace</p></li>
 
 
 
-                </ol>
+                    </ol>
+                </div>
+
+            </div> */}
+            <div className="drop_dwn">
+                <DropDown />
             </div>
-
-            </div>
-
         </div>
     </div>
 }

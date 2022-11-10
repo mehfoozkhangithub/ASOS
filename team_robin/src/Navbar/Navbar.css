@@ -66,6 +66,7 @@
 
 
 #nav_logo{
+    cursor: pointer;
     width:20%;
     display: flex;
     gap: 10px;
@@ -73,14 +74,17 @@
     align-items: center;
 }
 #nav_logo div h4{
+    cursor: pointer;
     padding: 24px 30px;
 }
 
 #search_box{
+    cursor: pointer;
     width:60%;
 }
 
 #nav-icons{
+    cursor: pointer;
     width: 14%;
     display: flex;
     justify-content: space-around;
@@ -116,6 +120,7 @@
 
 
  li {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,6 +158,28 @@ outline-offset: -2px;
 
 
 /* //last div */
+
+/* megamenu */
+
+.drop_dwn{
+
+    width: 100%;
+    /* margin: auto; */
+    display: flex;justify-content: center;
+    align-items: center;
+    background-color:#525050;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
