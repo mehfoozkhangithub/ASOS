@@ -1,0 +1,100 @@
+.nav_containor{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    border:  5pxx solid white;
+}
+
+.nav_first_div{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    background-color:#F8F8F8;
+    border:  5pxx solid white;
+
+}
+
+.nav_first_div>div{
+    display: flex; 
+    margin-right: 100px;
+}
+
+.nav_first_div>div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_first_div>div button{
+    padding: 10px 35px;
+    background-color: white;
+    border: none;
+}
+
+.nav_first_div>div button:hover{
+    color: rgb(84, 84, 230);
+}
+.nav_first_div>div img{
+    width: 30%;
+}
+
+
+/* //first top div  ends here */
+
+
+/* //second nav div starts here */
+.nav_second_div{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2D2D2D;
+    color: white;
+
+}
+.nav_mid{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 5px solid red; */
+}
+
+
+#nav_logo{
+    width:20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav_logo div h2{
+    padding: 20px 20px;
+}
+
+#search_box{
+    width: 50%;
+}
+#nav-icons{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_third_div{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color:#525050;
+
+
+}
+
+
+/* //last div */
+
+
+

@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# _ASOS_ (Clone)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**ASOS is an online fashion retailer which sells clothes online, from its own home lines and from a variety of different brands. In this article we will conduct a brief website analysis of the ASOS website.**
 
-## Available Scripts
+**User can `sign` in or `sign` up using `google sign in` or through `email verification`.**
 
-In the project directory, you can run:
+## Project look like this
 
-### `npm start`
+```javascript
+// here we have to put the ss of the project
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Build with
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<table  align=center>
+  <tr>
+ <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"  height=100   width=150 ></td>
+     <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" height=100   ></td>
+    <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"  height=100   width=150 ></td>
+     <td align=center> <img src="https://img.icons8.com/nolan/64/wikipedia.png"  height=100  ></td>
+  </tr><tr><td align=center>  <img src="https://img.icons8.com/color/48/null/chakra-ui.png"   width=100  ></td>
+   <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"  height=100    ></td>
+  <td align=center> <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"  height=100  ></td>
+  <td align=center> <img src="https://img.icons8.com/plasticine/100/null/github.png"  height=100  ></td>
+  </tr>
 
-### `npm test`
+</table>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<hr/>
 
-### `npm run build`
+## Functionalities
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and setup instruction
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tool Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ### **Frontend**
+- ### **Backend**
 
-### `npm run eject`
+- ### **Integration**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🤝 **_Collaborators_**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 🧔🏻 **Sanket Patil** `Project Manager`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Github:[@sanket](https://github.com/sanketpatil05)
+- Linkedin:[Sanket Patil](https://www.linkedin.com/in/sanket-patil-455700188/)
+- Email: (patilsanket209@gmail.com)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 👨🏻 **Mehfooz Khan** `Team Leader`
 
-## Learn More
+- Github: [@mehfooz](https://github.com/mehfoozkhangithub)
+- Linkedin: [Mehfooz Khan](https://www.linkedin.com/in/mehfoozkhan51/)
+- Email: (mehfoozshaik51@gmail.com)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 🧑🏻‍🦰 **Mohammad Ali**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Github:[@md_ali](https://github.com/mdali-11)
+- Linkedin: [Mohammad Ali](https://www.linkedin.com/in/md-ali11/)
+- Email: (mdali91935@gmail.com)
 
-### Code Splitting
+# 👱🏻‍♂️ **Rahul Singh**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Github:[@rahul](https://github.com/Srahul2244)
+- Linkedin:[Rahul Singh](https://www.linkedin.com/in/rahul-singh-17b20a1b4/)
+- Email: (ranafd9984@gmail.com)
 
-### Analyzing the Bundle Size
+# 🧑🏻 **Ashish Bajaj**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Github: [@ashish](https://github.com/abajaj655)
+- Linkedin: [Ashish Bajaj](https://www.linkedin.com/in/ashish-bajaj-7299a3235/)
+- Email: (abajaj655@gmail.com)
 
-### Making a Progressive Web App
+# 🧒🏻 **Bhupendra Kumar chandrakar**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Github:[@Bhupendra](https://github.com/bkcjanta)
+- Linkedin:[Bhupendra](https://www.linkedin.com/mwlite/in/bhupendra-kumar-chandrakar)
+- Email: (bhupendrafbook@gmail.com)

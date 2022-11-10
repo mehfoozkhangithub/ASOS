@@ -1,6 +1,6 @@
 import styles from "./BannerMen.module.css"
 
-export default function BannerMen(){
+function BannerMen(){
     return (
         <>
             <div className={styles.nav}></div>
@@ -10,3 +10,4 @@ export default function BannerMen(){
         </>
     )
 }
+export {BannerMen}
