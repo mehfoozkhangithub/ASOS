@@ -1,7 +1,9 @@
 
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { Box, Button, Flex, Grid, Select, Spacer, Text, boxShadow, border, borderColor, borderRadius } from "@chakra-ui/react";
+
+import axios from 'axios'
+
 function getProducts(params = {}) {
     // console.log(params.order)
     return axios.get("https://asos-server123.herokuapp.com/api/products", {
@@ -27,7 +29,7 @@ function postCart(item) {
         qty: item.qty
     })
 }
-export const ProductPage = () => {
+     const ProductPage = () => {
     const [data, setData] = useState([])
     const [brand, setBrand] = useState("")
     const [category, setCategory] = useState("")
@@ -137,3 +139,5 @@ export const ProductPage = () => {
 
     )
 }
+
+export {ProductPage}
