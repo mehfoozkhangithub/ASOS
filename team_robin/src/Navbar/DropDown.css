@@ -1,6 +1,8 @@
 .navbar {
     width: 100%;
     margin: auto;
+    border: none;
+    outline: none;
     /* overflow: hidden; */
     background-color:#525050;
     font-family: Arial;
@@ -16,7 +18,7 @@
   /* Links inside the navbar */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 8px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -24,11 +26,11 @@
   }
   
   /* The dropdown container */
-  .dropdown {
+  /* .dropdown {
     float: left;
     overflow: hidden;
     flex-wrap: wrap;
-  }
+  } */
   
   /* Dropdown button */
   .dropdown .dropbtn {
