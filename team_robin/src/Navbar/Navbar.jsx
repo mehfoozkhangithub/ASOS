@@ -3,7 +3,7 @@ import "./Navbar.css"
 import { useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import { FaRegUser, FaHeart, FaShoppingBag } from "react-icons/fa";
-import SearchBar from "./SearchBox";
+import SearchBar from "./SearchBar";
 import {
     Menu,
     MenuButton,
