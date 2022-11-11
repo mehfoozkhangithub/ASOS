@@ -20,15 +20,12 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
     "react-thunk": "^1.0.0",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
-    "thunk": "^0.0.1",
-=======
     "styled-components": "^5.3.6",
+    "thunk": "^0.0.1",
     "use-throttle": "0.0.3",
->>>>>>> fw20_0748_day-3
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -114,6 +114,7 @@
 
   .shopByEdit{
     width: 80%;
+    font-size: 12px;
     /* border: 5px solid red; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
