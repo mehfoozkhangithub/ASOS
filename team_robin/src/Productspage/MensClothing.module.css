@@ -30,11 +30,6 @@
     height: 120px;
   }
   
-  /* .flex_box{
-      display: grid;
-      grid-template-columns: repeat(2,5em);
-      grid-template-rows: auto;
-    } */
   .products {
     /* border: 1px solid blue; */
     width: 90%;
