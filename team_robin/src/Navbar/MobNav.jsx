@@ -51,7 +51,7 @@ export default function MobNav() {
     }
 
     useEffect(()=>{
-        womenClick();
+      setWomen(true)
     },[])
 
 
@@ -85,8 +85,8 @@ export default function MobNav() {
                
                       <Link style={{textDecoration:"none"}} to="/">
                       <div style={{width:"70%",margin:"auto",marginTop:"20px",fontSize:"20px",display:"flex",justifyContent:"space-between"}}>
-                       <h4 style={{border:women?"2px solid solid blue":"white"}}  onClick={womenClick}>WOMEN</h4>
-                       <h4 style={{border:men?"2px solid blue":"white"}}  onClick={menClick}>MEN</h4>
+                       <h4 style={{padding:"7px 10px",border:women?"2px solid blue":"white"}}  onClick={womenClick}>WOMEN</h4>
+                       <h4 style={{padding:"7px 10px",border:men?"2px solid blue":"white"}}  onClick={menClick}>MEN</h4>
                       </div>
                       </Link>
               
