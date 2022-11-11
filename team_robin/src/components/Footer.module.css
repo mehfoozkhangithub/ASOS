@@ -36,3 +36,7 @@
 .footCont > div > p > span{
     font-weight: bolder;
 }
+
+/* .footCont > div:first-child{
+    margin-left: 30px;
+} */
