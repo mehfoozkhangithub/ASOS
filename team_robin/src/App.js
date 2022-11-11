@@ -4,7 +4,10 @@ import BrandsSectionMen from './components/BrandsSectionMen';
 import CategoriesMen from './components/CategoriesMen';
 import CtaSectionMen from './components/CtaSectionMen';
 import DiscountSection from './components/DiscountSectionMen';
+import Footer from './components/Footer';
 import Navbar from "./Navbar/Navbar"
+import MenPage from './pages/MenPage';
+import WomensPage from './pages/WomensPage';
 
 function App() {
   return (
@@ -12,11 +15,8 @@ function App() {
     {/* write code  */}
     {/* <div>Team Robin</div> */}
     <Navbar />
-    <BannerMen />
-    <CategoriesMen />
-    <DiscountSection />
-    <CtaSectionMen />
-    <BrandsSectionMen />
+    <WomensPage />
+    <Footer />
     </div>
   );
 }

@@ -1,0 +1,53 @@
+.discCont {
+    /* border: 1px solid red; */
+    /* height: 150px; */
+    margin-top: 55px;
+    background-color: rgb(247, 153, 186);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.discCont > span {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.discCont2 {
+    /* border: 1px solid teal; */
+    /* height: 400px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+/* .discCat {
+    border: 1px solid black;
+} */
+
+.discCat > img{
+    width: 450px;
+}
+
+.discCat > button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.discCat > button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.discCat > p{
+    margin-top: 10px;
+}
