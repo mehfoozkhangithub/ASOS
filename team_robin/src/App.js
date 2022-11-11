@@ -17,9 +17,18 @@ function App() {
     <Navbar />
     <WomensPage />
     <Footer />
+      <MensClothing />
+      <Shoes />
+      <WomensClothing />
+      <ProductPage />
+      {/* <BannerMen />
+      <CategoriesMen />
+      <DiscountSection />
+      <CtaSectionMen />
+      <BrandsSectionMen /> */}
     </div>
   );
 }
-// hello every one 
+
 
 export default App;

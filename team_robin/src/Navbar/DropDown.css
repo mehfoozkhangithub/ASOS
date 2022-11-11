@@ -1,10 +1,14 @@
 .navbar {
-    width: 80%;
+    width: 100%;
     margin: auto;
+    border: none;
+    outline: none;
     /* overflow: hidden; */
     background-color:#525050;
     font-family: Arial;
     display: flex;
+    /* grid-template-columns: repeat(14,1rf); */
+    /* grid-template-rows: repeat(14, 1fr); */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -14,7 +18,7 @@
   /* Links inside the navbar */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 8px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -22,19 +26,19 @@
   }
   
   /* The dropdown container */
-  .dropdown {
+  /* .dropdown {
     float: left;
     overflow: hidden;
     flex-wrap: wrap;
-  }
+  } */
   
   /* Dropdown button */
   .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 14px;
     background-color: inherit;
     font: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
@@ -110,6 +114,7 @@
 
   .shopByEdit{
     width: 80%;
+    font-size: 12px;
     /* border: 5px solid red; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
