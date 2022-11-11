@@ -52,7 +52,7 @@ const Shoes = () => {
       <div className={styles.headline_box} style={{ border: "1px solid grey", width: "100%", height: "220px" }}>
         <div className={styles.headline}>
           <h1>Men's New in: Shoes</h1>
-          <p  style={{ fontSize: "11px" }}>
+          <p style={{ fontSize: "11px" }}>
             If you needed another excuse to build on your footwear collection,
             our edit of men's new shoes is a pretty good one. We've rounded up
             new men's trainers, shoes and men's new boots from some of your
@@ -65,7 +65,7 @@ const Shoes = () => {
         </div>
       </div>
       <div className={styles.filter_box}>
-        <Flex className={styles.flex_box} position="relative" top={2} left={110} display="flex">
+        <Flex className={styles.flex_box} display="flex">
           <Stack spacing={3}>
             <Select
               variant="filled"

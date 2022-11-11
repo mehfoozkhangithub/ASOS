@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Box, Button, Flex, Grid, Select, Spacer, Text, boxShadow, border, borderColor, borderRadius } from "@chakra-ui/react";
 
 import axios from 'axios'
+import styles from "./ProductPage.module.css";
 
 function getProducts(params = {}) {
     // console.log(params.order)
@@ -29,7 +30,7 @@ function postCart(item) {
         qty: item.qty
     })
 }
-     const ProductPage = () => {
+const ProductPage = () => {
     const [data, setData] = useState([])
     const [brand, setBrand] = useState("")
     const [category, setCategory] = useState("")
@@ -73,14 +74,15 @@ function postCart(item) {
     return (
         <>
 
-            <Box borderColor='gray.200' paddingLeft="50px" marginBottom="30px" paddingRight="50px" paddingTop="30px" paddingBottom="30px" bg="rgb(238,238,238)">
-                {showMore ? <h2>Stay ahead of the game with our ‘New in’ edit, featuring new women’s clothing and the latest fashion trends. From belts to bags and caps to cover-ups, find that finishing touch under all your fave brands. ASOS DESIGN serves bits that are always ready for the ’gram, whether it’s super-chunky sandals or a lovely lil dress – start scrolling for some serious inspo. Browse new clothing from Topshop, River Island and more, or if your evening self-care sesh needs an upgrade, there are plenty of fresh Face + Body products here, too. Smooth skin: coming soon. And if you’re in the running to become CEO of trends, remember to bookmark this tab, cos, the latest fashion changes all the time.</h2> : null}
-                <Button colorScheme='blue' onClick={handleHide}>Hide</Button>
-                <Button colorScheme='blue' onClick={handleShow}>View</Button>
+            <Box borderColor='gray.200' paddingLeft="50px" marginBottom="30px" paddingRight="50px" paddingTop="30px" bg="rgb(238,238,238)" paddingBottom="30px" className={styles.para}>
+                <h1 style={{ fontSize: "20px", color: "GrayText" }}>Men's New in: Men Clothes</h1>
+                {showMore ? <h2 style={{ fontSize: "10px", color: "GrayText" }}>Stay ahead of the game with our ‘New in’ edit, featuring new women’s clothing and the latest fashion trends. From belts to bags and caps to cover-ups, find that finishing touch under all your fave brands. ASOS DESIGN serves bits that are always ready for the ’gram, whether it’s super-chunky sandals or a lovely lil dress – start scrolling for some serious inspo. Browse new clothing from Topshop, River Island and more, or if your evening self-care sesh needs an upgrade, there are plenty of fresh Face + Body products here, too. Smooth skin: coming soon. And if you’re in the running to become CEO of trends, remember to bookmark this tab, cos, the latest fashion changes all the time.</h2> : null}
+                <Button colorScheme='blue' style={{ backgroundColor: "green", border: "1px solid green", margin: "10px" }} onClick={handleHide}>Hide</Button>
+                <Button colorScheme='blue' style={{ backgroundColor: "green", border: "1px solid green", margin: "10px" }} onClick={handleShow}>View</Button>
 
             </Box>
 
-            <Box paddingLeft="50px" marginBottom="30px" paddingRight="50px" paddingTop="30px" paddingBottom="30px" bg="rgb(238,238,238)">
+            <Box paddingLeft="50px" marginBottom="30px" paddingRight="50px" paddingTop="30px" paddingBottom="30px" bg="rgb(238,238,238)" h="100px" w="100%" className={styles.pr}>
                 <Flex marginBottom="20px">
                     <Select onChange={(e) => setOrder(e.target.value)} border="2px" w="300px" placeholder="Sort">
                         <option value="DESC">Price high to low</option>
@@ -118,26 +120,29 @@ function postCart(item) {
                     </Select>
                 </Flex>
             </Box>
-            <Grid gridTemplateColumns="repeat(3,1fr)" marginBottom="50px" gap="20px" >
-                {data?.map((item) =>
-                (
-                    <Box paddingLeft="60px" borderRadius="10px" paddingRight="60px" border='2px' borderColor='red.200' key={item.id}>
-                        <img src={item.image} alt="" />
-                        <Text paddingBottom="15px" color="RGB(45, 45, 45)" fontFamily="futura-pt, sans-serif" fontSize="14px" textAlign="left">{item.title}</Text>
-                        <Flex>
-                            <Text color="grey" fontWeight="700" fontFamily="futura-pt, sans-serif" fontSize="18px" textAlign="left">$ {item.price}</Text>
-                            <Spacer />
-                            {/* <Text color="grey" fontWeight="700" fontFamily="futura-pt, sans-serif" fontSize="18px">add to cart</Text>*/}
-                            <Button onClick={() => handleCart(item)}>Add to cart</Button>
-                        </Flex>
+            <div className={styles.products}>
+                {/* gridTemplateColumns="repeat(3,1fr)" */}
+                <div className={styles.product}>
+                    {data?.map((item) =>
+                    (
+                        <Box borderRadius="10px" padding="20px" border='2px ' borderColor='red.200' key={item.id} gap="20px">
+                            <img src={item.image} alt="" />
+                            <Text paddingBottom="15px" color="RGB(45, 45, 45)" fontFamily="futura-pt, sans-serif" fontSize="14px" textAlign="left">{item.title}</Text>
+                            <Flex>
+                                <Text color="grey" fontWeight="700" fontFamily="futura-pt, sans-serif" fontSize="18px" textAlign="left">$ {item.price}</Text>
+                                <Spacer />
+                                {/* <Text color="grey" fontWeight="700" fontFamily="futura-pt, sans-serif" fontSize="18px">add to cart</Text>*/}
+                                <Button border="none" onClick={() => handleCart(item)}>Add to cart</Button>
+                            </Flex>
 
-                    </Box>
-                )
-                )}
-            </Grid>
+                        </Box>
+                    )
+                    )}
+                </div>
+            </div>
         </>
 
     )
 }
 
-export {ProductPage}
+export { ProductPage }

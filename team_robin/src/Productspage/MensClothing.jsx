@@ -8,7 +8,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 
-import styles from "./Shoes.module.css";
+import styles from "./MensClothing.module.css";
 import { useEffect } from "react";
 import { showProducts, sort } from "../../src/ProductsStore/products.action"
 import { useDispatch, useSelector } from "react-redux";
