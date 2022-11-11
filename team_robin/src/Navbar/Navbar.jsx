@@ -20,6 +20,7 @@ import {
 // import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons"
 // import { Image } from "@chakra-ui/react";
 import DropDown from "./NavbarDropDown";
+import MobNav from "./MobNav";
 
 
 // div --> 3 div  
@@ -54,6 +55,7 @@ export default function NavbarTop() {
 
 
     return <div>
+    <div className="medium_nav"><MobNav /></div>
         <div className="nav_containor">
             <div className="nav_first_div">
                 <div>
@@ -74,7 +76,7 @@ export default function NavbarTop() {
                 <div className="nav_mid">
 
                     <div id="nav_logo">
-                        <div onClick={brandOnclick}>ASOS</div>
+                        <div onClick={brandOnclick}><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/fw20_0748_day-3/team_robin/src/Navbar/Team%20Robin.jpeg?raw=true" alt=""/></div>
                         <div><h4 style={{ backgroundColor: btnBg1 ? "#525050" : "transparent" }} onClick={buttonColor1Onclick}>WOMEN</h4></div>
                         <div><h4 style={{ backgroundColor: btnBg2 ? "#525050" : "transparent" }} onClick={buttonColor2Onclick}>MEN</h4></div>
                     </div>
