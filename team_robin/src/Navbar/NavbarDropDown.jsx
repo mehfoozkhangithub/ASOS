@@ -17,11 +17,11 @@ export default function DropDown() {
                         <div>
                             <ul>
                                 <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
-                                <li><Link className="link_font" to="/home">SALE View all</Link></li>
+                                <li><Link className="link_font" to="/products/productpage">SALE View all</Link></li>
                                 <li><Link className="link_font" to="/">SALE Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/">SALE Dresses</Link></li>
                                 <li><Link className="link_font" to="/">SALE Tops</Link></li>
-                                <li><Link className="link_font" to="/">SALE Shoes</Link></li>
+                                <li><Link className="link_font" to="/products/shoes">SALE Shoes</Link></li>
                                 <li><Link className="link_font" to="/">SALE Coats and Jackets</Link></li>
                                 <li><Link className="link_font" to="/">SALE Hoodies</Link></li>
                                 <li><Link className="link_font" to="/">SALE Accessories</Link></li>
@@ -35,8 +35,8 @@ export default function DropDown() {
                             <ul>
                                 {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
                                 <li><Link className="link_font" to="/">SALE Jeans</Link></li>
-                                <li><Link className="link_font" to="/">SALE Jewellry and Watches</Link></li>
-                                <li><Link className="link_font" to="/">SALE Jumpsuits and  Playsuits</Link></li>
+                                <li><Link className="link_font" to="/products/mensclothing">Mens</Link></li>
+                                <li><Link className="link_font" to="/products/womensclothing">Women</Link></li>
                                 <li><Link className="link_font" to="/">SALE Lingerie and Nightwears</Link></li>
                                 <li><Link className="link_font" to="/">SALE Shorts</Link></li>
                                 <li><Link className="link_font" to="/">SALE Skirts</Link></li>
@@ -55,7 +55,7 @@ export default function DropDown() {
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Sale under $15</Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Top Saved</Link></li>
                                 <li><Link className="link_font" to="/">SALE Tops</Link></li>
-                                <li><Link className="link_font" to="/">SALE Shoes</Link></li>
+                                <li><Link className="link_font" to="/product/shoe">SALE Shoes</Link></li>
                                 <li><Link className="link_font" to="/">SALE Coats and Jackets</Link></li>
                                 <li><Link className="link_font" to="/">SALE Hoodies</Link></li>
                                 <li><Link className="link_font" to="/">SALE Accessories</Link></li>
