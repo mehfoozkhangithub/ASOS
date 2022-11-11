@@ -11,11 +11,11 @@ import { WomensClothing } from './Productspage/WomensClothing';
 function App() {
   return (
     <div className="App">
+       <Navbar />
      <MensClothing/>
      <Shoes/>
      <WomensClothing/>
   <ProductPage/>
-    <Navbar />
     <BannerMen />
     <CategoriesMen />
     <DiscountSection />
