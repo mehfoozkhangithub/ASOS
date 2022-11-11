@@ -1,0 +1,227 @@
+.navbar {
+    width: 80%;
+    margin: auto;
+    /* overflow: hidden; */
+    background-color:#525050;
+    font-family: Arial;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: repeat(14,1fr); */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar button:hover, .dropdown:hover, .dropdown-content {
+    transition: all 0.5s ease;
+    background-color:#f9f9f9;
+    color: black;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    background-color:  black;
+    width: 85%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Mega Menu header, if needed */
+  /* .dropdown-content .header {
+    background: wheat;
+    padding: 16px;
+    color: black;
+  } */
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content{
+    display: block;
+    opacity: 1;
+    margin-left: 125px;
+    margin-right: 125px;
+
+  }
+
+  .row{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .column{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    color: white;
+  }
+
+
+  .column>div ul{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* justify-content: flex-start; */
+    text-align: left;    
+  }
+
+  .column>div ul li{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .column>div .link_font{
+    font-size: 12px;
+  }
+
+  .shopByEdit{
+    width: 80%;
+    /* border: 5px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .shopByEdit1{
+    width: 100%;
+    /* border: 5px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 25px;
+    gap:"25px";
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .shopByEdit img{
+    width: 50%;
+    margin: auto;
+    border-radius: 100%;
+  }
+
+  .clothing{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: 10px 0px;
+    text-align: center;
+
+
+  }
+
+  .clothing p{
+    display: flex;
+    justify-content: center;align-items: center;
+
+  }
+
+  .clothing img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: auto;
+  }
+
+
+
+  
+  /* Create three equal columns that floats next to each other */
+  /* .column {
+    float: left;
+    width:30%;
+    padding: 25px;
+    background-color:black;
+    color: white;
+    height: max-content;
+    text-align: left;
+    height: 300px;
+  } */
+
+ /* .column .hover_content{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid red;
+  } */
+
+ /* .column .hover_content ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ } */
+
+
+  
+  /* Style links inside the columns */
+  /* .column a{
+    float: none;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  } */
+  
+  /* Add a background color on hover */
+  /* .column a:hover { */
+    /* background-color: #ddd; */
+  /* } */
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .mm_head{
+    color: #2D2D2D;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    text-align-last: left;
+    text-decoration: underline;
+  }
+
+
+  .dropdown .red_bg_nav{
+    background-color: #D01345;
+    color: white;
+}
