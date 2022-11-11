@@ -52,9 +52,9 @@ export default function MobNav() {
                 }}>
                     <div className="mobile-menu" onClick={handleClick}>
                         {click ? (
-                            <CloseIcon w={50} h={50} className="menu-icon" />
+                            <CloseIcon w={25} h={25} className="menu-icon" />
                         ) : (
-                            <HamburgerIcon w={50} h={50} className="menu-icon" />
+                            <HamburgerIcon w={25} h={25} className="menu-icon" />
                         )}
                     </div>
                 </div>
