@@ -733,79 +733,27 @@
   "users": [
     {
       "id": 1,
-      "name": "rovin",
-      "email": "rovin7678@gmail.com",
-      "password": "12345678"
-    },
-    {
-      "id": 2,
-      "name": "deepanshu",
-      "email": "deepanshuchugh24@gmail.com",
-      "password": "12345678"
-    },
-    {
-      "email": "rovin7678@gmail.com",
+      "fname": "Bhupendra",
+      "lname": "Chandrakar",
+      "email": "bkc@gmail.com",
       "password": "12345678",
-      "id": 5
+      "date_of_birth": "1996-04-10"
     },
     {
-      "email": "aakarsh604@gmail.com",
-      "password": "12345",
-      "id": 6
+      "fname": "bhupendra",
+      "lname": "chandrakar",
+      "email": "bhupendrafbook@gmail.com",
+      "password": "B1@onasos",
+      "date": "1996-04-10",
+      "id": 2
     },
     {
-      "email": "akash@gmail.com",
-      "password": "12345678",
-      "name": "akash",
-      "id": 7
-    },
-    {
-      "email": "Saurabh@gmail.com",
-      "password": "1234678",
-      "name": "Saurabh",
-      "id": 8
-    },
-    {
-      "email": "aakarsh604@gmail.com",
-      "password": "12345",
-      "name": "Aakarsh",
-      "id": 9
-    },
-    {
-      "email": "aakarsh604@gmail.com",
-      "password": "123456",
-      "name": "Aakarsh",
-      "id": 10
-    },
-    {
-      "email": "aakarsh604@gmail.com",
-      "password": "123456",
-      "name": "Aakarsh",
-      "id": 11
-    },
-    {
-      "email": "aakarsh604@gmail.com",
-      "password": "1234567",
-      "name": "Aakarsh",
-      "id": 12
-    },
-    {
-      "email": "aakarsh604@gmail.com",
-      "password": "1234",
-      "name": "Aakarsh",
-      "id": 13
-    },
-    {
-      "email": "aakarsh604@gmail.com",
-      "password": "12345",
-      "name": "Aakarsh",
-      "id": 14
-    },
-    {
-      "email": "aakarsh604@gmail.com",
-      "password": "123",
-      "name": "Aakarsh",
-      "id": 15
+      "fname": "bhupendra",
+      "lname": "chandrakar",
+      "email": "bhupendrafbook@gmail.com",
+      "password": "B1@onasos",
+      "date": "1996-04-10",
+      "id": 3
     }
   ]
 }
