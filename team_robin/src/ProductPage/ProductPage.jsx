@@ -82,7 +82,7 @@ const ProductPage = () => {
 
             </Box>
 
-            <Box paddingLeft="50px" marginBottom="30px" paddingRight="50px" paddingTop="30px" paddingBottom="30px" bg="rgb(238,238,238)" h="100px" w="100%" className={styles.pr}>
+            <Box paddingLeft="50px" marginBottom="30px" paddingRight="50px" paddingTop="30px" paddingBottom="30px" bg="rgb(238,238,238)" className={styles.pr}>
                 <Flex marginBottom="20px">
                     <Select onChange={(e) => setOrder(e.target.value)} border="2px" w="300px" placeholder="Sort">
                         <option value="DESC">Price high to low</option>
@@ -125,15 +125,19 @@ const ProductPage = () => {
                 <div className={styles.product}>
                     {data?.map((item) =>
                     (
-                        <Box borderRadius="10px" padding="20px" border='2px ' borderColor='red.200' key={item.id} gap="20px">
+                        <Box borderRadius="10px" padding="20px" border='2px  ' borderColor='red.200' key={item.id} gap="20px">
                             <img src={item.image} alt="" />
-                            <Text paddingBottom="15px" color="RGB(45, 45, 45)" fontFamily="futura-pt, sans-serif" fontSize="14px" textAlign="left">{item.title}</Text>
-                            <Flex>
-                                <Text color="grey" fontWeight="700" fontFamily="futura-pt, sans-serif" fontSize="18px" textAlign="left">$ {item.price}</Text>
-                                <Spacer />
-                                {/* <Text color="grey" fontWeight="700" fontFamily="futura-pt, sans-serif" fontSize="18px">add to cart</Text>*/}
-                                <Button border="none" onClick={() => handleCart(item)}>Add to cart</Button>
-                            </Flex>
+                            <Text paddingBottom="15px" color="RGB(45, 45, 45)" fontFamily="futura-pt, sans-serif" fontSize="14px" textAlign="center">{item.title}</Text>
+                            <div className={styles.add}>
+                                <div >
+                                    <Text color="grey" fontWeight="700" fontFamily="futura-pt, sans-serif" fontSize="18px" textAlign="left">$ {item.price}</Text>
+                                </div>
+                                <div>
+                                    {/* <Spacer /> */}
+                                    {/* <Text color="grey" fontWeight="700" fontFamily="futura-pt, sans-serif" fontSize="18px">add to cart</Text>*/}
+                                    <Button border="none" onClick={() => handleCart(item)}>Add to cart</Button>
+                                </div>
+                            </div>
 
                         </Box>
                     )

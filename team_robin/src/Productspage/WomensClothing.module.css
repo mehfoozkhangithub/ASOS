@@ -81,7 +81,7 @@
   }
 
 
-@media only screen and (max-width: 400px) {
+  @media all and (min-width:320px) and (max-width: 480px) {
   .products {
     /* border: 1px solid blue; */
     width: 90%;
@@ -107,7 +107,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 850px) {
+@media all and (min-width:480px) and (max-width: 900px) {
   .products {
     /* border: 1px solid blue; */
     width: 90%;

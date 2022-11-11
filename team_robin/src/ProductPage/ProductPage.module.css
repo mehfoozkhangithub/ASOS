@@ -6,14 +6,22 @@
      gap:"20px"
 }
 .pr{
-    width:100%;
-    height: 40px;
+    
+    height: 100px;
     margin: 10px;
+}
+.add{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+
 }
 
 
 
-@media only screen and (max-width: 850px) {
+@media all and (min-width: 480px) and (max-width: 900px) {
     .product {
         /* border: 1px solid red; */
       width: 100%;
@@ -38,7 +46,7 @@
         margin: 10px;
     }
 }
-@media only screen and (max-width: 400px) {
+@media all and (min-width: 320px) and (max-width: 480px) {
     .product {
         /* border: 1px solid red; */
       width: 100%;
