@@ -80,17 +80,16 @@ export default function MobNav() {
                 <div><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/fw20_0748_day-3/team_robin/src/Navbar/Team%20Robin.jpeg?raw=true" alt=""/></div>
                 <ul className={click ? "nav-options active" : "nav-options"}>
 
-                <li className="option" onClick={() => {
                        
-                    //    closeMobileMenu()
-                   }}>
+               
+               
                       <Link style={{textDecoration:"none"}} to="/">
-                      <div style={{display:"flex", justifyContent:"space-between"}}>
-                       <h4 style={{padding:"10px 15px", border:women?"2px solid solid blue":"white"}}  onClick={womenClick}>WOMEN</h4>
-                       <h4 style={{padding:"10px 15px", border:men?"2px solid blue":"white"}}  onClick={menClick}>MEN</h4>
+                      <div style={{width:"70%",margin:"auto",marginTop:"20px",fontSize:"20px",display:"flex",justifyContent:"space-between"}}>
+                       <h4 style={{border:women?"2px solid solid blue":"white"}}  onClick={womenClick}>WOMEN</h4>
+                       <h4 style={{border:men?"2px solid blue":"white"}}  onClick={menClick}>MEN</h4>
                       </div>
                       </Link>
-                   </li>
+              
 
                    {men ? <div> <li className="option" onClick={() => {
                        
