@@ -69,8 +69,8 @@
     cursor: pointer;
     width:20%;
     display: flex;
-    gap: 10px;
-    justify-content: space-between;
+    /* gap: 10px; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -78,6 +78,7 @@
     margin-left: -80px;
  width:100pxpx;
   height:30px;
+  margin-right: 10px;
 }
 #nav_logo div h4{
     cursor: pointer;
