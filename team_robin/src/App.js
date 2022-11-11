@@ -5,13 +5,19 @@ import CategoriesMen from './components/CategoriesMen';
 import CtaSectionMen from './components/CtaSectionMen';
 import DiscountSection from './components/DiscountSectionMen';
 import Navbar from "./Navbar/Navbar"
+import { ProductPage } from './ProductPage/ProductPage';
+import MensClothing from './Productspage/MensClothing';
+import Shoes from './Productspage/Shoes';
+import { WomensClothing } from './Productspage/WomensClothing';
 
 function App() {
   return (
     <div className="App">
-    {/* write code  */}
-    {/* <div>Team Robin</div> */}
-    <Navbar />
+       <Navbar />
+     <MensClothing/>
+     <Shoes/>
+     <WomensClothing/>
+  <ProductPage/>
     <BannerMen />
     <CategoriesMen />
     <DiscountSection />

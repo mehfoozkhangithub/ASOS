@@ -6,7 +6,8 @@
     /* overflow: hidden; */
     background-color:#525050;
     font-family: Arial;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
