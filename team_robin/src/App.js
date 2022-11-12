@@ -6,12 +6,14 @@ import { Main } from './Main/Main';
 import Navbar from "./Navbar/Navbar"
 import MenPage from './pages/MenPage';
 import WomensPage from './pages/WomensPage';
+import { Route,Routes } from 'react-router-dom';
 // import AddProductPage from './AdminPage/AddProducts';
 // import Admin from './Admin_Panel/Admin';
 import MensClothing from "../src/Productspage/MensClothing";
 import {WomensClothing} from "../src/Productspage/WomensClothing";
 import Shoes from "../src/Productspage/Shoes";
 import {ProductPage}from "../src/ProductPage/ProductPage";
+import GetProduct from './AdminPage/GetProduct';
 // import Cart from "../src/Carts_Pages/Cart";
 // import Cart_Items from "../src/Carts_Pages/Cart_Item"
 
@@ -27,6 +29,8 @@ function App() {
     {/* <Admin /> */}
     <AddProductPage />
     <EditProductPage />
+    <GetProduct />
+    
       {/* <MensClothing />
       <Shoes />
       <WomensClothing />
