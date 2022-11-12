@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import styles from "./productDetails.module.css";
 import SimpleSlider from "./DataSlide"
-import { getProductData } from "../ProductReducer/action";
+import { getProductData ,getProductCart} from "../ProductReducer/action";
 import {
   Button,
   Spinner,
@@ -34,26 +34,15 @@ const ProductDetails = () => {
   const dispatch = useDispatch();
   const location = useLocation();
 
-  // let prevLocation;
-  // if (location.state.pathname === "/products/mensclothing") {
-  //   prevLocation = "MEN";
-  // } else if (location.state.pathname === "/products/womensclothing") {
-  //   prevLocation = "WOMEN";
-  // } else if(location.state.pathname==='/products/shoes'){
-  //   prevLocation = "SHOES"
-  // }
-  // else {
-  //   prevLocation = "";
-  // }
+  let flag=false;
+  if (location.state.pathname === "/products/productpage") {
+       flag=true
+       console.log("working")
+  } 
   
-  // const {
-  //   detailsData: productDetails,
-  //   getProductDetails,
-  //   cartData,
-  //   addItemCart: { loading },
-  // } = useSelector((state) => state.cart);
    const data=useSelector((state)=>state.Prod)
-  const {ProductData,isLoading,isError}=data
+   
+  const {ProductData,isLoading,isError,loading}=data
   console.log(ProductData)
 
   const [size, setSize] = useState("");
@@ -62,7 +51,13 @@ const ProductDetails = () => {
   // console.log(id)
 
   useEffect(() => {
-    dispatch(getProductData(3));
+      if(flag){
+       dispatch(getProductCart(id));
+      }else{
+        dispatch(getProductData(id));
+      }
+    
+    
     return () => {};
   }, [id]);
 
@@ -134,18 +129,18 @@ const ProductDetails = () => {
           <div className={styles.smallimgDiv}>
             <img
               className={styles.smallImg}
-              src={ProductData.Image}
+              src={ProductData.Image||ProductData.image}
               alt="img"
             />
           </div>
-          <img className={styles.bigImg} src={ProductData.Image} alt="img" />
+          <img className={styles.bigImg} src={ProductData.Image||ProductData.image} alt="img" />
         </div>
         <div className={styles.detailsDiv}>
           <div className={styles.brand}>
-            <p className={styles.brandname}>{ProductData.Brand_Name}</p>
+            <p className={styles.brandname}>{ProductData.Brand_Name||ProductData.brand}</p>
           </div>
           <div className={styles.price1}>
-            <h3 className={styles.price2}>{`£${ProductData.Price}`}</h3>
+            <h3 className={styles.price2}>{`£${ProductData.Price||ProductData.price}`}</h3>
           </div>
           <div className={styles.color}>
             <span className={styles.cspan}>COLOUR: </span>
@@ -185,7 +180,7 @@ const ProductDetails = () => {
                   }}
                 >
                   <div className={styles.spin}>
-                    {true && <Spinner color="white" />}
+                    {loading && <Spinner color="white" />}
                   </div>
                   <div className={styles.insidebtn}>ADD TO BAG</div>
                 </button>
@@ -278,7 +273,7 @@ const ProductDetails = () => {
       </div>
       <div className={styles.like}>
       <h1 className={styles.h1Like}>YOU MIGHT ALSO LIKE</h1>
-      {/* <SimpleSlider /> */}
+      <SimpleSlider />
       </div>
     </div>
   );

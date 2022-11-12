@@ -5,23 +5,24 @@ import React, { useState } from 'react'
 import { userSignUp } from "../AuthReducer/action"
 import styles from './login.module.css'
 import './login.css'
-// import { signup } from '../../store/auth/auth.actions'
 const SignupForm = () => {
     const [email,setEmail]=useState("");
     const [fname,SetName]=useState("");
-    const [password,setPassword]=useState("");
+    const [pass,setPass]=useState();
     const [lname, setSecondName] = useState("");
     const [date,setDate]=useState("")
     const navigate=useNavigate();
     const dispatch=useDispatch();
     const handleFormEvent=(e)=>{
         e.preventDefault();
-        let payload = {fname,lname,email, password,date}
+        const password=Number(pass)
+        let payload = {fname,lname,email,password,date}
         console.log(payload)
         dispatch(userSignUp(payload));
-        // navigate("/login")
+        navigate("/login")
+        
     }
-  return (
+   return (
     <form className={styles.form}>
       <label>EMAIL ADDRESS:</label>
       <input type="text" className={styles.input} value={email}  onChange={(e)=>setEmail(e.target.value)} />
@@ -30,7 +31,7 @@ const SignupForm = () => {
       <label>LAST NAME:</label>
       <input type="text" className={styles.input} value={lname} onChange={(e)=>setSecondName(e.target.value)}/>
       <label>PASSWORD:</label>
-      <input type="password" className={styles.input} value={password} onChange={(e)=>setPassword(e.target.value)}/>
+      <input type="password" className={styles.input} value={pass} onChange={(e)=>setPass(e.target.value)}/>
       <label>DATE OF BIRTH:</label>
       <input type="date" className={styles.inputDate} value={date} onChange={(e)=>setDate(e.target.value)} />
       <br></br>

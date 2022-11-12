@@ -1,8 +1,6 @@
 import React from "react";
+import Navbar from "../Navbar/Navbar";
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
   Flex,
   Select,
   Stack,
@@ -50,7 +48,9 @@ const WomensClothing = () => {
       </div>
     );
   return (
+
     <div>
+      <Navbar/>
       <div className={styles.headline_box} style={{ border: "1px solid blue", width: "100%", height: "220px" }}>
         <div className={styles.headline}>
           <h1>Women's New in: Women Clothes</h1>
@@ -108,7 +108,7 @@ const WomensClothing = () => {
       <div className={styles.products}>
         {data.map((el) => (
           <div id={styles.items} key={el.id}>
-            {/* <Link to={`/productdetails/${el.id}`} state={from}> */}
+            <Link to={`/product/${el.id}`} state={from}>
             <img src={el.Image} alt="" />
             <div id={styles.name_div}>
               <h2> {el.Brand_Name}</h2>
@@ -116,7 +116,7 @@ const WomensClothing = () => {
             <div id={styles.price_div}>
               <h3>{`£ ${+(el.Price)}`}</h3>
             </div>
-            {/* </Link> */}
+            </Link>
           </div>
         ))}
       </div>

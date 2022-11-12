@@ -7,8 +7,8 @@ const LikeProducts = ({item}) => {
     }
   return (
        <div key={item.id} style={{marginRight : "10px", marginLeft : "10px"}}>
-       <Link to={`/productdetails/${item.id}`} state={from}>
-         <img src={`${item.Image}`} />
+       <Link to={`/product/${item.id}`} state={from}>
+         <img src={`${item.Image}` } alt="" />
         <div className='sauravcardname1'>{item.Brand_Name}</div>
         <div className="sauravcardprice">{`£ ${item.Price}`}</div>
        </Link>

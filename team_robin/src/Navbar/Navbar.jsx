@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css"
 import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom"
 // import { Link } from "react-router-dom";
 import { FaRegUser, FaHeart, FaShoppingBag } from "react-icons/fa";
-import SearchBar from "./SearchBox";
+import SearchBar from "./SearchBar";
 import {
     Menu,
     MenuButton,
@@ -92,6 +93,7 @@ export default function NavbarTop() {
                                 color="white"
                                 py={[1, 2, 2]}
                                 cursor="pointer"
+                                border="none"
                                 // px={4}
                                 // borderRadius={5}
                                 // _hover={{ bg: ("gray.100", "gray.700") }}
@@ -105,22 +107,24 @@ export default function NavbarTop() {
                             </MenuButton>
                             <MenuList width={200} onMouseEnter={onOpen} onMouseLeave={onClose}>
                                 <div style={{width:"auto",height:"35px",display:"flex",justifyContent:"flex-start",alignItems:"center", gap:"20px",position:"relative",backgroundColor:"white",color:"black",paddingLeft:"10px",zIndex:"2px"}}>
-                                    <p>Sign In</p>
-                                    <p>Join</p>
+                                    <Link to="/login"><p>Sign In</p></Link>
+                                    <Link to="/login"><p>Join</p></Link>
                                 </div>
-                                <MenuItem paddingLeft={10} height={50} color="black">My Account</MenuItem>
-                                <MenuItem paddingLeft={10} height={50} color="black">My Orders</MenuItem>
-                                <MenuItem paddingLeft={10} height={50} color="black">Return Information</MenuItem>
-                                <MenuItem paddingLeft={10} height={50} color="black">Contact Preferences</MenuItem>
+                                <MenuItem backgroundColor="black"  paddingLeft={10} height={50} color="white">My Account</MenuItem>
+                                <MenuItem backgroundColor="black"paddingLeft={10} height={50} color="white">My Orders</MenuItem>
+                                <MenuItem backgroundColor="black"paddingLeft={10} height={50} color="white">Return Information</MenuItem>
+                                <MenuItem backgroundColor="black" paddingLeft={10} height={50} color="white">Contact Preferences</MenuItem>
                             </MenuList>
                         </Menu>
                         <div>
                             <FaHeart color="transparent" style={{ stroke: "white", strokeWidth: "50" }} border="2px solid white" size={23} />
                         </div>
                         <div>
+                            {/* <Link to ="/cart"> */}
                             <FaShoppingBag
                                 color="transparent" style={{ stroke: "white", strokeWidth: "50" }} border="2px solid white"
                                 size={23} />
+                                {/* </Link> */}
                         </div>
                     </div>
 

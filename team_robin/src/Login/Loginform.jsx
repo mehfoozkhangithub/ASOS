@@ -8,17 +8,12 @@ import { getProductData } from "../ProductReducer/action";
 
 const LoginForm = () => {
     const dispatch=useDispatch();
-    const fxData=useSelector((state)=>state.Auth);
-    const data=useSelector((state)=>state.Prod)
-    const {productData}=data;
+    const data=useSelector((state)=>state.Auth);
     useEffect(()=>{
         dispatch(getProductData(1))
     },[])
 
-    const {isAuth,isErrorLogin}=fxData
-    console.log("isAuth"+isAuth)
-    console.log("isAut"+isAuth)
-    // console.log(isAuth)
+    const {isAuth}=data;
     
     const Navigate=useNavigate()
     const [email, setEmail] = useState("bkc@gmail.com");
@@ -32,9 +27,11 @@ const LoginForm = () => {
             password,
         }
           dispatch(userLogin(user));
-        //   Navigate("/")
-        console.log(user)
+          Navigate("/");
      }
+     if(isAuth){
+       Navigate("/");
+     }else
     return (
         <>
             <form className={styles.form}>

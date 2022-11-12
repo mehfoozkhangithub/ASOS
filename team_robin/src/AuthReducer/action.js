@@ -44,7 +44,7 @@ export const UserSignUpRequest=()=>{
 }
 export const UserSignUpSuccess=(payload)=>{
   return{
-    type:type.LOGIN_SUCCESS,
+    type:type.SIGNUP_SUCCESS,
     payload
   }
    

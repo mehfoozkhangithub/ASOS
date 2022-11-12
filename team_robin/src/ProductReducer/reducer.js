@@ -2,7 +2,8 @@ import * as type from "./actionType"
 const initialState={
     isLoading:false,
     isError:false,
-    ProductData:{}
+    loading:false,
+    ProductData:{},
 }
 
 export const reducer=(state=initialState,action)=>{

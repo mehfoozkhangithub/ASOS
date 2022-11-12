@@ -1,8 +1,8 @@
 import * as type from "./actionTypes"
 const initialState = {
-  userData:{},
+  userData:JSON.parse(localStorage.getItem("user"))||{},
   isAuth: false,
-  token:"",
+  token:localStorage.getItem("token")||"",
   isLoadingLogin: false,
   isErrorLogin: false,
   isLoadingSignUp:false,
@@ -19,6 +19,8 @@ const reducer = (state = initialState,action) => {
                 isAuth:false,
               }
             case type.LOGIN_SUCCESS:
+              localStorage.setItem("user",JSON.stringify(action.payload.data))
+              localStorage.setItem("token",action.payload.token)
               return{
                 ...state,
                 isLoadingLogin:false,

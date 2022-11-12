@@ -1,14 +1,15 @@
 import React from "react";
+import Navbar from "../Navbar/Navbar"
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
+  // Breadcrumb,
+  // BreadcrumbItem,
+  // BreadcrumbLink,
   Flex,
   Select,
   Stack,
 } from "@chakra-ui/react";
 
-import styles from "./Shoes.module.css";
+import styles from "./MensClothing.module.css";
 import { useEffect } from "react";
 import { showProducts, sort } from "../../src/ProductsStore/products.action"
 import { useDispatch, useSelector } from "react-redux";
@@ -52,6 +53,7 @@ const MensClothing = () => {
 
   return (
     <div>
+      <Navbar/>
       <div
         className={styles.headline_box}
         style={{ border: "1px solid grey", width: "100%", height: "220px" }}
@@ -110,7 +112,7 @@ const MensClothing = () => {
       <div className={styles.products}>
         {data.map((el) => (
           <div id={styles.items} key={el.id}>
-            {/* <Link to={`/productdetails/${el.id}`} state={from}> */}
+            <Link to={`/product/${el.id}`} state={from}>
             <img src={el.Image} alt="" />
             <div id={styles.name_div}>
               <h2> {el.Brand_Name}</h2>
@@ -118,7 +120,7 @@ const MensClothing = () => {
             <div id={styles.price_div}>
               <h3>{`£ ${+el.Price}`}</h3>
             </div>
-            {/* </Link> */}
+            </Link>
           </div>
         ))}
       </div>

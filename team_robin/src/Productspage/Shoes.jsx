@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../Navbar/Navbar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -48,11 +49,12 @@ const Shoes = () => {
   // console.log(data, "jsx");
   return (
     <div>
+      <Navbar/>
 
       <div className={styles.headline_box} style={{ border: "1px solid grey", width: "100%", height: "220px" }}>
         <div className={styles.headline}>
           <h1>Men's New in: Shoes</h1>
-          <p  style={{ fontSize: "11px" }}>
+          <p style={{ fontSize: "11px" }}>
             If you needed another excuse to build on your footwear collection,
             our edit of men's new shoes is a pretty good one. We've rounded up
             new men's trainers, shoes and men's new boots from some of your
@@ -65,7 +67,7 @@ const Shoes = () => {
         </div>
       </div>
       <div className={styles.filter_box}>
-        <Flex className={styles.flex_box} position="relative" top={2} left={110} display="flex">
+        <Flex className={styles.flex_box} display="flex">
           <Stack spacing={3}>
             <Select
               variant="filled"
@@ -104,7 +106,7 @@ const Shoes = () => {
       <div className={styles.products}>
         {data.map((el) => (
           <div id={styles.items} key={el.id}>
-            {/* <Link to={`/productdetails/${el.id}`} state={from}> */}
+            <Link to={`/product/${el.id}`} state={from}>
             <img src={el.Image} alt="" />
             <div id={styles.name_div}>
               <h2> {el.Brand_Name}</h2>
@@ -112,7 +114,7 @@ const Shoes = () => {
             <div id={styles.price_div}>
               <h3>{`£ ${+(el.Price)}`}</h3>
             </div>
-            {/* </Link> */}
+            </Link>
           </div>
         ))}
       </div>

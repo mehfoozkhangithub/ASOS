@@ -44,7 +44,7 @@ const Login = () => {
                                 <div className={styles.formOuter}>
 
 
-                                    <LoginForm />
+                                    <LoginForm/>
 
 
                                     <p>Forgot Password ?</p>

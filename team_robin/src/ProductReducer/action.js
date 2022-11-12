@@ -30,3 +30,15 @@ export const getProductData=(id)=>(dispatch)=>{
         })
 
 }
+export const getProductCart=(id)=>(dispatch)=>{
+    dispatch(getProductRequest());
+    return axios.get(`https://asos-server123.herokuapp.com/api/products/${id}`)
+    .then((res)=>{
+        console.log(res.data)
+        return dispatch(getProductSuccess(res.data));
+    })
+    .catch((err)=>{
+        return dispatch(getProductFailure())
+    })
+
+}

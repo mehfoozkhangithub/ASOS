@@ -10,7 +10,7 @@ import {
     dispatch({ type: PRODUCTS_LOADING });
   
     return axios
-      .get(`http://localhost:8080/${value}`)
+      .get(`https://mock-api-server.onrender.com/${value}`)
       .then((r) => {
         dispatch({ type: PRODUCTS_SUCESS, payload: r.data });
       })

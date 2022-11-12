@@ -1,0 +1,42 @@
+.footCont{
+    /* border: 1px solid red; */
+    /* height: 200px; */
+    background-color: #eeeeee;
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.footCont > div > h4{
+    text-align: left;
+    color: grey;
+    margin-bottom: 14px;
+}
+
+.footCont > div > p{
+    text-align: left;
+    cursor: pointer;
+    color: gray;
+    font-size: small;
+    margin-bottom: 14px;
+}
+
+.footCont > div{
+    padding-left: 80px;
+    width: 200px;
+}
+
+.footCont > div > p:hover{
+    color: blue;
+}
+
+.footCont > div > p > span{
+    font-weight: bolder;
+}
+
+/* .footCont > div:first-child{
+    margin-left: 30px;
+} */
