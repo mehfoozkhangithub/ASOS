@@ -10,7 +10,7 @@ export const getItemApi=()=>(dispatch)=>{
 
   axios.get("http://localhost:8080/cartItem")
   .then((res)=>(dispatch({type:GET_ITEM_CART_SUCCESS,payload:res.data}))).catch((err)=>{
-  ({type:GET_ITEM_CART_ERROR})
+  dispatch({type:GET_ITEM_CART_ERROR})
   })
 }
 

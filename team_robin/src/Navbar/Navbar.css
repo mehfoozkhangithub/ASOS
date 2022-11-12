@@ -74,10 +74,10 @@
 }
 
 #nav_logo img{
-    margin-left: -80px;
- width:100pxpx;
+    /* margin-left: -80px; */
+ width:100px;
   height:30px;
-  margin-right: 10px;
+  margin-right: 140px;
 }
 #nav_logo div h4{
     cursor: pointer;

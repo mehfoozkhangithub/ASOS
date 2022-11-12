@@ -143,9 +143,9 @@ const ProductPage = () => {
                 <div className={styles.product}>
                     {data?.map((item) =>
                     (
-                        <Box borderRadius="10px" padding="20px" border='2px  ' borderColor='red.200' key={item.id} gap="20px">
+                        <Box borderRadius="10px" padding="20px"  borderColor='red.200' key={item.id} gap="20px">
                             <img src={item.image} alt="" />
-                            <Text paddingBottom="15px" color="RGB(45, 45, 45)" fontFamily="futura-pt, sans-serif" fontSize="14px" textAlign="center">{item.title}</Text>
+                            <Text paddingBottom="15px" color="RGB(45, 45, 45)" fontFamily="futura-pt, sans-serif" fontSize="14px" textAlign="left">{item.title}</Text>
                             <div className={styles.add}>
                                 <div >
                                     <Text color="grey" fontWeight="700" fontFamily="futura-pt, sans-serif" fontSize="18px" textAlign="left">$ {item.price}</Text>

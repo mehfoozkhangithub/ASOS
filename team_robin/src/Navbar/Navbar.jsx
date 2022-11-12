@@ -110,10 +110,10 @@ export default function NavbarTop() {
                                     <Link to="/login"><p>Sign In</p></Link>
                                     <Link to="/login"><p>Join</p></Link>
                                 </div>
-                                <MenuItem backgroundColor="black"  paddingLeft={10} height={50} color="white">My Account</MenuItem>
-                                <MenuItem backgroundColor="black"paddingLeft={10} height={50} color="white">My Orders</MenuItem>
-                                <MenuItem backgroundColor="black"paddingLeft={10} height={50} color="white">Return Information</MenuItem>
-                                <MenuItem backgroundColor="black" paddingLeft={10} height={50} color="white">Contact Preferences</MenuItem>
+                                <Link to={"/myaccount"}><MenuItem  paddingLeft={10} height={50} color="black">My Account</MenuItem></Link>
+                                <Link to={"/"}> <MenuItem paddingLeft={10} height={50} color="black">My Orders</MenuItem></Link>
+                                <Link to={"/"}> <MenuItem paddingLeft={10} height={50} color="black">Return Information</MenuItem></Link>
+                                <Link to={"/"}> <MenuItem  paddingLeft={10} height={50} color="black">Contact Preferences</MenuItem></Link>
                             </MenuList>
                         </Menu>
                         <div>
