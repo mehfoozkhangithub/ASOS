@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../Navbar/Navbar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -50,7 +51,9 @@ const WomensClothing = () => {
       </div>
     );
   return (
+
     <div>
+      <Navbar/>
       <div className={styles.headline_box} style={{ border: "1px solid blue", width: "100%", height: "220px" }}>
         <div className={styles.headline}>
           <h1>Women's New in: Women Clothes</h1>
