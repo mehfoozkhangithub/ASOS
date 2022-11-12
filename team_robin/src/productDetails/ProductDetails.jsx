@@ -5,6 +5,7 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import styles from "./productDetails.module.css";
 import SimpleSlider from "./DataSlide"
 import { getProductData ,getProductCart} from "../ProductReducer/action";
+import Navbar from "../Navbar/Navbar"
 import {
   Button,
   Spinner,
@@ -28,6 +29,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useRef } from "react";
 
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { addCartApi } from "../cart_auth/cart_Action_type";
 const ProductDetails = () => {
   const toast = useToast();
   const refSize = useRef(null);
@@ -41,6 +43,9 @@ const ProductDetails = () => {
   } 
   
    const data=useSelector((state)=>state.Prod)
+   const cartData=useSelector((state)=>state.cartInfo);
+   const {addItemCart}=cartData;
+   console.log(addItemCart)
    
   const {ProductData,isLoading,isError,loading}=data
   console.log(ProductData)
@@ -83,6 +88,11 @@ const ProductDetails = () => {
   //   refSize.current = e.target.value;
   //   setSelectSize(false);
   // };
+const handleAddCart=()=>{
+  dispatch(addCartApi(ProductData,size));
+
+}
+
   const handleToggle = () => setShow(!show);
   if (isLoading) {
     return (
@@ -104,6 +114,7 @@ const ProductDetails = () => {
   }
   return (
     <div>
+      <Navbar/>
       <div className={styles.breadCrumbDiv}>
         {/* <Breadcrumb className={styles.breadCrumb1}
           spacing="8px"
@@ -175,12 +186,10 @@ const ProductDetails = () => {
               <WrapItem>
                 <button
                   className={styles.btnCart}
-                  onClick={() => {
-                    // handleAddCart();
-                  }}
+                  onClick={handleAddCart}
                 >
                   <div className={styles.spin}>
-                    {loading && <Spinner color="white" />}
+                    {addItemCart.loading && <Spinner color="white" />}
                   </div>
                   <div className={styles.insidebtn}>ADD TO BAG</div>
                 </button>

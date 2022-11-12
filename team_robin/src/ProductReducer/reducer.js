@@ -2,7 +2,6 @@ import * as type from "./actionType"
 const initialState={
     isLoading:false,
     isError:false,
-    loading:false,
     ProductData:{},
 }
 

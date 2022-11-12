@@ -19,8 +19,8 @@ import MyAccount from './MyAccount/MyAccount';
 
 
 import GetProduct from './AdminPage/GetProduct';
-// import Cart from "../src/Carts_Pages/Cart";
-// import Cart_Items from "../src/Carts_Pages/Cart_Item"
+import Cart from "../src/Carts_Pages/Cart";
+import CartItems from "../src/Carts_Pages/CartItem"
 
 
 function App() {
@@ -38,8 +38,8 @@ function App() {
         <Route path ="/product/:id" element ={<ProductDetails/>}/>
         <Route path ="/myaccount" element ={<MyAccount/>}/>
         {/* <Route path ="/mydetails" element ={<Mydetails/>}/> */}
-        {/* <Route path ="/cartitem" element ={<Cart_Items/>}/> */}
-        {/* <Route path ="/Cart" element ={<Cart/>}/> */}
+        <Route path ="/cartitem" element ={<CartItems/>}/>
+        <Route path ="/Cart" element ={<Cart/>}/>
        </Routes>
     </div>
   );
