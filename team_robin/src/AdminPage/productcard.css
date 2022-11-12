@@ -1,0 +1,12 @@
+.danger, .edit{
+    background-color: white;
+    border: none;
+}
+
+.add-to-cart, .remove-from-cart{
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0 5px;
+}

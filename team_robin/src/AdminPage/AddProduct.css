@@ -1,0 +1,123 @@
+.add_main_div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.addProducts{
+    width: 85%;
+    height: max-content;
+    margin: auto;
+    background-color:#F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.add-product-wrapper{
+    padding: 40px 25px;
+    width: 40%;
+    height:max-content;
+    gap: 25px;
+    background-color:rgb(203, 198, 198);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-label{
+    font-size: 20px;
+}
+
+.addbtn{
+    margin-top: 15px;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.addbtn:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.form-element-div select,.form-element-div input{
+width: 60%;
+box-sizing: border-box;
+
+}
+
+
+.form-element-div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showAddProduct{
+    padding:60px 10px;
+    width: 60%;
+    height: max-content;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 75, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+}
+
+
+.show_input{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 5px solid red; */
+
+}
+.show_input div{
+width: 50%;
+/* border: 5px solid red; */
+
+}
+
+
+@media all and (min-width: 480px) and (max-width: 900px) {
+
+    .add_main_div{
+        width: 100%;
+        height: max-content;
+    }
+    .addProducts{
+        margin-top: 100px;
+        height: max-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 5px solid red; */
+        /* margin-top: 100px; */
+    }
+    
+.add-product-wrapper{
+    width: 70%;
+    gap: 20px;
+    /* border: 5px solid red; */
+
+}
+
+.showAddProduct{
+    width: 90%;
+    gap: 20px;
+    /* border: 5px solid red; */
+}
+}
+
+@media all and (min-width: 480px) and (max-width: 900px) {
+
+}
