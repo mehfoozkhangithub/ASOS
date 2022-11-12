@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
+    "@chakra-ui/layout": "^2.1.9",
     "@chakra-ui/react": "^2.3.7",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -20,14 +21,16 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "react-thunk": "^1.0.0",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
+    "slick-carousel": "^1.8.1",
     "thunk": "^0.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server":"json-server --watch db.json --port 8080",
+    "server": "json-server --watch db.json --port 8080",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

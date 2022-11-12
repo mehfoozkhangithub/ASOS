@@ -10,11 +10,12 @@ import MensClothing from "./Productspage/MensClothing";
 import Shoes from "./Productspage/Shoes";
 import { WomensClothing } from "./Productspage/WomensClothing";
 import Login from "./Login/Login"
+import ProductDetails from "./productDetails/ProductDetails"
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar />
       <MensClothing />
       <Shoes />
       <WomensClothing />
@@ -23,8 +24,9 @@ function App() {
       <CategoriesMen />
       <DiscountSection />
       <CtaSectionMen />
-      <BrandsSectionMen />
-      
+      <BrandsSectionMen /> */}
+      {/* <Login/> */}
+      <ProductDetails/>
 
     </div>
   );

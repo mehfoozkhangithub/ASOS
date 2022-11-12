@@ -728,6 +728,15 @@
       "color": "Khaki",
       "quantity": 1,
       "id": 9
+    },
+    {
+      "productName": "River Island round toe derby shoes in brown",
+      "Image": "https://images.asos-media.com/products/vans-old-skool-trainers-in-orange/201666941-1-orange?$n_320w$&wid=317&fit=constrain",
+      "price": "37.40",
+      "size": "2XS",
+      "color": "Orange",
+      "quantity": 1,
+      "id": 2
     }
   ],
   "users": [
@@ -754,6 +763,14 @@
       "password": "B1@onasos",
       "date": "1996-04-10",
       "id": 3
+    },
+    {
+      "fname": "abc",
+      "lname": "cde",
+      "email": "abc@gmail.com",
+      "password": "123",
+      "date": "2022-11-11",
+      "id": 4
     }
   ]
 }

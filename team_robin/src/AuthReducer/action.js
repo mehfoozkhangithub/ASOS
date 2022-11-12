@@ -23,9 +23,8 @@ export const userLogin=(data)=>(dispatch)=>{
     dispatch(UserLoginRequest());
   return axios.get(`http://localhost:8080/users?email=${data.email}&password=${data.password}`,data)
     .then((res)=>{
-      console.log(res.data)
       if(res.data.length>0){
-        console.log(res.data[0].name)
+        console.log(res.data[0])
         return dispatch(UserLoginSuccess({token:"QpwL5tke4Pnpja7X4",data:res.data[0]}))
        }else{
         return dispatch(UserLoginFailure());

@@ -1,19 +1,27 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useState } from "react"
 import {useDispatch,useSelector} from "react-redux"
 import styles from './login.module.css'
 import {useNavigate} from "react-router-dom"
 import { userLogin } from "../AuthReducer/action"
+import { getProductData } from "../ProductReducer/action";
 
 const LoginForm = () => {
     const dispatch=useDispatch();
     const fxData=useSelector((state)=>state.Auth);
-    const {isAuth}=fxData
-    console.log(isAuth)
+    const data=useSelector((state)=>state.Prod)
+    const {productData}=data;
+    useEffect(()=>{
+        dispatch(getProductData(1))
+    },[])
+
+    const {isAuth,isErrorLogin}=fxData
+    console.log("isAuth"+isAuth)
+    console.log("isAut"+isAuth)
     // console.log(isAuth)
     
     const Navigate=useNavigate()
-    const [email, setEmail] = useState("bhupendra@gmail.com");
+    const [email, setEmail] = useState("bkc@gmail.com");
     const [password,setPassword]=useState(12345678)
 
    
