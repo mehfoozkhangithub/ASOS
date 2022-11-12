@@ -54,12 +54,13 @@
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
-
     position: absolute;
     opacity: 0;
     transition: opacity 1s ease-out;
     background-color:  black;
     width: 85%;
+    margin-left: 125px;
+    margin-right: 125px;
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -75,7 +76,10 @@
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content{
     display: block;
+    transition-delay: 2s;
+    transition-property: display;
     opacity: 1;
+    transition: opacity 1s ease-in;
     margin-left: 125px;
     margin-right: 125px;
 
@@ -106,6 +110,10 @@
   .column>div ul li{
     display: flex;
     justify-content: flex-start;
+  }
+
+  .column li h4{
+    font-size: 16px;
   }
 
   .column>div .link_font{

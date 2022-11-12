@@ -1,3 +1,5 @@
+import AddProductPage from './AdminPage/AddProducts';
+import EditProductPage from './AdminPage/EditProduct';
 import './App.css';
 import { BannerMen } from './components/BannerMen';
 import BrandsSectionMen from './components/BrandsSectionMen';
@@ -8,6 +10,8 @@ import Footer from './components/Footer';
 import Navbar from "./Navbar/Navbar"
 import MenPage from './pages/MenPage';
 import WomensPage from './pages/WomensPage';
+// import AddProductPage from './AdminPage/AddProducts';
+// import Admin from './Admin_Panel/Admin';
 
 function App() {
   return (
@@ -17,10 +21,13 @@ function App() {
     <Navbar />
     <WomensPage />
     <Footer />
-      <MensClothing />
+    {/* <Admin /> */}
+    <AddProductPage />
+    <EditProductPage />
+      {/* <MensClothing />
       <Shoes />
       <WomensClothing />
-      <ProductPage />
+      <ProductPage /> */}
       {/* <BannerMen />
       <CategoriesMen />
       <DiscountSection />
