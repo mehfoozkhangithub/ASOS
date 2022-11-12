@@ -1,6 +1,6 @@
 
-import { GET_ITEM_CART_LOADING, GET_ITEM_CART_SUCCESS, GET_ITEM_CART_ERROR, ADD_TO_CART_LOADING, ADD_TO_CART_SUCCESS, ADD_TO_CART_ERROR, REMOVE_FROM_CART_LOADING, REMOVE_FROM_CART_SUCCESS, REMOVE_FROM_CART_ERROR, UPDATE_CART_LOADING, UPDATE_CART_SUCCESS, UPDATE_CART_ERROR, GET_PRODUCT_DETAILS_LOADING, GET_PRODUCT_DETAILS_SUCCESS, GET_PRODUCT_DETAILS_ERROR } from './cart_types';
-import { axios } from 'axios';
+import { GET_ITEM_CART_LOADING, GET_ITEM_CART_SUCCESS, GET_ITEM_CART_ERROR, ADD_TO_CART_LOADING, ADD_TO_CART_SUCCESS, ADD_TO_CART_ERROR, REMOVE_FROM_CART_LOADING, REMOVE_FROM_CART_SUCCESS, REMOVE_FROM_CART_ERROR, UPDATE_CART_LOADING, UPDATE_CART_SUCCESS, UPDATE_CART_ERROR, GET_PRODUCT_DETAILS_LOADING, GET_PRODUCT_DETAILS_SUCCESS, GET_PRODUCT_DETAILS_ERROR } from '.././cart_auth/cart_types';
+import axios from "axios"
 
 
 //! Get request handle
@@ -9,9 +9,9 @@ export const getItemApi=()=>(dispatch)=>{
   dispatch({type:GET_ITEM_CART_LOADING});
 
   axios.get("http://localhost:8080/cartItem")
-  .then((res)=>(dispatch({type:GET_ITEM_CART_SUCCESS,payload:res.data}))).catch((err)=>{
+  .then((res)=>(dispatch({type:GET_ITEM_CART_SUCCESS,payload:res.data}))).catch((err)=>(
   ({type:GET_ITEM_CART_ERROR})
-  })
+  ))
 }
 
 //* add request handle
