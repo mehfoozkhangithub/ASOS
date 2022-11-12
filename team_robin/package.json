@@ -28,8 +28,10 @@
     "use-throttle": "0.0.3",
     "web-vitals": "^2.1.4"
   },
+  "main": "server.js",
   "scripts": {
     "server": "json-server --watch db.json --port 8080 ",
+    "start1": "node server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
