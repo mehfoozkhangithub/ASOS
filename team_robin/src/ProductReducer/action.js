@@ -20,7 +20,7 @@ export const getProductFailure=()=>{
 
 export const getProductData=(id)=>(dispatch)=>{
         dispatch(getProductRequest());
-        return axios.get(`http://localhost:8080/Products/${id}`)
+        return axios.get(`https://mock-api-server.onrender.com/Products/${id}`)
         .then((res)=>{
             console.log(res.data)
             return dispatch(getProductSuccess(res.data));

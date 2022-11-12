@@ -34,11 +34,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-<<<<<<< HEAD
     "server": "json-server --watch db.json --port 8080",
-=======
-    "server":"json-server --watch db.json --port 8080",
->>>>>>> 20e078c6e6d4811e27c3a2c1c9115b10b5c41131
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

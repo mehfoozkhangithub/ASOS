@@ -88,7 +88,7 @@ import {
           case "none":
           
             return axios
-            .get(`http://localhost:8080/${products}`)
+            .get(`https://mock-api-server.onrender.com/${products}`)
             .then((r) => {
               //   console.log(r.data, "manish");
               dispatch({ type: PRODUCTS_SUCESS, payload: r.data });

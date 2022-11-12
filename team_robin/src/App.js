@@ -24,26 +24,7 @@ import GetProduct from './AdminPage/GetProduct';
 
 function App() {
   return (
-    <div className="App">
-    {/* write code  */}
-    {/* <div>Team Robin</div> */}
-    <Navbar />
-    <WomensPage />
-    <Footer />
-    {/* <Admin /> */}
-    <AddProductPage />
-    <EditProductPage />
-    <GetProduct />
-    
-      {/* <MensClothing />
-      <Shoes />
-      <WomensClothing />
-      <ProductPage /> */}
-      {/* <BannerMen />
-      <CategoriesMen />
-      <DiscountSection />
-      <CtaSectionMen />
-      <BrandsSectionMen /> */}
+    <div className="App">    
        <Routes>
         <Route path ="/" element ={<Main />}/>
         <Route path ="/womenspage" element ={<WomensPage/>}/>

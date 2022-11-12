@@ -21,7 +21,7 @@ export const UserLoginFailure=()=>{
 
 export const userLogin=(data)=>(dispatch)=>{
     dispatch(UserLoginRequest());
-  return axios.get(`http://localhost:8080/users?email=${data.email}&password=${data.password}`,data)
+  return axios.get(`https://mock-api-server.onrender.com/users?email=${data.email}&password=${data.password}`,data)
     .then((res)=>{
       if(res.data.length>0){
         console.log(res.data[0])
@@ -58,7 +58,7 @@ export const UserSignUpFailure=()=>{
 
 export const userSignUp=(data)=>(dispatch)=>{
   dispatch(UserSignUpRequest());
-return axios.post("http://localhost:8080/users",data)
+return axios.post("https://mock-api-server.onrender.com/users",data)
   .then((res)=>{
       return dispatch(UserSignUpSuccess(res.data))
   }).catch((res)=>dispatch(UserSignUpFailure()))
