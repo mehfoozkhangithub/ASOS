@@ -13,7 +13,7 @@ import {
 } from ".././cart_auth/cart_Action_type";
 import styles from "./Cart.module.css";
 const Cart_Item = ({ item  }) => {
-  console.log(item)
+  console.log(item,"this is show undefinde ")
   const dispatch = useDispatch();
   const [flag, setFlag] = useState(false);
   const sizeRef = useState(false);

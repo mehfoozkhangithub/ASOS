@@ -15,7 +15,7 @@ const Cart = () => {
   
   const  { cartData, getItemCart }=dataDstructure;
 
-  console.log(cartData)
+  console.log(cartData , "this is data  render ")
 
   useEffect(()=>{
     dispatch(getItemApi());
