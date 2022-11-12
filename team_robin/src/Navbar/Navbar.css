@@ -3,7 +3,6 @@
     height: 160px;
     display: flex;
     flex-direction: column;
-    border:  5pxx solid white;
 }
 
 .nav_first_div{
@@ -175,10 +174,9 @@ outline-offset: -2px;
 .drop_dwn{
 
     width: 100%;
-    height: max-content;
     /* margin: auto; */
-    display: flex;justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: center;
     background-color:#525050;
 }
 

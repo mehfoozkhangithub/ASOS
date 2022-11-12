@@ -1,10 +1,13 @@
-import { Route,Routes } from 'react-router-dom';
+import AddProductPage from './AdminPage/AddProducts';
+import EditProductPage from './AdminPage/EditProduct';
 import './App.css';
 import Footer from './components/Footer';
 import { Main } from './Main/Main';
 import Navbar from "./Navbar/Navbar"
 import MenPage from './pages/MenPage';
 import WomensPage from './pages/WomensPage';
+// import AddProductPage from './AdminPage/AddProducts';
+// import Admin from './Admin_Panel/Admin';
 import MensClothing from "../src/Productspage/MensClothing";
 import {WomensClothing} from "../src/Productspage/WomensClothing";
 import Shoes from "../src/Productspage/Shoes";
@@ -16,6 +19,23 @@ import {ProductPage}from "../src/ProductPage/ProductPage";
 function App() {
   return (
     <div className="App">
+    {/* write code  */}
+    {/* <div>Team Robin</div> */}
+    <Navbar />
+    <WomensPage />
+    <Footer />
+    {/* <Admin /> */}
+    <AddProductPage />
+    <EditProductPage />
+      {/* <MensClothing />
+      <Shoes />
+      <WomensClothing />
+      <ProductPage /> */}
+      {/* <BannerMen />
+      <CategoriesMen />
+      <DiscountSection />
+      <CtaSectionMen />
+      <BrandsSectionMen /> */}
        <Routes>
         <Route path ="/" element ={<Main />}/>
         <Route path ="/womenspage" element ={<WomensPage/>}/>
