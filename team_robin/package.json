@@ -2,6 +2,7 @@
   "name": "team_robin",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
     "@chakra-ui/react": "^2.3.7",
@@ -28,10 +29,11 @@
     "use-throttle": "0.0.3",
     "web-vitals": "^2.1.4"
   },
-  "main": "server.js",
+  
   "scripts": {
     "server": "json-server --watch db.json --port 8080 ",
     "start": "node server.js",
+    "done": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
