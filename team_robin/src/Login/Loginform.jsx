@@ -13,7 +13,8 @@ const LoginForm = () => {
         dispatch(getProductData(1))
     },[])
 
-    const {isAuth}=data;
+    const {isAuth,userData}=data;
+    console.log(userData)
     
     const Navigate=useNavigate()
     const [email, setEmail] = useState("bkc@gmail.com");

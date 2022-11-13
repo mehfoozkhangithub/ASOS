@@ -15,60 +15,33 @@ import Shoes from "../src/Productspage/Shoes";
 import {ProductPage}from "../src/ProductPage/ProductPage";
 import Login from "./Login/Login"
 import ProductDetails from "./productDetails/ProductDetails"
+import MyAccount from './MyAccount/MyAccount';
 
 
 import GetProduct from './AdminPage/GetProduct';
-// import Cart from "../src/Carts_Pages/Cart";
-// import Cart_Items from "../src/Carts_Pages/Cart_Item"
 import Cart from "../src/Carts_Pages/Cart";
-import Cart_Items from "../src/Carts_Pages/Cart_Item"
+import CartItems from "../src/Carts_Pages/CartItem"
 
 
 function App() {
   return (
-
-     
-    
-    <div className="App">
-    {/* write code  */}
-    
-    <Cart_Items />
-    
-    
-    {/* <Navbar />
-    <WomensPage />
-    <Footer /> */}
-    {/* <Admin /> */}
-    {/* <AddProductPage />
-    <EditProductPage /> */}
-      {/* <MensClothing />
-      <Shoes />
-      <WomensClothing />
-      <ProductPage /> */}
-      {/* <BannerMen />
-      <CategoriesMen />
-      <DiscountSection />
-      <CtaSectionMen />
-      <BrandsSectionMen /> */}
-       {/* <Routes> */}
-        {/* <Route path ="/" element ={<Main />}/>
-
+    <div className="App">    
+       <Routes>
+        <Route path ="/" element ={<Main />}/>
         <Route path ="/womenspage" element ={<WomensPage/>}/>
         <Route path ="/menspage" element ={<MenPage/>}/>
+        <Route path ="/products/productpage" element ={<ProductPage/>}/>
         <Route path ="/products/shoes" element ={<Shoes/>}/>
         <Route path ="/products/mensclothing" element ={<MensClothing/>}/>
         <Route path ="/products/womensclothing" element ={<WomensClothing/>}/>
         <Route path ="/login" element ={<Login/>}/>
         <Route path ="/product/:id" element ={<ProductDetails/>}/>
-
-        <Route path ="/products/womensclothing" element ={<WomensClothing/>}/> */}
-
-        {/* <Route path ="/cartitem" element ={<Cart_Items/>}/> */}
-        {/* <Route path ="/Cart" element ={<Cart/>}/> */}
-       {/* </Routes> */}
+        <Route path ="/myaccount" element ={<MyAccount/>}/>
+        {/* <Route path ="/mydetails" element ={<Mydetails/>}/> */}
+        <Route path ="/cartitem" element ={<CartItems/>}/>
+        <Route path ="/Cart" element ={<Cart/>}/>
+       </Routes>
     </div>
-    
-   
   );
 }
 

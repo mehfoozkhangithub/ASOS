@@ -3,7 +3,7 @@ import { useDispatch,useSelector } from "react-redux";
 import {getItemApi} from ".././cart_auth/cart_Action_type"
 import { Link } from 'react-router-dom';
 import {Alert,AlertIcon,Progress,Stack} from '@chakra-ui/react';
-import Cart_Item from "./Cart_Item"
+import CartItem from "./CartItem"
 import styles from "./Cart.module.css"
 
 
@@ -60,7 +60,7 @@ const Cart = () => {
             </div>
             <div className={styles.leftDivTowUper}>
               {cartData.map((el)=>(
-                <Cart_Item key={el.id} item={el} />
+                <CartItem key={el.id} item={el} />
               ))}
             </div>
             <div className={styles.leftDivThree}>

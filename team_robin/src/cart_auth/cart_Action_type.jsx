@@ -21,13 +21,13 @@ export const addCartApi=(item,v)=>(dispatch)=>{
   dispatch({type:ADD_TO_CART_LOADING});
 
   axios.post("https://mock-api-server.onrender.com/cartItem",{
-    productName: item.Brand_Name,
-    Image: item.Image,
-    Price: item.Price,
+    productName: item.Brand_Name||item.title,
+    Image: item.Image||item.image,
+    Price: item.Price||item.price,
     size:v,
     color:item.color,
     quantity:1,
-    id: item.id,
+    // id: item.id,
   }).then((res)=>(dispatch({type:ADD_TO_CART_SUCCESS,payload:res.data}))).catch((err)=>{dispatch({type:ADD_TO_CART_ERROR})})
 
 }

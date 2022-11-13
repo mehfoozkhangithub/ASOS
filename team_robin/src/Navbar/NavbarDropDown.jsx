@@ -117,11 +117,11 @@ export default function DropDown() {
                         <div>
                             <ul>
                                 <li ><Link to="/"><Text><h4>NEW PRODUCTS</h4></Text></Link></li>
-                                <li><Link className="link_font" to="/home"> View all</Link></li>
+                                <li><Link className="link_font" to="/products/productpage"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
                                 <li><Link className="link_font" to="/"> Tops</Link></li>
-                                <li><Link className="link_font" to="/"> Shoes</Link></li>
+                                <li><Link className="link_font" to="/products/shoes"> Shoes</Link></li>
                                 <li><Link className="link_font" to="/"> Coats and Jackets</Link></li>
                                 <li><Link className="link_font" to="/"> Hoodies</Link></li>
                                 <li><Link className="link_font" to="/"> Accessories</Link></li>
@@ -316,8 +316,8 @@ export default function DropDown() {
                                 <li ><Link to="/"><Text><h4>NEW PRODUCTS</h4></Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
-                                <li><Link className="link_font" to="/"> Dresses</Link></li>
-                                <li><Link className="link_font" to="/"> Tops</Link></li>
+                                <li><Link className="link_font" to="/products/mensclothing"> Mens</Link></li>
+                                <li><Link className="link_font" to="/products/womensclothing"> Tops</Link></li>
                                 <li><Link className="link_font" to="/"> Shoes</Link></li>
                                 <li><Link className="link_font" to="/"> Coats and Jackets</Link></li>
                                 <li><Link className="link_font" to="/"> Hoodies</Link></li>

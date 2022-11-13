@@ -7,17 +7,19 @@
 }
 .pr{
     
-    height: 100px;
+    height: 140px;
     margin: 10px;
 }
 .add{
     display: flex;
     justify-content: space-between;
     /* border: 1px solid red; */
-    width: 70%;
+    width: 75%;
     margin: auto;
+    margin-left: 1rem;
 
 }
+
 
 
 

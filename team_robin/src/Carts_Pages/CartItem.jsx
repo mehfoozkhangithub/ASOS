@@ -12,7 +12,7 @@ import {
   updateCartApi,
 } from ".././cart_auth/cart_Action_type";
 import styles from "./Cart.module.css";
-const Cart_Item = ({ item  }) => {
+const CartItem = ({ item  }) => {
   console.log(item,"this is show undefinde ")
   const dispatch = useDispatch();
   const [flag, setFlag] = useState(false);
@@ -39,7 +39,6 @@ const Cart_Item = ({ item  }) => {
               <p className={styles.name1}>{item.productName}</p>
             </Link>
             <div className={styles.colorSize}>
-              {" "}
               <span>{item.color}</span>
               <p className={styles.size}>
                 <select
@@ -110,4 +109,4 @@ const Cart_Item = ({ item  }) => {
   );
 };
 
-export default Cart_Item;
+export default CartItem;
