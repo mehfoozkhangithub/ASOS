@@ -40,6 +40,9 @@
 - ### **Integration**
 
 ## 🤝 **_Collaborators_**
+**Contributions, issues and feature requests are welcome!**
+
+*Feel free to check the `issues page`.*
 
 # 🧔🏻 **Sanket Patil** `Project Manager`
 
@@ -76,3 +79,9 @@
 - Github:[@Bhupendra](https://github.com/bkcjanta)
 - Linkedin:[Bhupendra](https://www.linkedin.com/mwlite/in/bhupendra-kumar-chandrakar)
 - Email: (bhupendrafbook@gmail.com)
+
+## Show your support 
+Give a ⭐️ if you like this project!
+
+# Acknowledgments
++ We take all the responsiblity for every single line of code. The desgin inspire from `Asos` and
