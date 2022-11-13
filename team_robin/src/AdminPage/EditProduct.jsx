@@ -1,16 +1,34 @@
 
 import "./EditProduct.css"
 import { useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios"
 import Navbar from "../Navbar/Navbar"
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import React from "react";
 
 
 
+
+  import {
+    useDisclosure,
+    AlertDialog,
+    Button,
+    AlertDialogOverlay,
+    AlertDialogContent,
+    AlertDialogHeader,
+    AlertDialogCloseButton,
+    AlertDialogFooter,
+    // AlertDialogBody
+  } from "@chakra-ui/react";
 
 
 export default function EditProductPage() {
+
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    const cancelRef = React.useRef();
+
 
 const {id} =useParams()
 
@@ -18,7 +36,7 @@ const {id} =useParams()
     const [price, setPrice] = useState('')
     const navigate = useNavigate()
 
-    const [inputPrice, setinputPrice] = useState("")
+    // const [inputPrice, setinputPrice] = useState("")
 
 
 
@@ -39,11 +57,11 @@ const {id} =useParams()
 
     const EditProducts = () => {
         let payload = {
-            price
+            Price:price
         }
-        axios.patch(`http://localhost:8080/Products${id}`, payload).then(() => {
-
-            // navigate('/')
+        axios.patch(`https://mock-api-server.onrender.com/products/${id}`, payload).then(() => {
+            onOpen()
+            // navigate('/getProduct')
         }).catch((err) => {
         console.log(err)
         })   
@@ -60,7 +78,41 @@ const {id} =useParams()
     }
 
     return <div className="edit_main_div">
-        <Navbar />
+    <AlertDialog
+        motionPreset="slideInBottom"
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+        isOpen={isOpen}
+        
+      >
+        <AlertDialogOverlay />
+
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            {/* {" "}
+            Do you Agree with terms and conditions ?{" "} */}
+            Product Price Updated Successfully
+          </AlertDialogHeader>
+          <AlertDialogCloseButton />
+
+          <AlertDialogFooter>
+          {/* ref={cancelRef} used in ok button  */}
+            <Button bg="green" color="white"  onClick={() => navigate("/getProduct")}>
+              Ok
+            </Button>:
+       
+            {/* <Button onClick={onClose}  colorScheme="red" ml={3}>
+              Close
+            </Button> */}
+          </AlertDialogFooter>
+        </AlertDialogContent>
+        </AlertDialog>
+    
+        <div style={{width:"100%", display:"flex",justifyContent:"center",gap:"50px",backgroundColor:"#F8F8F8",color:"white",padding:"10px"
+        }}>
+        <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/getProduct">Dashboard</Link>
+        <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/addProduct">Add Product</Link>
+        </div>
         <div className="editProducts">
             <div
                 className="add-product-wrapper">

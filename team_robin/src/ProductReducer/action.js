@@ -42,3 +42,25 @@ export const getProductCart=(id)=>(dispatch)=>{
     })
 
 }
+
+const addCartRequest=()=>{
+    return{
+        type:type.ADD_CART_REQUEST,
+    }
+}
+const addCartSuccess=()=>{
+    return{
+        type:type.ADD_CART_SUCCESS
+    }
+}
+const addCartFailure=()=>{
+    return{
+        type:type.ADD_CART_FAILURE
+    }
+}
+
+// export const addToCart=(data)=>(dispatch)=>{
+// dispatch(addCartRequest());
+// return axios.post(``)
+
+// }

@@ -19,6 +19,7 @@ const SignupForm = () => {
         let payload = {fname,lname,email,password,date}
         console.log(payload)
         dispatch(userSignUp(payload));
+        
         navigate("/")
         
     }

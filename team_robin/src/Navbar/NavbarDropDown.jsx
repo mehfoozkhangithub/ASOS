@@ -200,9 +200,9 @@ export default function DropDown() {
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
-                                <li><Link className="link_font" to="/"> Tops</Link></li>
-                                <li><Link className="link_font" to="/"> Shoes</Link></li>
-                                <li><Link className="link_font" to="/"> Coats and Jackets</Link></li>
+                                <li><Link className="link_font" to="/products/womensclothing"> Women</Link></li>
+                                <li><Link className="link_font" to="/products/shoes"> Shoes</Link></li>
+                                <li><Link className="link_font" to="/products/mensclothing"> Men</Link></li>
                                 <li><Link className="link_font" to="/"> Hoodies</Link></li>
                                 <li><Link className="link_font" to="/"> Accessories</Link></li>
                                 <li><Link className="link_font" to="/"> Activewear</Link></li>

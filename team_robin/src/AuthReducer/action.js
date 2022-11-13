@@ -27,11 +27,16 @@ export const userLogin=(data)=>(dispatch)=>{
         console.log(res.data[0])
         return dispatch(UserLoginSuccess({token:"QpwL5tke4Pnpja7X4",data:res.data[0]}))
        }else{
+        console.log("error")
         return dispatch(UserLoginFailure());
        }
       
         
-    }).catch((res)=>dispatch(UserLoginFailure()))
+    }).catch((res)=>{
+      console.log(res)
+     return dispatch(UserLoginFailure())
+
+    })
 
 }
 
@@ -64,6 +69,22 @@ return axios.post("https://mock-api-server.onrender.com/users",data)
   }).catch((res)=>dispatch(UserSignUpFailure()))
 
 }
+
+const UserLogoutRequest=()=>{
+  return{
+    type:type.LOGOUT_REQUEST
+  }
+}
+
+const UserLogoutSuccess=()=>{
+  return{
+    type:type.LOGOUT_SUCCESS
+  }
+}
+export const UserLogout=()=>(dispatch)=>{
+     dispatch(UserLogoutSuccess())
+}
+
 
 
 

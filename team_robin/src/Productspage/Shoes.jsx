@@ -49,7 +49,7 @@ const Shoes = () => {
   // console.log(data, "jsx");
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
 
       <div className={styles.headline_box} style={{ border: "1px solid grey", width: "100%", height: "220px" }}>
         <div className={styles.headline}>

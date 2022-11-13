@@ -1,12 +1,24 @@
 import styles from "./MyAccount.module.css";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import Navbar from "../Navbar/Navbar";
+import { UserLogout } from "../AuthReducer/action";
 export default function MyAccount(){
+    const dispatch=useDispatch()
     const data=useSelector((state)=>state.Auth);
     const {userData}=data;
+    console.log(userData);
+    const fname=userData.fname.toUpperCase();
+    const lname=userData.lname.toUpperCase();
+    
+    const handleLogout=()=>{
+        dispatch(UserLogout())
+    }
+    
 
     return (
+        <>
+        <Navbar/>
         <div className={styles.accPg}>
             <div className={styles.accCont}>
                 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN5bWJvbCBpZD0iYSIgdmlld0JveD0iMCAwIDIzIDI0Ij48cGF0aCBkPSJNNS4wNzYgMTIuMDE3YzAtMy44MTQgMi4zMjgtNy41MDkgNi41MjEtNy41MDkgNC4xOTQgMCA2LjUyMiAzLjY5NSA2LjUyMiA3LjUxIDAgMTAuMDk4LTEzLjA0MyAxMC4wOTUtMTMuMDQzIDB6bTE3LjkxOC03LjUyMVYuNjAzaC00Ljg3NXYxLjUxNEMxNi4xMjcuNjgzIDEzLjk2Ny4wMTMgMTEuNjMgMGgtLjA2NkM4Ljc0Mi4wMTYgNi4xNzguOTg4IDMuODU3IDMuMTEgMi41OCA0LjI5MSAxLjYwNyA1LjYzNS45NjQgNy4xMTQuMzI3IDguNTg4IDAgMTAuMjM5IDAgMTIuMDE1YzAgMS42NTguMjg4IDMuMjExLjg1MyA0LjYxNi41NjYgMS40MDUgMS40MjYgMi43MDUgMi41NiAzLjg2MyAxLjEzNCAxLjE2IDIuNDAxIDIuMDQyIDMuNzY2IDIuNjIgMS4zMzYuNTY1IDIuODA3Ljg1OCA0LjM2OS44N2guMDVsLjA0OS4wMDFjMS41NjItLjAxMyAzLjAzMy0uMzA2IDQuMzY5LS44NzEuNzMtLjMxIDEuNDMzLS43MDcgMi4xMDMtMS4xODd2MS40NTVoNC44NzVWNC40OTZ6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iYiIgdmlld0JveD0iMCAwIDU3IDI0Ij48cGF0aCBkPSJNNTAuOTY0IDE5LjMxNmMtMS4wMTggMS4wMDktMy40OTUgMS40MDUtNS4yODIuMjUxLTEuMDYtLjY4NC0xLjgwMS0xLjkxMy0xLjc5OC0zLjE5OGwtNC41NTktLjAwMmMuNDk4LTEuMzM1Ljc1LTIuNzk4Ljc1LTQuMzUyIDAtLjM0OC0uMDEyLS42OS0uMDM3LTEuMDI4LjMuMzc2LjY1MS43MjEgMS4wNTggMS4wMjIgMi40OTUgMS44MzMgNS42NSAxLjcyNiA4LjQwNSAyLjg2Ny42NDQuMjY3IDEuMjgzLjYxOSAxLjcwNSAxLjE4Ni44NiAxLjE1OS44MDYgMi4yMTUtLjI0MiAzLjI1NHptLTI5LjAwNy03LjI5OWMwLTMuODE0IDIuMzI4LTcuNTEgNi41MjEtNy41MVMzNSA4LjIwNCAzNSAxMi4wMThjMCAxMC4xLTEzLjA0MiAxMC4wOTYtMTMuMDQyIDB6bS02LjEzNi0uMDAzYy0yLjQ5NS0xLjgzMy01LjY1LTEuNzI1LTguNDA1LTIuODY2LS42NDUtLjI2Ny0xLjI4NC0uNjItMS43MDUtMS4xODctLjcwMy0uOTQ2LS41OTMtMi40MjcuMjQxLTMuMjUzIDEuMDE1LTEuMDA2IDMuNDkyLTEuNDA4IDUuMjgyLS4yNTIgMS4wNi42ODUgMS44MDIgMS45MTQgMS43OTggMy4xOThsNC41OTYuMDAyYy0uNDk0IDEuMzMzLS43NDcgMi43OTgtLjc0NyA0LjM1OSAwIC4zNjMuMDE1LjcyMi4wNDIgMS4wNzVhNS42OTIgNS42OTIgMCAwMC0xLjEwMi0xLjA3NnpNLjE5NCA5LjU0OGE1LjczMyA1LjczMyAwIDAwMS45IDIuNDY2YzIuNDk1IDEuODMzIDUuNjUgMS43MjUgOC40MDUgMi44NjcuNjQ1LjI2NyAxLjI4NC42MTggMS43MDUgMS4xODYuNzAzLjk0Ni41OTMgMi40MjctLjI0MiAzLjI1My0xLjAxNyAxLjAxLTMuNDk1IDEuNDA2LTUuMjgxLjI1Mi0xLjA2LS42ODUtMS44MDItMS45MTMtMS43OTgtMy4xOThsLTQuNjg5LS4wMDJtMCAyLjI3OGMuNDk0IDEuMzkxIDEuMzc1IDIuNjQgMi41MzIgMy41MjYgMi4xNDkgMS42NDcgNS4wMDggMS45OCA3LjY4MyAxLjc2NSAxLjY0OC0uMTMyIDMuMzE3LS40NjQgNC43NDUtMS4zMTcgMS43ODUtMS4wNjcgMi44MzYtMy4wMiAzLjAxNi01LjA0M2ExMi4xMiAxMi4xMiAwIDAwMi4xMjQgMi45MTNjMS4xMzQgMS4xNiAyLjQwMiAyLjA0MiAzLjc2NiAyLjYyIDEuMzM2LjU2NSAyLjgwNy44NTggNC4zNjkuODd2LjAwMWguMDk5YzEuNTYyLS4wMTMgMy4wMzMtLjMwNiA0LjM2OC0uODcxIDEuMzY1LS41NzggMi42MzMtMS40NiAzLjc2Ni0yLjYyYTEyLjA3OCAxMi4wNzggMCAwMDIuMjA3LTMuMDc1Yy4zMzcgMS44NzIgMS4zNyAzLjYxMiAyLjg1OCA0Ljc1MyAyLjE1IDEuNjQ3IDUuMDA4IDEuOTggNy42ODMgMS43NjUgMi4wNzgtLjE2OCAzLjI2LS40MyA0Ljc0Ni0xLjMxOCAzLjYyLTIuMTYzIDQuMjItNy45NzUuNjY2LTEwLjYxLTIuNDk1LTEuODMyLTUuNjUtMS43MjUtOC40MDUtMi44NjYtLjY0NS0uMjY3LTEuMjg0LS42MTktMS43MDUtMS4xODYtLjcwMi0uOTQ3LS41OTItMi40MjcuMjQyLTMuMjU0IDEuMDE1LTEuMDA2IDMuNDkyLTEuNDA4IDUuMjgyLS4yNTIgMS4wNi42ODUgMS44MDEgMS45MTQgMS43OTggMy4xOThsNS4xMy4wMDNjLS4wODUtMi4yNTgtMS4yMDgtNC40NTItMi45NzMtNS44MDVDNTIuMDQuMiA0OS4xODItLjEzMyA0Ni41MDguMDgyIDQ0Ljg2LjIxNSA0My4xOS41NDcgNDEuNzYyIDEuNGMtMS43NzggMS4wNjItMi44MTUgMi45OC0zLjAxIDQuOTctLjYyNS0xLjE4OC0xLjQ3My0yLjI4LTIuNTMzLTMuMjZDMzMuODk4Ljk4NyAzMS4zMzQuMDE1IDI4LjUxIDBoLS4wNjZjLTIuODIyLjAxNi01LjM4Ni45ODgtNy43MDcgMy4xMS0xLjE0NiAxLjA2LTIuMDQ0IDIuMjQ5LTIuNjgxIDMuNTUtLjMyNy0xLjg5My0xLjM2NS0zLjY1Ni0yLjg2OC00LjgwOEMxMy4wNC4yMDUgMTAuMTgxLS4xMjggNy41MDYuMDg3IDUuODU4LjIyIDQuMTkuNTUgMi43NiAxLjQwNSAxLjU1MiAyLjEyNy42ODYgMy4yNDQuMTk0IDQuNTEiLz48L3N5bWJvbD48dXNlIGhyZWY9IiNhIiB3aWR0aD0iMjMiLz48dXNlIGhyZWY9IiNiIiB4PSIyMi44IiB3aWR0aD0iNTciLz48L3N2Zz4=" alt="" />
@@ -17,10 +29,10 @@ export default function MyAccount(){
                 <div>
                     <div>
                         <div className={styles.nameLog}>
-                            <h1>BK</h1>
+                            <h1>{fname[0]+lname[0]}</h1>
                         </div>
                         <span>Hi,</span>
-                        <h3>Bhupendra Kumar</h3>
+                        <h3>{fname+"  "+lname}</h3>
                     </div>
                     <div>
                         <img src="https://i.pinimg.com/originals/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg" alt="" />
@@ -73,7 +85,7 @@ export default function MyAccount(){
                     </div>
                     <div>
                         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDIwIDE3Ij48ZyBmaWxsPSIjMkQyRDJEIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xOS45NjUuMXYxNi44aC05LjQ0MXYtMi4wNjdoNy4zODhzLjA0LTEyLjY4OSAwLTEyLjY4OWgtNy4zODhWLjFoOS40NDF6Ii8+PHBhdGggZD0iTTIuMTQzIDkuNTV2LTIuMWgxMS41MjR2Mi4xeiIvPjxwYXRoIGQ9Ik0xLjUyNSAxMC4wMzRsLS4wMDIuMDAyTC4wNDIgOC41NTRsLjAwMS0uMDAxLS4wMDEtLjAwMkwxLjUyMyA3LjA3bC4wMDIuMDAxIDMuNzE0LTMuNzE0TDYuNzIxIDQuODQgMy4wMDcgOC41NTNsMy43MTQgMy43MTQtMS40ODIgMS40ODEtMy43MTQtMy43MTR6Ii8+PC9nPjwvc3ZnPg==" alt="" />
-                        <h5>Signout</h5>
+                        <h5 onClick={handleLogout}>Sign Out</h5>
                     </div>
                 </div>
                 <div>
@@ -86,5 +98,6 @@ export default function MyAccount(){
                 </div>
             </div>
         </div>
+        </>
     )
 }

@@ -4,6 +4,7 @@
   "private": true,
   "main": "index.js",
   "dependencies": {
+    "@chakra-ui/alert": "^2.0.11",
     "@chakra-ui/icons": "^2.0.11",
     "@chakra-ui/layout": "^2.1.9",
     "@chakra-ui/react": "^2.3.7",
@@ -20,6 +21,7 @@
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
+    "react-native-web": "^0.18.10",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
@@ -34,7 +36,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server":"json-server --watch db.json --port 8080",
+    "server": "json-server --watch db.json --port 8080",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

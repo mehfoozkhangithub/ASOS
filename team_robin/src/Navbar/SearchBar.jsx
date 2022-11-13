@@ -1,61 +1,12 @@
-// import { useCallback } from 'react';
-// import { useEffect } from 'react';
-// import { useState } from 'react';
-// // import './App.css';
-// import { SearchBox } from './SearchBox';
-// import country from '../utils/countries';
-
-// function SearchBar() {
-
-//   const [query ,setQuery]=useState("")
-//   const [suggestions,setSuggestions] = useState([]);
-
-//   const queryHandler = useCallback((val)=>{
-//     console.log("INSIDE QUERY HANDLES", val)
-//     setQuery(val)
-//   },[])
-
-
-//   // const queryHandler = (val) => {
-//   //   setQuery(val)
-//   // }
-
-//   useEffect(()=> {
-//     if(query===""){
-//       setSuggestions([])
-//     }
-//     else{
-//       let text = query.toLowerCase();
-//       let newSuggesstions= country.filter
-//       ((item)=> {
-//         return item.country.toLowerCase().indexOf(text) !== -1
-//         ? true:false;
-//       }).map((item) => item.country);
-//       setSuggestions(newSuggesstions)
-//     }
-//   } , [query])
-
-//   return (
-//     <div className="SearchBar">
-//      <SearchBox suggestions={suggestions} queryHandler={queryHandler} />
-//     </div>
-//   );
-// }
-
-// export default SearchBar;
-import { SearchIcon } from "@chakra-ui/icons";
-
 import React, { useState, useEffect } from "react"
-import { Form, FormControl } from "react-bootstrap";
-// import { Form, FormControl,Button } from "react-bootstrap";
-
-// import {FaSearch} from "react-icons/fa"
+import {FaSearch} from "react-icons/fa"
 import axios from "axios"
 const Searchbar = () => {
     const [SearchData, setSearchData] = useState([]);
     const [search, setSearch] = useState('');
+
     useEffect(() => {
-            const API_URL = `http://localhost:8080/shoes/?title=${search}`
+            const API_URL = `https://asos-server123.herokuapp.com/api/products/?brand=${search}`
             axios
                 .get(API_URL)
                 .then(res => {
@@ -63,30 +14,23 @@ const Searchbar = () => {
                     setSearchData(contacts)
                     console.log(SearchData);
                 })
-        }, [SearchData,search])   
+        }, [search])   
+
+
         const onSubmit=()=>{
             console.log("contact:",SearchData);
-            setSearch("");
+            // setSearch("");
         } 
-    return (
-        <>
-            <Form className="d-flex form_controls">
-                <FormControl
-              style={{width:"90%", height:"35px", borderRadius:"50px", padding:"10px", fontSize:"15px"}}
-                    type="search"
+    return <div>
+            <input style={{width:"90%",height:"40px",textAlign:"left",borderRadius:"25px",padding:"10px",backgroundColor:"white", color:"black"}}
+             type="text"                  
                     placeholder="Search for items and brands here"
-                    className="me-2 "
-                    aria-label="Search"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                />
-   <span style={{position:"relative" , right:"35px" ,color:"black"}}  onClick={onSubmit}><SearchIcon /></span>
-
-               {/* <Button variant="outline-success" className="searchbtn"><FaSearch/></Button> */}
-            </Form>
-
-        </>
-    )
+                 />
+               <button style={{position:"relative", marginLeft:"-40px", color:"black"}} variant="outline-success" onClick={onSubmit} className="searchbtn"><FaSearch/></button>            
+            </div>
 }
 
 export default Searchbar;
+

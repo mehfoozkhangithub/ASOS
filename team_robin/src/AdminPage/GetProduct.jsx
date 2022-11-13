@@ -46,7 +46,7 @@
 // export default GetProduct
 
 
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar"
 import {
   Breadcrumb,
@@ -57,24 +57,84 @@ import {
   Stack,
 } from "@chakra-ui/react";
 
+import axios from "axios";
+
+import {
+  useDisclosure,
+  AlertDialog,
+  Button,
+  AlertDialogOverlay,
+  AlertDialogContent,
+  AlertDialogHeader,
+  AlertDialogCloseButton,
+  AlertDialogFooter,
+  // AlertDialogBody
+} from "@chakra-ui/react";
+
 import styles from "./GetProduct.module.css";
 import { useEffect } from "react";
 import { showProducts, sort } from "../../src/ProductsStore/products.action"
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const GetProduct = () => {
-  const dispatch = useDispatch();
-  const { loading, error, data } = useSelector((state) => state.products);
-  const location = useLocation();
-  const from = {
-    pathname: location.pathname,
-  };
-  useEffect(() => {
-    // console.log("useEffect");
 
-    showProducts(dispatch, "Men");
-  }, [dispatch]);
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const cancelRef = React.useRef();
+
+    const navigate=useNavigate();
+
+    const [data,setData]=useState([])
+    const [error,setError]=useState(false)
+    const [loading,setLoading]=useState(false)
+
+    const getData = () => {
+        setLoading(true)
+        axios.get('https://mock-api-server.onrender.com/products').then((res) => {
+    setData(res.data)
+    setLoading(false)
+            // navigate('/')
+            // alert("product added succesfully")
+        }).catch((err) => {
+            setError(true)
+            console.log(err)
+        })
+
+    }
+
+    
+    useEffect(()=> {
+        getData();
+    },[])
+
+ 
+
+    const goToEdit=(id)=>{
+        navigate(`/editProduct/${id}`)
+    }
+
+    const deleteProduct=(id)=>{
+        axios.delete(`https://mock-api-server.onrender.com/products/${id}`).then(() => {
+      onOpen()
+      // getData()
+        // alert("Product deleted successfully")
+        // getData();
+        }).catch((err) => {
+        console.log(err)
+        })   
+    }
+
+  const dispatch = useDispatch();
+//   const { loading, error, data } = useSelector((state) => state.products);
+//   const location = useLocation();
+//   const from = {
+//     pathname: location.pathname,
+//   };
+//   useEffect(() => {
+//     // console.log("useEffect");
+
+//     showProducts(dispatch, "Men");
+//   }, [dispatch]);
 
   const handleOnSelect = (e) => {
     // e.preventDefault()
@@ -100,9 +160,45 @@ const GetProduct = () => {
     );
 
   return (
-    <div>
-      <Navbar/>
-      <div
+    <div >
+      <AlertDialog
+        motionPreset="slideInBottom"
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+        isOpen={isOpen}
+        
+      >
+        <AlertDialogOverlay />
+
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            {/* {" "}
+            Do you Agree with terms and conditions ?{" "} */}
+            Product Deleted Successfully
+          </AlertDialogHeader>
+          <AlertDialogCloseButton />
+
+          <AlertDialogFooter>
+          {/* ref={cancelRef} used in ok button  */}
+            <Button bg="red" color="white" onClick={()=>{
+              onClose()
+              getData()
+            }} ref={cancelRef}>
+              Ok
+            </Button>:
+       
+            {/* <Button onClick={onClose}  colorScheme="red" ml={3}>
+              Close
+            </Button> */}
+          </AlertDialogFooter>
+        </AlertDialogContent>
+        </AlertDialog>
+      <div style={{width:"100%", display:"flex",justifyContent:"center",gap:"50px",backgroundColor:"#F8F8F8",color:"white",padding:"10px"
+        }}>
+        <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/getProduct">Dashboard</Link>
+        <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/addProduct">Add Product</Link>
+        </div>
+      {/* <div
         className={styles.headline_box}
         style={{ border: "1px solid grey", width: "100%", height: "220px" }}
       >
@@ -119,8 +215,8 @@ const GetProduct = () => {
             All you need now are some big plans to debut your new kicks.
           </p>
         </div>
-      </div>
-      <div className={styles.filter_box}>
+      </div> */}
+      {/* <div className={styles.filter_box}>
         <Flex top={2} left={110}>
           <Stack spacing={3}>
             <Select
@@ -152,10 +248,14 @@ const GetProduct = () => {
             </Select>
           </Stack>
         </Flex>
-      </div>
+      </div> */}
+      {/* <div>
+      <h1 style={{fontSize:"50px"}} textAlign="center">Dashboard</h1>
+      </div> */}
       <div>
         <p>{data.length} styles found</p>
       </div>
+  
 
       <div className={styles.products}>
         {data.map((el) => (
@@ -167,6 +267,10 @@ const GetProduct = () => {
             </div>
             <div id={styles.price_div}>
               <h3>{`£ ${+el.Price}`}</h3>
+            </div>
+            <div className={styles.crud_btn_div}>
+                <button onClick={()=>goToEdit(el.id)}>Edit</button>
+                <button onClick={()=>deleteProduct(el.id)}>Delete</button>
             </div>
             {/* </Link> */}
           </div>

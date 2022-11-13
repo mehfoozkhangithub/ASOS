@@ -90,7 +90,7 @@ const ProductPage = () => {
 
     return (
         <>
-        <Navbar/>
+        {/* <Navbar/> */}
 
             <Box borderColor='gray.200' paddingLeft="50px" marginBottom="30px" paddingRight="50px" paddingTop="30px" bg="rgb(238,238,238)" paddingBottom="30px" className={styles.para}>
                 <h1 style={{ fontSize: "20px", color: "GrayText" }}>Men's New in: Men Clothes</h1>

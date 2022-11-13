@@ -1,7 +1,7 @@
 
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import styles from "./productDetails.module.css";
 import SimpleSlider from "./DataSlide"
 import { getProductData ,getProductCart} from "../ProductReducer/action";
@@ -27,6 +27,7 @@ import {
 } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { useRef } from "react";
+import { useNativeBase } from "native-base";
 
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { addCartApi } from "../cart_auth/cart_Action_type";
@@ -35,6 +36,7 @@ const ProductDetails = () => {
   const refSize = useRef(null);
   const dispatch = useDispatch();
   const location = useLocation();
+  const navigate=useNavigate()
 
   let flag=false;
   if (location.state.pathname === "/products/productpage") {
@@ -90,7 +92,9 @@ const ProductDetails = () => {
   // };
 const handleAddCart=()=>{
   dispatch(addCartApi(ProductData,size));
-
+  setTimeout(()=>{
+    navigate("/cartpage")
+  },2000)
 }
 
   const handleToggle = () => setShow(!show);
@@ -114,7 +118,6 @@ const handleAddCart=()=>{
   }
   return (
     <div>
-      <Navbar/>
       <div className={styles.breadCrumbDiv}>
         {/* <Breadcrumb className={styles.breadCrumb1}
           spacing="8px"

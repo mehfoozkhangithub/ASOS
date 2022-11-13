@@ -4,8 +4,10 @@ import styles from './login.module.css'
 import './login.css'
 import LoginForm from './Loginform'
 import SignupForm from './SignupForm'
+
 const Login = () => {
         return (
+            <>
             <div className={styles.box} >
                 <div className={styles.logo} >
                     <img src="https://my.asos.com/Content/images/asos-logo-2022-93x28.png" alt="ASOS Logo" loading="lazy" />
@@ -69,6 +71,7 @@ const Login = () => {
                 <br></br>
                 <br></br>
             </div>
+            </>
         )
     }
 

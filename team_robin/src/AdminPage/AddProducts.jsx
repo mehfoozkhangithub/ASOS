@@ -4,12 +4,31 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios"
 import Navbar from "../Navbar/Navbar"
-import { color } from "@chakra-ui/react";
+// import { color } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import React from "react";
+
+import {
+    useDisclosure,
+    AlertDialog,
+    Button,
+    AlertDialogOverlay,
+    AlertDialogContent,
+    AlertDialogHeader,
+    AlertDialogCloseButton,
+    AlertDialogFooter,
+    // AlertDialogBody
+  } from "@chakra-ui/react";
 
 
 
 
 export default function AddProductPage() {
+
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    const cancelRef = React.useRef();
+
+
 
     const [title, setTitle] = useState('')
     const [image, setImage] = useState('');
@@ -86,33 +105,62 @@ export default function AddProductPage() {
             color: color,
 
         }
-        axios.post('http://localhost:8080/Products', payload).then(() => {
-
-            navigate('/')
-            alert("product added succesfully")
+        axios.post('https://mock-api-server.onrender.com/products', payload).then(() => {
+            onOpen()
+            // alert("product added succesfully")
+            // navigate('/getProduct')
         }).catch((err) => {
             console.log(err)
         })
 
-        clearForm()
+
 
 
         // eslint-disable-next-line 
     }
 
-    const clearForm = () => {
-        setTitle("")
-        setImage("")
-        setPrice("")
-        setColor("")
-    }
+
 
     return <div className="add_main_div">
-        <Navbar />
+      <AlertDialog
+        motionPreset="slideInBottom"
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+        isOpen={isOpen}
+        
+      >
+        <AlertDialogOverlay />
+
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            {/* {" "}
+            Do you Agree with terms and conditions ?{" "} */}
+            Product Added Successfully
+          </AlertDialogHeader>
+          <AlertDialogCloseButton />
+
+          <AlertDialogFooter>
+          {/* ref={cancelRef} used in ok button  */}
+            <Button bg="green" color="white"  onClick={() => navigate("/getProduct")}>
+              Ok
+            </Button>:
+       
+            {/* <Button onClick={onClose}  colorScheme="red" ml={3}>
+              Close
+            </Button> */}
+          </AlertDialogFooter>
+        </AlertDialogContent>
+        </AlertDialog>
+
+        <div style={{width:"100%", display:"flex",justifyContent:"center",gap:"50px",backgroundColor:"#F8F8F8",color:"white",padding:"10px"
+        }}>
+        <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/getProduct">Dashboard</Link>
+        <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/addProduct">Add Product</Link>
+        </div>
         <div className="addProducts">
             <div
                 className="add-product-wrapper">
-                <h1 textAlign="center">Add Product</h1>
+                <h1 style={{fontSize:"25px", fontWeight:"bolder"}} textAlign="center">Add Product</h1>
                 <div className="form-element-div">
                     <label className="form-label">Name</label>
                     <input data-cy="add-product-title" onChange={handleTitle} type="text" />
@@ -145,7 +193,7 @@ export default function AddProductPage() {
             </div>
 
             <div className="showAddProduct">
-                <h1 style={{ marginBottom: "10px" }} textAlign="center">Product Details</h1>
+                <h1  style={{ marginBottom: "10px",fontSize:"25px", fontWeight:"bolder" }} textAlign="center">Product Details</h1>
                 <div className="show_input">
                     <div>
                         <label className="form-label">Brand</label>

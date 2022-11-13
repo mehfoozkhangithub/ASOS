@@ -5,6 +5,7 @@ import {Link} from "react-router-dom"
 // import { Link } from "react-router-dom";
 import { FaRegUser, FaHeart, FaShoppingBag } from "react-icons/fa";
 import SearchBar from "./SearchBar";
+
 import {
     Menu,
     MenuButton,
@@ -22,6 +23,8 @@ import {
 // import { Image } from "@chakra-ui/react";
 import DropDown from "./NavbarDropDown";
 import MobNav from "./MobNav";
+import { useDispatch,useSelector } from "react-redux";
+import { UserLogout } from "../AuthReducer/action";
 
 
 // div --> 3 div  
@@ -30,13 +33,23 @@ export default function NavbarTop() {
     const [btnBg1, setButtonBg1] = useState(false)
     const [btnBg2, setButtonBg2] = useState(false)
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const navigate = useNavigate();
+    const dispatch=useDispatch();
+    const data=useSelector((state)=>state.Auth);
+    const {isAuth,userData}=data;
+    console.log(isAuth)
+    console.log(userData)
+    const handleLogout=()=>{
+        dispatch(UserLogout())
+        navigate("/login")
+    }
 
 
     useEffect(() => {
         buttonColor1Onclick();
     }, [])
 
-    const navigate = useNavigate();
+    
 
     const brandOnclick = () => {
         navigate("/")
@@ -79,8 +92,7 @@ export default function NavbarTop() {
                     <div id="nav_logo">
                         <div onClick={brandOnclick}><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/fw20_0748_day-3/team_robin/src/Navbar/Team%20Robin.jpeg?raw=true" alt=""/></div>
                         <div><h4 style={{ backgroundColor: btnBg1 ? "#525050" : "transparent" }} onClick={buttonColor1Onclick}>WOMEN</h4></div>
-                        <div><h4 style={{ backgroundColor: btnBg2 ? "#525050" : "transparent" }} onClick={buttonColor2Onclick}>MEN</h4></div>
-                    </div>
+                     <Link to ="menpage"><div><h4 style={{ backgroundColor: btnBg2 ? "#525050" : "transparent" }} onClick={buttonColor2Onclick}>MEN</h4></div></Link>                      </div>
 
                     <div id="search_box"><SearchBar /></div>
 
@@ -107,12 +119,20 @@ export default function NavbarTop() {
                             </MenuButton>
                             <MenuList width={200} onMouseEnter={onOpen} onMouseLeave={onClose}>
                                 <div style={{width:"auto",height:"35px",display:"flex",justifyContent:"flex-start",alignItems:"center", gap:"20px",position:"relative",backgroundColor:"white",color:"black",paddingLeft:"10px",zIndex:"2px"}}>
-                                    <Link to="/login"><p>Sign In</p></Link>
-                                    <Link to="/login"><p>Join</p></Link>
+                                    {
+                                        !isAuth?<>
+                                        <Link to="/login"><p>Sign In</p></Link>
+                                        <Link to="/login"><p>Join</p></Link>
+                                        </>:
+                                        <>
+                                        <p>Hi {userData.fname.toUpperCase()}</p>
+                                        <button onClick={handleLogout}>Sign Out</button>
+                                       </>
+                                    }
                                 </div>
                                 <Link to={"/myaccount"}><MenuItem  paddingLeft={10} height={50} color="black">My Account</MenuItem></Link>
-                                <Link to={"/"}> <MenuItem paddingLeft={10} height={50} color="black">My Orders</MenuItem></Link>
-                                <Link to={"/"}> <MenuItem paddingLeft={10} height={50} color="black">Return Information</MenuItem></Link>
+                                <Link to={"/cartpage"}> <MenuItem paddingLeft={10} height={50} color="black">My Orders</MenuItem></Link>
+                                <Link to={"/addProduct"}> <MenuItem paddingLeft={10} height={50} color="black">Admin</MenuItem></Link>
                                 <Link to={"/"}> <MenuItem  paddingLeft={10} height={50} color="black">Contact Preferences</MenuItem></Link>
                             </MenuList>
                         </Menu>
@@ -120,11 +140,11 @@ export default function NavbarTop() {
                             <FaHeart color="transparent" style={{ stroke: "white", strokeWidth: "50" }} border="2px solid white" size={23} />
                         </div>
                         <div>
-                            {/* <Link to ="/cart"> */}
+                            <Link to ="/cartpage">
                             <FaShoppingBag
                                 color="transparent" style={{ stroke: "white", strokeWidth: "50" }} border="2px solid white"
                                 size={23} />
-                                {/* </Link> */}
+                                </Link>
                         </div>
                     </div>
 

@@ -1,0 +1,342 @@
+#mainCDiv{
+    background-color: #eeeeee;
+    display: flex;
+    /* justify-content: center; */
+    height:340vh;
+}
+#MainLeftCDiv{
+  width: 65%;
+
+}
+#brandCheckout{
+    display: flex;
+    /* background-color: #ffffff; */
+    height: 40px;
+    margin-left: 25%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    
+}
+#MainRightCDiv{
+  width:25%;
+  /* background-color: #ffffff; */
+  /* height: 300px; */
+  margin-top:6% ;
+  margin-left: 1.5%;
+  margin-right: 16%;
+  
+   
+}
+ #item{
+    width: 100%;
+    background-color: #ffffff;
+    height: fit-content;
+    margin-top:5.2% ;
+    margin-left: 1.5%;
+     margin-right: 16%; 
+     /* display: flex; */ 
+     padding:24px;
+  } 
+  #item>div:nth-child(1){
+   display: flex;
+   justify-content:space-between;
+  }
+  #itemQty>div:nth-child(1){
+     font-weight: 670;
+     font-size: 17px;
+  }
+  .flextotaldelivery{
+      display: flex;
+      justify-content: space-between;
+      color:gray;
+  }
+  .flextotaldelivery>p{
+   margin:3.5px;
+}
+  #flextotalpay{
+      display: flex;
+      justify-content:space-between;
+      font-weight: 600;
+      font-size: 15px;
+  }
+  #imgflex{
+      display: flex;
+      gap:15px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
+  #imgflex>div>h5{
+   margin:1.5px;
+}
+#imgflex>div>p{
+    margin:2px;
+ }
+ #spanQty>span{
+   font-weight: 600;
+ }
+ 
+#brandCheckoutname{
+    font-size: 26px;
+    font-weight:700
+}
+ #flageflex{
+     display: flex;
+ }
+ #flageflex>div{
+     margin-left: 15px;
+ }
+ 
+
+#divC1{
+  background-color: #ffffff;
+  height: fit-content;
+  margin-left: 25%;
+  margin-top: -25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+   
+}
+#cngbtn{
+    font-size:14px;
+    padding:4px 28px;
+    border:0px;
+    margin-top:30px;
+}
+#divC1>div>div:nth-child(1){
+    margin-top: 4px;
+    font-size: 19px;
+    font-weight:670;
+}
+ #divC1>div>div:nth-child(2){
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight:300;
+}
+/*
+#mybag{
+    font-size: 17px;
+    font-weight: 700;
+    
+} */
+#divC2{
+    background-color: #ffffff;
+    height: 40px;
+    margin-top: 1%;
+    margin-left: 25%;
+    display: flex;
+    justify-content:space-between;
+    /* padding:14px; */
+}
+#divC2>div:nth-child(1){
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight:650;
+}
+#divC3{
+    background-color: #ffffff;
+    height: 80px;
+    margin-top: 1%;
+    margin-left: 25%;
+    /* padding:24px; */
+  
+}
+#divC3>div:nth-child(1){
+ font-size: 13px;
+ font-weight:620;
+  
+}
+#divC3>input{
+    margin-top: 5px;
+    padding:10px 80px;
+  
+}
+/* #subtotalflex{
+    display: flex;
+    justify-content:flex-end;
+    gap: 3%;
+    margin-right: 3%;
+    padding-top: 2%;
+    font-weight: 500;
+} */
+#divC4{
+    background-color: #ffffff;
+    /* height: 200px; */
+    margin-top: 1%;
+    margin-left: 25%;
+    /* text-align: center; */
+    padding: 24px;
+}
+ #divC4>div:nth-child(1){
+    font-size: 18px;
+    font-weight:620;
+    padding-top: 1%;
+    
+}
+#divC4>div:nth-child(2){
+    font-weight: 600;
+    /* color:gray; */
+    padding-top: 3%;
+    
+}
+/* #divC4>div:nth-child(3){
+     display: flex; 
+ } 
+  */
+#divC4>div>div:nth-child(1){
+     font-size: 16px;
+     color:rgb(124, 118, 118);
+      margin-top: 5px;
+      font-weight:600;
+}
+#divC4>div>input{
+    margin-top: 5px;
+    padding:10px 80px;
+    border: 1px solid gray;
+  
+}
+input,select{
+    border: 1px solid gray;
+}
+#filter{
+    padding:9px 98px;
+    margin-top: 5px;
+}
+ 
+ #divC5{
+    background-color: #ffffff;
+    height: 120px;
+    margin-top: 1%;
+    margin-left: 25%;
+ 
+}
+#divC6{
+    background-color: #ffffff;
+     /* height: 120px;  */
+    margin-top: 1%;
+    margin-left: 25%;
+    padding:24px;
+ 
+}
+#divC6>div:nth-child(1){
+    font-size: 18px;
+    font-weight:620;
+    padding-top: 1%;
+    
+}
+#divC6>div:nth-child(2){
+    font-weight: 600;
+    /* color:gray; */
+    padding-top: 3%;
+    
+}
+#divC6>div>div:nth-child(1){
+    font-size: 15px;
+    /* color:rgb(124, 118, 118); */
+     margin-top: 5px;
+}
+#creditdebitcancel{
+    display: flex;
+    justify-content:space-between;
+}
+#creditdebitcancel>button{
+    border:0px;
+    /* color:white; */
+    background-color: rgb(231, 230, 230);
+    font-size:14px;
+    padding:4px 28px;
+    
+    margin-top:0px;
+}
+#divC6>div>input{
+   margin-top: 5px;
+   padding:10px 80px;
+   border: 1px solid gray;
+ 
+}
+.cardexp{
+    font-weight: 600;
+    color:gray;
+    padding-top: 3%;
+}
+.cardexp>input{
+ padding:10px 80px;
+ margin-top: 5px;
+}
+#flexcheckbox{
+    display: flex;
+    gap: 8px;;
+}
+#flexcheckbox>p{
+     margin-top: -2.8px;
+}
+#checkboxpadding{
+    padding:2px;
+}
+.flextotalwithcard{
+    display: flex;
+    /* margin-left: 15px; */
+}
+.flextotalwithcard>div:nth-child(1){
+    font-weight: 600;
+    font-size: 16px;
+}
+.flextotalwithcard>div:nth-child(2){
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 15px;
+}
+#selectdate>div:nth-child(1){
+    font-weight: 600;
+    color:gray;
+    padding-top: 3%;
+    /* font-size: 8px; */
+    margin-bottom: 5px;
+}
+#month{
+    padding:8px 15px;
+}
+#year{
+    padding:8px 12px;
+    margin-left: 5px;
+}
+#selectdate>button{
+     border:0px;
+     color:white;
+     background-color: black;
+     font-size: 15px;
+     font-weight: 550;
+     padding: 8px 20px;
+} 
+#divC7{
+    /* background-color: #ffffff; */
+    height: 120px;
+    margin-top: 1%;
+    margin-left: 25%;
+    padding: 24px;
+ 
+} 
+#divC7>p{
+  font-size: 14.5px;
+}
+#divC7>p>span{
+    text-decoration: underline;
+  }
+#placeorder{
+    
+    background-color:#018849;
+    color:white;
+    padding:2.5% 34%;
+    border:0px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#footerdiv{
+    height:50px;
+    text-align: center;
+    padding-top: 25px;
+}

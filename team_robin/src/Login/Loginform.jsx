@@ -9,30 +9,24 @@ import { getProductData } from "../ProductReducer/action";
 const LoginForm = () => {
     const dispatch=useDispatch();
     const data=useSelector((state)=>state.Auth);
-    useEffect(()=>{
-        dispatch(getProductData(1))
-    },[])
 
     const {isAuth,userData}=data;
-    console.log(userData)
-    
     const Navigate=useNavigate()
     const [email, setEmail] = useState("bkc@gmail.com");
     const [password,setPassword]=useState(12345678)
 
-   
     const handledSubmit = (e) => {
         e.preventDefault();
         const user={
             email,
             password,
         }
-          dispatch(userLogin(user));
-          Navigate("/");
+        dispatch(userLogin(user));
+        Navigate("/")
+         
+             
      }
-     if(isAuth){
-       Navigate("/");
-     }else
+     
     return (
         <>
             <form className={styles.form}>
