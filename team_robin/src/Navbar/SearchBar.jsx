@@ -14,7 +14,7 @@ const Searchbar = () => {
                     setSearchData(contacts)
                     console.log(SearchData);
                 })
-        }, [search])   
+        }, [SearchData,search])   
 
 
         const onSubmit=()=>{
