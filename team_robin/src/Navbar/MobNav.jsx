@@ -6,6 +6,7 @@ import {
     CloseIcon, HamburgerIcon
 
 } from "@chakra-ui/icons";
+import ReactTooltip from "react-tooltip"
 // import { SearchIcon } from "@chakra-ui/icons"
 
 
@@ -65,6 +66,7 @@ export default function MobNav() {
     // };
     return (
         <div className="header">
+        <ReactTooltip wrapper="span" />
             <div className="logo-nav">
                 <div style={{
                     marginLeft: "2vw",
@@ -226,16 +228,6 @@ export default function MobNav() {
             
                 </ul>
             </div>
-            <ul className="signin-up">
-                <li className="sign-in" onClick={closeMobileMenu}>
-                   <Link to="/login"><p>Sign Up</p></Link>
-                </li>
-                <li onClick={closeMobileMenu}>
-                   <Link to="/"sName="signup-btn">
-                        <p>Join</p>
-                    </Link>
-                </li>
-            </ul>
             <div id="nav-icons">
                 <BsSearch size={23} />
                 <Menu isOpen={isOpen}>

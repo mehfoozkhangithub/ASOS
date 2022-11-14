@@ -7,16 +7,16 @@ export default function DropDown() {
 
     return <div className="navbar">
 
-        <div class="dropdown">
-            <button class="dropbtn red_bg_nav">Sale
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn red_bg_nav">Sale
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                    <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                    <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/">SALE View all</Link></li>
                                 <li><Link className="link_font" to="/">SALE Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/">SALE Dresses</Link></li>
@@ -33,7 +33,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/">SALE Jeans</Link></li>
                                 <li><Link className="link_font" to="/products/mensclothing">Mens</Link></li>
                                 <li><Link className="link_font" to="/products/womensclothing">Women</Link></li>
@@ -50,7 +50,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><p fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</p></Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Biggest Deals</Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Sale under $15</Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Top Saved</Link></li>
@@ -68,7 +68,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP SALE BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP SALE BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -107,16 +107,16 @@ export default function DropDown() {
             </div>
         </div>
 
-        <div class="dropdown">
-            <button class="dropbtn">New In
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">New In
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                    <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                    <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>NEW PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">NEW PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/products/productpage"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -132,7 +132,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -167,7 +167,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>NEW EDITS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">NEW EDITS</Text></Link></li>
                                <li>
                                <div className="shopByEdit1">
                                             <div>
@@ -187,16 +187,16 @@ export default function DropDown() {
             </div>
         </div>
 
-        <div class="dropdown">
-            <button class="dropbtn">Clothing
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Clothing
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -213,7 +213,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/"> Jeans</Link></li>
                                 <li><Link className="link_font" to="/"> Jewellry and Watches</Link></li>
                                 <li><Link className="link_font" to="/"> Jumpsuits and  Playsuits</Link></li>
@@ -229,7 +229,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -264,7 +264,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</Text></Link></li>
                                <li>
                                 <div className="clothing">
                                     <div><img src="https://images.asos-media.com/navigation/ww_gbl_clothing_partywear_3M_114239512?&$n_240w$" alt="img" /></div>
@@ -304,16 +304,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn">Dresses
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Dresses
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>NEW PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">NEW PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/products/mensclothing"> Mens</Link></li>
@@ -329,7 +329,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -364,7 +364,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>NEW EDITS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">NEW EDITS</Text></Link></li>
                                <li>
                                <div className="shopByEdit1">
                                             <div>
@@ -385,16 +385,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn">Shoes
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Shoes
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home">SALE View all</Link></li>
                                 <li><Link className="link_font" to="/">SALE Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/">SALE Dresses</Link></li>
@@ -411,7 +411,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/">SALE Jeans</Link></li>
                                 <li><Link className="link_font" to="/">SALE Jewellry and Watches</Link></li>
                                 <li><Link className="link_font" to="/">SALE Jumpsuits and  Playsuits</Link></li>
@@ -428,7 +428,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</Text></Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Biggest Deals</Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Sale under $15</Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Top Saved</Link></li>
@@ -446,7 +446,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP SALE BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP SALE BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -487,16 +487,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn">Sportswear
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Sportswear
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -513,7 +513,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/"> Jeans</Link></li>
                                 <li><Link className="link_font" to="/"> Jewellry and Watches</Link></li>
                                 <li><Link className="link_font" to="/"> Jumpsuits and  Playsuits</Link></li>
@@ -529,7 +529,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -564,7 +564,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</Text></Link></li>
                                <li>
                                 <div className="clothing">
                                     <div><img src="https://images.asos-media.com/navigation/ww_gbl_clothing_partywear_3M_114239512?&$n_240w$" alt="img" /></div>
@@ -604,16 +604,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn">Accessories
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Accessories
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -630,7 +630,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/"> Jeans</Link></li>
                                 <li><Link className="link_font" to="/"> Jewellry and Watches</Link></li>
                                 <li><Link className="link_font" to="/"> Jumpsuits and  Playsuits</Link></li>
@@ -646,7 +646,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -681,7 +681,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</Text></Link></li>
                                <li>
                                 <div className="clothing">
                                     <div><img src="https://images.asos-media.com/navigation/ww_gbl_clothing_partywear_3M_114239512?&$n_240w$" alt="img" /></div>
@@ -721,16 +721,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn">Autumn
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Autumn
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>NEW PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">NEW PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -746,7 +746,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -781,7 +781,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>NEW EDITS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">NEW EDITS</Text></Link></li>
                                <li>
                                <div className="shopByEdit1">
                                             <div>
@@ -802,16 +802,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn">Gifting
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Gifting
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home">SALE View all</Link></li>
                                 <li><Link className="link_font" to="/">SALE Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/">SALE Dresses</Link></li>
@@ -828,7 +828,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/">SALE Jeans</Link></li>
                                 <li><Link className="link_font" to="/">SALE Jewellry and Watches</Link></li>
                                 <li><Link className="link_font" to="/">SALE Jumpsuits and  Playsuits</Link></li>
@@ -845,7 +845,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</Text></Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Biggest Deals</Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Sale under $15</Link></li>
                                 <li><Link className="link_font" style={{ fontWeight: "bolder" }} to="/">Top Saved</Link></li>
@@ -863,7 +863,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP SALE BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP SALE BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -903,16 +903,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn">TopShop
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">TopShop
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -929,7 +929,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/"> Jeans</Link></li>
                                 <li><Link className="link_font" to="/"> Jewellry and Watches</Link></li>
                                 <li><Link className="link_font" to="/"> Jumpsuits and  Playsuits</Link></li>
@@ -945,7 +945,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -980,7 +980,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</Text></Link></li>
                                <li>
                                 <div className="clothing">
                                     <div><img src="https://images.asos-media.com/navigation/ww_gbl_clothing_partywear_3M_114239512?&$n_240w$" alt="img" /></div>
@@ -1020,16 +1020,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn">Face + Body
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Face + Body
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>NEW PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">NEW PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -1045,7 +1045,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -1080,7 +1080,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>NEW EDITS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">NEW EDITS</Text></Link></li>
                                <li>
                                <div className="shopByEdit1">
                                             <div>
@@ -1101,16 +1101,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn">Brands
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Brands
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -1127,7 +1127,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/"> Jeans</Link></li>
                                 <li><Link className="link_font" to="/"> Jewellry and Watches</Link></li>
                                 <li><Link className="link_font" to="/"> Jumpsuits and  Playsuits</Link></li>
@@ -1143,7 +1143,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -1178,7 +1178,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</Text></Link></li>
                                <li>
                                 <div className="clothing">
                                     <div><img src="https://images.asos-media.com/navigation/ww_gbl_clothing_partywear_3M_114239512?&$n_240w$" alt="img" /></div>
@@ -1218,16 +1218,16 @@ export default function DropDown() {
         </div>
 
 
-        <div class="dropdown">
-            <button class="dropbtn red_bg_nav">Outlet
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn red_bg_nav">Outlet
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -1244,7 +1244,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/"> Jeans</Link></li>
                                 <li><Link className="link_font" to="/"> Jewellry and Watches</Link></li>
                                 <li><Link className="link_font" to="/"> Jumpsuits and  Playsuits</Link></li>
@@ -1260,7 +1260,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -1295,7 +1295,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</Text></Link></li>
                                <li>
                                 <div className="clothing">
                                     <div><img src="https://images.asos-media.com/navigation/ww_gbl_clothing_partywear_3M_114239512?&$n_240w$" alt="img" /></div>
@@ -1334,16 +1334,16 @@ export default function DropDown() {
             </div>
         </div>
 
-        <div class="dropdown">
-            <button class="dropbtn">Marketplace
-                <i class="fa fa-caret-down"></i>
+        <div className="dropdown">
+            <button className="dropbtn">Marketplace
+                <i className="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <div class="row">
-                <div class="column">
+            <div className="dropdown-content">
+                <div className="row">
+                <div className="column">
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY PRODUCTS</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY PRODUCTS</Text></Link></li>
                                 <li><Link className="link_font" to="/home"> View all</Link></li>
                                 <li><Link className="link_font" to="/"> Selling Fast</Link></li>
                                 <li><Link className="link_font" to="/"> Dresses</Link></li>
@@ -1360,7 +1360,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                {/* <li ><Link to="/"><Text><h4>__</h4></Text></Link></li> */}
+                                {/* <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">__</Text></Link></li> */}
                                 <li><Link className="link_font" to="/"> Jeans</Link></li>
                                 <li><Link className="link_font" to="/"> Jewellry and Watches</Link></li>
                                 <li><Link className="link_font" to="/"> Jumpsuits and  Playsuits</Link></li>
@@ -1376,7 +1376,7 @@ export default function DropDown() {
                         </div>
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY BODY FIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY BODY FIT</Text></Link></li>
                                 <li>
                                     <Link to="/" >
                                         <div className="shopByEdit">
@@ -1411,7 +1411,7 @@ export default function DropDown() {
 
                         <div>
                             <ul>
-                                <li ><Link to="/"><Text><h4>SHOP BY EDIT</h4></Text></Link></li>
+                                <li ><Link to="/"><Text fontSize={"16px"} fontWeight="bolder">SHOP BY EDIT</Text></Link></li>
                                <li>
                                 <div className="clothing">
                                     <div><img src="https://images.asos-media.com/navigation/ww_gbl_clothing_partywear_3M_114239512?&$n_240w$" alt="img" /></div>
