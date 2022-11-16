@@ -5,22 +5,50 @@
 **User can `sign` in or `sign` up using `google sign in` or through `email verification`.**
 
 ## Project look like this
-###
 
 
-## Build with
+<table  align=center >
+<td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_054818.png?raw=true" alt="womansPage"  height=300   width=450 />
+</td>
+ <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_054605.png?raw=true" alt="cartPage"  height=300   width=450 />
+ </td>
+ <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_054830.png?raw=true" alt="footer"  height=300   width=450 />
+ <tr>
+ <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_054842.png?raw=true" alt="womansPage"  height=300   width=450 />
+ </td>
+ <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_054854.png?raw=true" alt="mensPage"  height=300   width=450 />
+ </td>
+ <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_054938.png?raw=true" alt="mensPage"  height=300   width=450 />
+ </td>
+ <tr>
+  <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_054953.png?raw=true" alt="shoesCart"  height=300   width=450 />
+ </td>
+  <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_055100.png?raw=true" alt="login"  height=300   width=450 />
+ </td>
+  <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_055110.png?raw=true" alt=""  height=300   width=450 />
+ </td>
+ <tr>
+  <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_055121.png?raw=true" alt="navbar"  height=300   width=450 />
+ </td>
+  <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_055209.png?raw=true" alt="navbar"  height=300   width=450 />
+ </td>
+ </td>
+  <td align=center><img src="https://github.com/mehfoozkhangithub/tangible-robin-3650/blob/main/team_robin/assets/Screenshot_20221116_055226.png?raw=true" alt="adminPanel"  height=300   width=450 />
+ </td>
+</table>
+<hr>
 
+## Build with 
 <table  align=center>
-  <tr>
  <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"  height=100   width=150 ></td>
      <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" height=100   ></td>
     <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"  height=100   width=150 ></td>
      <td align=center> <img src="https://img.icons8.com/nolan/64/wikipedia.png"  height=100  ></td>
-  </tr><tr><td align=center>  <img src="https://img.icons8.com/color/48/null/chakra-ui.png"   width=100  ></td>
+  </tr><><td align=center>  <img src="https://img.icons8.com/color/48/null/chakra-ui.png"   width=100  ></td>
    <td align=center> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/768px-Bootstrap_logo.svg.png"  height=100    ></td>
   <td align=center> <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"  height=100  ></td>
   <td align=center> <img src="https://img.icons8.com/plasticine/100/null/github.png"  height=100  ></td>
-  </tr>
+  
 
 </table>
 
