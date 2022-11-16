@@ -1,50 +1,47 @@
-import AddProductPage from './AdminPage/AddProducts';
-import EditProductPage from './AdminPage/EditProduct';
+
 import './App.css';
-import Footer from './components/Footer';
-import { Main } from './Main/Main';
-import Navbar from "./Navbar/Navbar"
-import MenPage from './pages/MenPage';
-import WomensPage from './pages/WomensPage';
-import { Route,Routes } from 'react-router-dom';
-// import AddProductPage from './AdminPage/AddProducts';
-// import Admin from './Admin_Panel/Admin';
-import MensClothing from "../src/Productspage/MensClothing";
-import {WomensClothing} from "../src/Productspage/WomensClothing";
-import Shoes from "../src/Productspage/Shoes";
-import {ProductPage}from "../src/ProductPage/ProductPage";
-import Login from "./Login/Login"
-import ProductDetails from "./productDetails/ProductDetails"
-import MyAccount from './MyAccount/MyAccount';
-
-
-import GetProduct from './AdminPage/GetProduct';
-import Cart from "../src/Carts_Pages/Cart";
-import CartItems from "../src/Carts_Pages/CartItem"
-
-
+import Navigation from "./components/Navbar/Navbar";
+import Login from './pages/Login/Login';
+import MenPage from "./pages/Menpage/MenPage"
+import { Routes, Route } from "react-router-dom"
+import ProductDetails from './pages/productDetails/ProductDetails';
+import Cart from './pages/cartPage/Cart';
+import Shoes from './pages/Productspage/Shoes';
+import MensClothing from './pages/Productspage/MensClothing'
+import WomensClothing from './pages/Productspage/WomensClothing'
+import Footer from './components/footer/Footer';
+import WomenPage from './pages/Womenpage/WomenPage';
+import Homepage from './pages/Home/Homepage';
+import Checkout from './pages/Checkoutpage/Checkout';
+import RequiredAuth from "./hoc/RequiredAuth"
+import Errorpage from './pages/Error/Errorpage';
 function App() {
   return (
-    <div className="App">    
-       <Routes>
-        <Route path ="/" element ={<Main />}/>
-        <Route path ="/womenspage" element ={<WomensPage/>}/>
-        <Route path ="/menspage" element ={<MenPage/>}/>
-        <Route path ="/products/productpage" element ={<ProductPage/>}/>
-        <Route path ="/products/shoes" element ={<Shoes/>}/>
-        <Route path ="/products/mensclothing" element ={<MensClothing/>}/>
-        <Route path ="/products/womensclothing" element ={<WomensClothing/>}/>
-        <Route path ="/login" element ={<Login/>}/>
-        <Route path ="/product/:id" element ={<ProductDetails/>}/>
-        <Route path ="/myaccount" element ={<MyAccount/>}/>
-        {/* <Route path ="/mydetails" element ={<Mydetails/>}/> */}
-        <Route path ="/cartitem" element ={<CartItems/>}/>
-        <Route path ="/Cart" element ={<Cart/>}/>
-       </Routes>
+    <div className="App">
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/women" element={<WomenPage />} />
+        <Route path="/men" element={<MenPage />} />
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/productdetails/:id' element={<ProductDetails />} />
+        <Route path='/cart' element={
+         <RequiredAuth>
+            <Cart />
+         </RequiredAuth>
+        } />
+        <Route path='/products/shoes' element={<Shoes />}></Route>
+        <Route path='/products/mensclothing' element={<MensClothing />}></Route>
+        <Route path='/products/womensclothing' element={<WomensClothing />}></Route>
+        <Route path='/checkoutpage' element={<Checkout />} />
+        <Route path='/*' element={<Errorpage/>} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
 
-
 export default App;
+
+
 

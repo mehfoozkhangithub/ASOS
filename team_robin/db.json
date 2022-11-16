@@ -677,34 +677,6 @@
       "Price": "37.00",
       "id": 48,
       "color": "Pink"
-    },
-    {
-      "title": "shirt",
-      "category": "Shoes",
-      "image": "https://rukminim1.flixcart.com/image/580/696/xif0q/shirt/p/q/w/l-czba-db-den-cazzba-original-imag5ydvgdw5qk4s-bb.jpeg?q=50",
-      "price": "1000",
-      "id": 49
-    },
-    {
-      "title": "shirt",
-      "category": "Electronics",
-      "image": "https://rukminim1.flixcart.com/image/580/696/l4bn5ow0/shirt/7/p/c/-original-imagf8rxgwzscagy.jpeg?q=50",
-      "price": "1000",
-      "id": 50
-    },
-    {
-      "title": "",
-      "category": "",
-      "image": "",
-      "price": "",
-      "id": 51
-    },
-    {
-      "title": "",
-      "category": "",
-      "image": "",
-      "price": "",
-      "id": 52
     }
   ],
   "country": [
@@ -731,122 +703,112 @@
   ],
   "cartItem": [
     {
-      "productName": "Wrangler t-shirt with americana print in black",
-      "Image": "https://images.asos-media.com/products/wrangler-t-shirt-with-americana-print-in-black/201262477-1-black?$n_640w$&wid=513&fit=constrain",
-      "price": "18.00",
-      "size": "L",
-      "color": "BLACK",
-      "quantity": 1,
-      "id": 26
-    },
-    {
-      "productName": "ASOS DESIGN co-ord embellished floral mini dress in fil coupe - LGREEN and skirt",
-      "Image": "https://images.asos-media.com/groups/asos-design-co-ord-embellished-floral-mini-dress-in-fil-coupe-lgreen-and-skirt/72527-group-1?$n_640w$&wid=513&fit=constrain",
-      "price": "21.25",
+      "productName": "ASOS Actual oversized t-shirt with health & wellbeing back print logo in orange",
+      "Image": "https://images.asos-media.com/products/asos-actual-oversized-t-shirt-with-health-wellbeing-back-print-logo-in-orange/203291076-1-orange?$n_640w$&wid=513&fit=constrain",
+      "price": "60.00",
       "size": "XS",
-      "color": "Teal",
+      "color": "ORANGE",
       "quantity": 1,
-      "id": 34
+      "id": 18
     },
     {
-      "productName": "Nike Running Wildhorse 7 trainers in khaki",
-      "Image": "https://images.asos-media.com/products/nike-air-force-1-luxe-trainers-with-chunky-gum-sole-in-black/23592550-1-black?$n_320w$&wid=317&fit=constrain",
-      "price": "110.09",
-      "size": "M",
-      "color": "Khaki",
+      "productName": "Dr Martens Jarrick Lo 3 Tie Shoes Black Smooth",
+      "Image": "https://images.asos-media.com/products/puma-running-aviator-trainers-in-blue/203236148-1-bluegrey?$n_320w$&wid=317&fit=constrain",
+      "price": "159.05",
+      "size": "XS",
+      "color": "blue",
       "quantity": 1,
-      "id": 9
-    },
-    {
-      "productName": "River Island round toe derby shoes in brown",
-      "Image": "https://images.asos-media.com/products/vans-old-skool-trainers-in-orange/201666941-1-orange?$n_320w$&wid=317&fit=constrain",
-      "price": "37.40",
-      "size": "2XS",
-      "color": "Orange",
-      "quantity": 1,
-      "id": 2
+      "id": 14
     }
   ],
   "users": [
     {
       "id": 1,
-      "fname": "Bhupendra",
-      "lname": "Chandrakar",
-      "email": "bkc@gmail.com",
+      "name": "rovin",
+      "email": "rovin7678@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 2,
+      "name": "deepanshu",
+      "email": "deepanshuchugh24@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "email": "rovin7678@gmail.com",
       "password": "12345678",
-      "date_of_birth": "1996-04-10"
-    },
-    {
-      "fname": "bhupendra",
-      "lname": "chandrakar",
-      "email": "bhupendrafbook@gmail.com",
-      "password": "B1@onasos",
-      "date": "1996-04-10",
-      "id": 2
-    },
-    {
-      "fname": "bhupendra",
-      "lname": "chandrakar",
-      "email": "bhupendrafbook@gmail.com",
-      "password": "B1@onasos",
-      "date": "1996-04-10",
-      "id": 3
-    },
-    {
-      "fname": "abc",
-      "lname": "cde",
-      "email": "abc@gmail.com",
-      "password": "123",
-      "date": "2022-11-11",
-      "id": 4
-    },
-    {
-      "fname": "qweweqw",
-      "lname": "wefw",
-      "email": "ferwfe",
-      "password": "34121",
-      "date": "2022-12-02",
       "id": 5
     },
     {
-      "fname": "qweweqw",
-      "lname": "wefw",
-      "email": "ferwfe",
-      "pass": 34121,
-      "date": "2022-12-02",
+      "email": "aakarsh604@gmail.com",
+      "password": "12345",
       "id": 6
     },
     {
-      "fname": "a",
-      "lname": "b",
-      "email": "a@",
-      "password": 123,
-      "date": "2022-11-25",
+      "email": "akash@gmail.com",
+      "password": "12345678",
+      "name": "akash",
       "id": 7
     },
     {
-      "fname": "",
-      "lname": "",
-      "email": "",
-      "password": null,
-      "date": "",
+      "email": "Saurabh@gmail.com",
+      "password": "1234678",
+      "name": "Saurabh",
       "id": 8
     },
     {
-      "fname": "jkbwejf",
-      "lname": "eqwfbjqh",
-      "email": "bhk",
-      "password": null,
-      "date": "2022-11-11",
+      "email": "aakarsh604@gmail.com",
+      "password": "12345",
+      "name": "Aakarsh",
       "id": 9
     },
     {
-      "fname": "",
-      "lname": "",
-      "email": "",
-      "password": null,
-      "date": "",
+      "email": "aakarsh604@gmail.com",
+      "password": "123456",
+      "name": "Aakarsh",
       "id": 10
+    },
+    {
+      "email": "aakarsh604@gmail.com",
+      "password": "123456",
+      "name": "Aakarsh",
+      "id": 11
+    },
+    {
+      "email": "aakarsh604@gmail.com",
+      "password": "1234567",
+      "name": "Aakarsh",
+      "id": 12
+    },
+    {
+      "email": "aakarsh604@gmail.com",
+      "password": "1234",
+      "name": "Aakarsh",
+      "id": 13
+    },
+    {
+      "email": "aakarsh604@gmail.com",
+      "password": "12345",
+      "name": "Aakarsh",
+      "id": 14
+    },
+    {
+      "email": "aakarsh604@gmail.com",
+      "password": "123",
+      "name": "Aakarsh",
+      "id": 15
+    },
+    {
+      "email": "kkkkkk",
+      "password": "1234",
+      "name": "qwee",
+      "id": 16
+    },
+    {
+      "email": "kkkkkk",
+      "password": "1234",
+      "name": "qwee",
+      "id": 17
     }
   ]
 }

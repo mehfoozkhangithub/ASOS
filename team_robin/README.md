@@ -5,10 +5,8 @@
 **User can `sign` in or `sign` up using `google sign in` or through `email verification`.**
 
 ## Project look like this
+###
 
-```javascript
-// here we have to put the ss of the project
-```
 
 ## Build with
 
@@ -30,19 +28,27 @@
 
 ## Functionalities
 
+
+
 ## Installation and setup instruction
+- Clone down this repository. You will need `node` and `npm` installed globally on your machine. Installation:` npm install` To Run Test Suite: npm test To Start Server: `npm start `To Visit App: `localhost:3000/` or Deploye sit : [link]()
 
 ## Tool Used
 
 - ### **Frontend**
+  - `HTML`
+  - `CSS`
+  - `REACT` *To learn React,please checkout this* [React Documentation](https://reactjs.org/)
+  - `REDUX` *To learn Redux,please checkout this* [Redux Documentation](https://redux.js.org/)
+  - `CHAKRA-UI`*To learn React,please checkout this* [Chakra-ui Documentation](https://chakra-ui.com/)
 - ### **Backend**
+  - `Render server.json`
+  - `NPM`
+  - `Firebase`
 
-- ### **Integration**
+<!-- - ### **Integration** -->
 
 ## 🤝 **_Collaborators_**
-**Contributions, issues and feature requests are welcome!**
-
-*Feel free to check the `issues page`.*
 
 # 🧔🏻 **Sanket Patil** `Project Manager`
 
@@ -79,9 +85,3 @@
 - Github:[@Bhupendra](https://github.com/bkcjanta)
 - Linkedin:[Bhupendra](https://www.linkedin.com/mwlite/in/bhupendra-kumar-chandrakar)
 - Email: (bhupendrafbook@gmail.com)
-
-## Show your support 
-Give a ⭐️ if you like this project!
-
-# Acknowledgments
-+ We take all the responsiblity for every single line of code. The desgin inspire from `Asos` and
