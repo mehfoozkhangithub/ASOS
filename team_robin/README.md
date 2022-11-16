@@ -1,4 +1,4 @@
-# _ASOS_ (Clone)
+# _ASOS_ (Clone) as _Team Robin_
 
 **ASOS is an online fashion retailer which sells clothes online, from its own home lines and from a variety of different brands. In this article we will conduct a brief website analysis of the ASOS website.**
 
@@ -78,6 +78,8 @@
 
 ## 🤝 **_Collaborators_**
 
+- ***Contributions, issues and feature requests are welcome!***
+
 # 🧔🏻 **Sanket Patil** `Project Manager`
 
 - Github:[@sanket](https://github.com/sanketpatil05)
@@ -113,3 +115,11 @@
 - Github:[@Bhupendra](https://github.com/bkcjanta)
 - Linkedin:[Bhupendra](https://www.linkedin.com/mwlite/in/bhupendra-kumar-chandrakar)
 - Email: (bhupendrafbook@gmail.com)
+
+# Show your support 
+
+- **Give a ⭐️ if you like this project!**
+
+# Acknowledgement  
+
+- *We take all the responsibility for every single line of code. The Design inspire from `Asos`.*
