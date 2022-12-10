@@ -50,8 +50,8 @@
 
 .nav-options.active {
   /* background: #9899d1; */
-  width:40%;
-  height:95vh;
+  width:30vh;
+  height:100vh;
   overflow: scroll;
   background-color:whitesmoke;
   left: 0;
