@@ -1,0 +1,22 @@
+Things to Improve:
+
+
+1. Your commits names are poor, always have a meaningful commit name and PR name.
+2. Always make small commits and commit names should be relevant to what the code change you have done like fixed some bug, or added config etc etc.
+3. Add a lot of comments in your code as it will help anyone to understand what you have done.
+4. Try to use OOPs concepts like abstraction in your code to have much more control over the data flow.
+5. You can add test cases in your code so if someone else tries to change something it shouldn’t break the whole project as a failure in the test case can tell you what is broken.
+6. Next time add MVC architecture and try to have a local DB setup at least to store credentials etc.
+7. There is no backend code added in GITHUB.
+8. Functions are too large and make sure you break down the functionalities.
+9. Never push large changes under a single commit as it is impossible to review 20k plus lines of code.
+10. You have taken most of the code from existing websites, try to write your own code as much as possible.
+
+
+Things I liked:
+1. Used ES6 syntax like maps which is a good coding practice..
+2. Have used a good enough structure to differentiate your codebase in different sections like src, public etc.
+3. The class structure and functions have proper meanings which makes it easier to understand.
+4. Most of the functions describe the use cases for which they are defined and solve 1 functionality.
+5. Variable names are thoughtfully chosen and are self explanatory.
+6. Almost all the required functionalities are there from frontend perspective..
