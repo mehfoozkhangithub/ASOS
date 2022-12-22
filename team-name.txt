@@ -1,8 +1,0 @@
-Team name -> Team Robin
-
-Team Leader -> Mehfooz khan
-Member-1 -> Md Ali (fw20_0748)
-Member-2 -> Bhupendra Kumar Chandrakar (fp04_289)
-Member-3 -> Ashish Bajaj (fw19_0772)
-Member-4 -> Rahul Singh (fw20_1180)
-Ia ->  Sanket Bhimgonda Patil

@@ -22,7 +22,7 @@ import {
 
 
 
-
+// adding product page 
 export default function AddProductPage() {
 
     const { isOpen, onOpen, onClose } = useDisclosure();

@@ -17,7 +17,7 @@ export const getProductFailure=()=>{
         type:type.PRODUCT_FAILURE
     }
 }
-
+// this is product data coming from dispatch 
 export const getProductData=(id)=>(dispatch)=>{
         dispatch(getProductRequest());
         return axios.get(`https://mock-api-server.onrender.com/Products/${id}`)
@@ -30,6 +30,7 @@ export const getProductData=(id)=>(dispatch)=>{
         })
 
 }
+//  this is comming from cart product at dispatch 
 export const getProductCart=(id)=>(dispatch)=>{
     dispatch(getProductRequest());
     return axios.get(`https://asos-server123.herokuapp.com/api/products/${id}`)
@@ -43,16 +44,24 @@ export const getProductCart=(id)=>(dispatch)=>{
 
 }
 
+//  this is add to cart request handler from action dispatch 
+
 const addCartRequest=()=>{
     return{
         type:type.ADD_CART_REQUEST,
     }
 }
+
+//  this is add to cart success handler from action dispatch 
+
 const addCartSuccess=()=>{
     return{
         type:type.ADD_CART_SUCCESS
     }
 }
+
+//  this is add to cart failure  handler from action dispatch 
+
 const addCartFailure=()=>{
     return{
         type:type.ADD_CART_FAILURE

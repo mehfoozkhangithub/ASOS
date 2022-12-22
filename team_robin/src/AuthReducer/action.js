@@ -21,7 +21,9 @@ export const UserLoginFailure=()=>{
 
 export const userLogin=(data)=>(dispatch)=>{
     dispatch(UserLoginRequest());
+    // this is the axios where we have fetch the data 
   return axios.get(`https://mock-api-server.onrender.com/users?email=${data.email}&password=${data.password}`,data)
+  // here we have to matain the data where we geting from api 
     .then((res)=>{
       if(res.data.length>0){
         console.log(res.data[0])
@@ -29,10 +31,10 @@ export const userLogin=(data)=>(dispatch)=>{
        }else{
         console.log("error")
         return dispatch(UserLoginFailure());
-       }
-      
-        
-    }).catch((res)=>{
+       }      
+    })
+    // here we have to handle the error any thing in api
+    .catch((res)=>{
       console.log(res)
      return dispatch(UserLoginFailure())
 
@@ -40,13 +42,16 @@ export const userLogin=(data)=>(dispatch)=>{
 
 }
 
+//  here we have to handle the signup requied 
 
 export const UserSignUpRequest=()=>{
   return{
     type:type.SIGNUP_REQUEST
-  }
-   
+  }   
 }
+
+//  here we have to handle the signup success 
+
 export const UserSignUpSuccess=(payload)=>{
   return{
     type:type.SIGNUP_SUCCESS,
@@ -54,12 +59,17 @@ export const UserSignUpSuccess=(payload)=>{
   }
    
 }
+//  here we have to handle the signup failed 
+
+
 export const UserSignUpFailure=()=>{
   return{
     type:type.SIGNUP_FAILURE
   }
    
 }
+
+//  here we have to handle the signup from dispatch 
 
 export const userSignUp=(data)=>(dispatch)=>{
   dispatch(UserSignUpRequest());
@@ -70,17 +80,23 @@ return axios.post("https://mock-api-server.onrender.com/users",data)
 
 }
 
+// here we have to login request
+
 const UserLogoutRequest=()=>{
   return{
     type:type.LOGOUT_REQUEST
   }
 }
 
+//  here we have to login will successful 
 const UserLogoutSuccess=()=>{
   return{
     type:type.LOGOUT_SUCCESS
   }
 }
+
+// here we havre to mantained the logout 
+
 export const UserLogout=()=>(dispatch)=>{
      dispatch(UserLogoutSuccess())
 }
