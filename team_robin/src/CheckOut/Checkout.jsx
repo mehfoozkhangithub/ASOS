@@ -16,18 +16,16 @@ import {
     AlertDialogCloseButton,
     AlertDialogFooter,
     // AlertDialogBody
+    Box
   } from "@chakra-ui/react";
 // import {KeyboardArrowDown} from '@mui/icons-material';
 function Checkout() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const cancelRef = React.useRef();
-const navigate=useNavigate()
-const handleClick=()=>{
-    onOpen()
-    
-        
-    
-}
+    const navigate=useNavigate()
+    const handleClick=()=>{
+    onOpen()   
+    }
   return (
     <div>
          <AlertDialog

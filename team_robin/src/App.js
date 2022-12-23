@@ -38,15 +38,14 @@ function App() {
         <Route path ="/login" element ={<Login/>}/>
         <Route path ="/product/:id" element ={<ProductDetails/>}/>
         <Route path ="/myaccount" element ={<PrivateRoute><MyAccount/></PrivateRoute>}/>
-        {/* <Route path ="/mydetails" element ={<Mydetails/>}/> */}
         <Route path ="/cartpage" element ={<Cart/>}/>
         <Route path ="/checkout" element ={<Checkout/>}/>
         <Route path ="/menpage" element ={<MenPage/>}/>
         <Route path="/addProduct" element={<AddProductPage />}/>
         <Route path="/editProduct/:id" element={<EditProductPage />}/>
         <Route path="/getProduct" element={<GetProduct />}/>
-       </Routes>
-       <Footer/>
+       </Routes> 
+       {/* <Footer/> */}
     </div>
   );
 }

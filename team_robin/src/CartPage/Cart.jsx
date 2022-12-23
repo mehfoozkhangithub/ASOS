@@ -9,13 +9,14 @@ import Total from "./Total";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar"
 import { BsCursor } from "react-icons/bs";
-// import  style from "./cart.css"
+import "./cart.css"
 
 
 const style={
     color:"red",
-    BsCursor:"pointer"
+    BsCursor:"pointer",
 }
+
 
 function getCart(){
 
@@ -84,9 +85,10 @@ const navigate=useNavigate()
     
     return (
         <>
-        <Box paddingTop="30px" bg="rgb(238,238,238)">
-        <Flex margin="auto" w="900px">
-            <Box>
+        <Box paddingTop="3rem" bg="rgb(238,238,238)"  >
+        {/* <Flex margin="auto" w="80%"  > */}
+        <div className="mehf" >
+            <div className="mehfooz">
                 
                     <Flex paddingLeft="20px" paddingRight="20px" marginBottom="20px" paddingTop="20px" paddingBottom="20px" w="510px" bg="white">
                         <Text fontWeight="600" fontSize="18.4px" color="RGB(45, 45, 45)" fontFamily="Arial">MY BAG</Text>
@@ -133,9 +135,9 @@ const navigate=useNavigate()
 
 
 
-                <Box marginTop="20px" paddingTop="20px" paddingBottom="20px" paddingLeft="20px" paddingRight="20px" bg="white">
+                <Box marginTop="20px" paddingTop="20px" paddingBottom="20px" paddingLeft="20px" paddingRight="20px" bg="white" border="1px solid red" w="33rem">
                     <Flex>
-                        <Box paddingTop="20px" paddingLeft="30px" w="100px">
+                    <Box paddingTop="20px" paddingLeft="30px" w="100px">
                     <FiTruck  size="30px"/>
                     </Box>
                     <Box>
@@ -145,14 +147,15 @@ const navigate=useNavigate()
                     </Box>
                     </Flex>
                 </Box>
-            </Box>
+            </div>
             <Spacer/>
-            <Box paddingTop="20px" paddingBottom="20px" paddingLeft="20px" paddingRight="20px" height="300px"   w="360px" bg="white">
+            <div className="mehfooz">
+            <Box paddingTop="20px" paddingBottom="20px" paddingLeft="20px" paddingRight="20px" height="300px"    bg="white" >
                 <Text textAlign="left" fontWeight="600" fontSize="18.4px" color="RGB(45, 45, 45)" fontFamily="Arial">TOTAL</Text>
                 <Center height='25px'>
                  <Divider orientation='horizontal' />
             </Center>
-            <Flex>
+            <Flex >
             <Text textAlign="left" fontWeight="600" fontSize="16.4px" color="RGB(45, 45, 45)" fontFamily="Arial">Sub-total</Text>
             <Spacer/>
             <Total total={calculateTotal(data)}/>
@@ -164,7 +167,9 @@ const navigate=useNavigate()
             </Center>
             <Button color="white" marginTop="20px" bg="rgb(1,136,73)" w="320px" onClick={()=>navigate("/checkout")}>PLACE ORDER</Button>
             </Box>
-        </Flex>
+            </div>
+            </div>
+        {/* </Flex> */}
         </Box>
         {/* <Footer/> */}
         </>
