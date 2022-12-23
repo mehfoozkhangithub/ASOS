@@ -109,7 +109,7 @@ const {id} =useParams()
         </AlertDialog>
     
         <div style={{width:"100%", display:"flex",justifyContent:"center",gap:"50px",backgroundColor:"#F8F8F8",color:"white",padding:"10px"
-        }}>
+        }} className="mehfoozkhan09">
         <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/getProduct">Dashboard</Link>
         <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/addProduct">Add Product</Link>
         </div>
