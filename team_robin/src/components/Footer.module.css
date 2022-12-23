@@ -26,6 +26,13 @@ align-items: center;
 .footCont > div{
     width: 80%;
     margin: auto;
+    /* border: 5PX solid red; */
+}
+
+
+.footCont > div{
+    width: 80%;
+    margin: auto;
     /* border: 5PX solid red; */
 }
 
