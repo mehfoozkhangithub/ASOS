@@ -1,14 +1,28 @@
 .add_main_div{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: max-content;
+    padding: 25px 0px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
+    /* border: 5px solid red; */
 }
 
+.top_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    /* border: 5px solid red; */
+
+}
 .addProducts{
     width: 85%;
     height: max-content;
     margin: auto;
+    margin-top: 50px;
     background-color:#F8F8F8;
     display: flex;
     justify-content: space-around;
@@ -60,7 +74,7 @@ box-sizing: border-box;
 
 .showAddProduct{
     padding:50px 10px;
-    width: 60%;
+    width: 50%;
     height: max-content;
     display: flex;
     gap: 20px;
@@ -119,5 +133,35 @@ width: 50%;
 }
 
 @media all and (min-width: 480px) and (max-width: 900px) {
+
+    
+    .add_main_div{
+        width: 100%;
+        height: max-content;
+    }
+    .addProducts{
+        margin-top: 100px;
+        height: max-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 5px solid red; */
+        /* margin-top: 100px; */
+    }
+    
+.add-product-wrapper{
+    width: 100%;
+    gap: 20px;
+    /* border: 5px solid red; */
+
+}
+
+.showAddProduct{
+    width: 100%;
+    gap: 20px;
+    /* border: 5px solid red; */
+}
+
+
 
 }
