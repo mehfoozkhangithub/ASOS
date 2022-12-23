@@ -12,6 +12,7 @@
 .top_btn{
     width: 100%;
     display: flex;
+    gap: 1.5rem;
     justify-content: center;align-items: center;
     margin: auto;
     margin-top: 40px;
