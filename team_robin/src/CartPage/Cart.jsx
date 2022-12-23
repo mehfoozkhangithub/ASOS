@@ -135,7 +135,7 @@ const navigate=useNavigate()
 
 
 
-                <Box marginTop="20px" paddingTop="20px" paddingBottom="20px" paddingLeft="20px" paddingRight="20px" bg="white" border="1px solid red" w="33rem">
+                <Box marginTop="20px" paddingTop="20px" paddingBottom="20px" paddingLeft="20px" paddingRight="20px" bg="white"  w="33rem">
                     <Flex>
                     <Box paddingTop="20px" paddingLeft="30px" w="100px">
                     <FiTruck  size="30px"/>
@@ -150,7 +150,7 @@ const navigate=useNavigate()
             </div>
             <Spacer/>
             <div className="mehfooz">
-            <Box paddingTop="20px" paddingBottom="20px" paddingLeft="20px" paddingRight="20px" height="300px"    bg="white" >
+            <Box paddingTop="20px" paddingBottom="20px" paddingLeft="20px" paddingRight="20px" height="300px" marginTop="1.5rem"   bg="white" >
                 <Text textAlign="left" fontWeight="600" fontSize="18.4px" color="RGB(45, 45, 45)" fontFamily="Arial">TOTAL</Text>
                 <Center height='25px'>
                  <Divider orientation='horizontal' />

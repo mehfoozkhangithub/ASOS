@@ -1,7 +1,7 @@
 import * as type from "./actionTypes"
 const initialState = {
   userData:JSON.parse(localStorage.getItem("user"))||{},
-  isAuth: localStorage.getItem("isAuth")||false,
+  isAuth: localStorage.getItem("isAuth")==="true"?true:false,
   token:localStorage.getItem("token")||"",
   isLoadingLogin: false,
   isErrorLogin: false,

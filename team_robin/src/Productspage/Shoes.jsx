@@ -51,7 +51,7 @@ const Shoes = () => {
     <div>
       {/* <Navbar/> */}
 
-      <div className={styles.headline_box} style={{ border: "1px solid grey", width: "100%", height: "220px" }}>
+      <div className={styles.headline_box} style={{ border: "1px solid grey", width: "100%", height: "fitContent" }}>
         <div className={styles.headline}>
           <h1>Men's New in: Shoes</h1>
           <p style={{ fontSize: "11px" }}>
