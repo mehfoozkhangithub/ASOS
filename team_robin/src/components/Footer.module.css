@@ -1,15 +1,33 @@
 .footCont{
     /* border: 1px solid red; */
     /* height: 200px; */
-    width: 100%;
+    /* width: 100%;
+    block-size: fit-content;
     background-color: #eeeeee;
+    border: 5px solid red;
     display: grid;
-    grid-template-columns: repeat(4, 350px);
+    grid-template-columns: repeat(4,1fr);
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    align-items: center; */
+    /* padding-left: 10px; */
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 4rem 0px;
+    background-color: #eeeeee;
+    justify-content: center;
+align-items: center;
+
 }
 
+
+.footCont > div{
+    width: 80%;
+    margin: auto;
+    /* border: 5PX solid red; */
+}
 
 
 .footCont > div > h4{
