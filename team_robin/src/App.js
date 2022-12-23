@@ -45,7 +45,7 @@ function App() {
         <Route path="/editProduct/:id" element={<EditProductPage />}/>
         <Route path="/getProduct" element={<GetProduct />}/>
        </Routes> 
-       {/* <Footer/> */}
+       <Footer/>
     </div>
   );
 }
