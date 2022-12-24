@@ -29,7 +29,7 @@ const LoginForm = () => {
             })
         } else {
             dispatch(UserLoginRequest())
-            axios.post("http://localhost:8080/user/login", { email, password })
+            axios.post("https://lazy-rose-oyster-sock.cyclic.app/user/login", { email, password })
                 .then((res) => {
                     console.log(res.data)
                     if(res.data.isUser){
