@@ -2,7 +2,7 @@
     /* border: 1px solid red; */
     /* height: 250px; */
     margin-top: 40px;
-    width: 1250px;
+    width: 100%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -19,4 +19,31 @@
 
 .brandImg > div > img{
     width: 100%;
+}
+
+
+
+
+@media all and (min-width: 480px) and (max-width: 900px) {
+
+    .brandImg{
+        /* border: 1px solid red; */
+        /* height: 200px; */
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    
+}
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+    .brandImg{
+        /* border: 1px solid red; */
+        /* height: 200px; */
+        grid-template-columns: repeat(2,1fr);
+        block-size: fit-content;
+        padding-left: 10px;
+    
+    }
+   
+   
 }

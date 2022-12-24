@@ -22,7 +22,7 @@ import {
 
 
 
-
+// adding product page 
 export default function AddProductPage() {
 
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -152,8 +152,7 @@ export default function AddProductPage() {
         </AlertDialogContent>
         </AlertDialog>
 
-        <div style={{width:"100%", display:"flex",justifyContent:"center",gap:"50px",backgroundColor:"#F8F8F8",color:"white",padding:"10px"
-        }}>
+        <div className="top_btn">
         <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/getProduct">Dashboard</Link>
         <Link style={{padding:"10px 25px", color:"white", backgroundColor:"#D01345", fontSize:"15px"}} to="/addProduct">Add Product</Link>
         </div>

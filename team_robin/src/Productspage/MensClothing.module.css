@@ -71,7 +71,12 @@
     font-size: x-large;
   }
   
- 
+  @media all and (min-width:500px) and (max-width: 1250px) {
+    .headline{
+      padding: 2rem ;
+    }
+
+  }
   
   /* tablet screen */
   

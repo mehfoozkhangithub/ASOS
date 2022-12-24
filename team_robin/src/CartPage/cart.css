@@ -1,3 +1,25 @@
-.div{
-    color: red;
+.mehf{
+    display: flex;
+    margin:auto;
+    width:84%;
+    justify-content: space-between;
+    
 }
+.mehfooz{
+    width : 33rem ;
+    margin: auto;
+}
+
+@media all and (min-width:400px) and (max-width:1124px){
+    .mehf{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-top: 1rem;
+        width: fit-content;
+    }
+    .mehfooz{
+        width: 100%;
+    }
+}
+

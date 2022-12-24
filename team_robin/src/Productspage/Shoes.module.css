@@ -5,6 +5,7 @@
     top: 154px;
     left: 130px;
   } 
+  
    .headline > h1 {
    
     /* width: fit-content; */
@@ -83,6 +84,14 @@
     font-size: x-large;
   
   }  
+
+
+  @media all and (min-width:500px) and (max-width: 1250px) {
+    .headline{
+      padding: 2rem ;
+    }
+
+  }
   
   
   

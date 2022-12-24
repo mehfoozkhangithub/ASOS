@@ -2,3 +2,23 @@
     /* border: 1px solid red; */
     /* height: 100px; */
 }
+.mehfoozkhan{
+    border: 2px solid black;
+}
+
+
+@media all and (min-width:500px) and (max-width:910px){
+
+.mehfoozkhan{
+    margin-top: 4rem;
+}
+
+}
+@media all and (min-width:300px) and (max-width:500px){
+
+.mehfoozkhan{
+    margin-top: 4rem;
+}
+
+
+}

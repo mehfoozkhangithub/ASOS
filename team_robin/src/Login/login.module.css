@@ -7,6 +7,8 @@
   margin-bottom: 25px;
 }
 
+
+
 .container {
   width: 650px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -167,4 +169,23 @@
   height: 29px;
   color: #000000;
   border-color: #eeeeee;
+}
+
+
+@media all and (min-width: 480px) and (max-width: 900px) {
+
+ .container{
+  width: 100%;
+ }
+  
+  
+}
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+
+  .container{
+    width: 100%;
+   }
+ 
+ 
 }

@@ -56,7 +56,7 @@ const MensClothing = () => {
       {/* <Navbar/> */}
       <div
         className={styles.headline_box}
-        style={{ border: "1px solid grey", width: "100%", height: "220px" }}
+        style={{ border: "1px solid grey", width: "100%", height: "fit-content" }}
       >
         <div className={styles.headline}>
           <h1>Men's New in: Men Clothes</h1>
