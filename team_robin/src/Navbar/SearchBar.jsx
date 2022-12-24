@@ -27,24 +27,43 @@ const Searchbar = () => {
         //     console.log("contact:",SearchData);
         //     // setSearch("");
         // } 
-
-         useEffect(() => {
-            // const API_URL = `https://asos-server123.herokuapp.com/api/products/?brand=${search}`
-            const API_URL=`https://mock-api-server.onrender.com/Products/?q=${search}`
-            axios
-                .get(API_URL)
-                .then(res => {
-                    const contacts = res.data
-                    setSearchData(contacts)
-                    // console.log(SearchData);
-                })
-                .catch((err)=>{
-                    console.log(err)
-                })
-        }, [])   
-
         const [query ,setQuery]=useState("")
         const [suggestions,setSuggestions] = useState([]);
+        //  useEffect(() => {
+        //     // const API_URL = `https://asos-server123.herokuapp.com/api/products/?brand=${search}`
+        //     const API_URL=`https://mock-api-server.onrender.com/Products/?q=${query}`
+        //     axios
+        //         .get(API_URL)
+        //         .then(res => {
+        //             const contacts = res.data
+        //             setSearchData(contacts)
+        //             // console.log(SearchData);
+        //         })
+        //         .catch((err)=>{
+        //             console.log(err)
+        //         })
+        // }, [])   
+
+        const getData=()=>{
+            const API_URL=`https://mock-api-server.onrender.com/Products/?q=${query}`
+
+            axios.get(API_URL)
+                        .then(res => {
+                            const data = res.data
+                            setSearchData(data)
+                            console.log(SearchData);
+                        })
+                        .catch((err)=>{
+                            console.log(err)
+                        })
+
+        }
+
+        useEffect(()=>{
+            getData()
+        },[query])
+
+
       
         const queryHandler = useCallback((val)=>{
           console.log("INSIDE QUERY HANDLES", val)
@@ -61,15 +80,15 @@ const Searchbar = () => {
             setSuggestions([])
           }
           else{
-            let text = search.toLowerCase();
+            let text = query.toLowerCase();
+            // console.log(SearchData)
             let newSuggesstions=SearchData.filter
             ((item)=> {
-              return item.Brand_Name.toLowerCase().indexOf(text) !== -1
-              ? true:false;
+              return item.Brand_Name.toLowerCase().indexOf(text) !== -1;
             }).map((item) => item.Brand_Name);
             setSuggestions(newSuggesstions)
           }
-        } , [search])
+        } , [query,SearchData])
       
       
     return <div>

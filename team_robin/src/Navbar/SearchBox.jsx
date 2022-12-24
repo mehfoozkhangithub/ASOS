@@ -92,8 +92,11 @@ const SearchBox =({ suggestions,queryHandler}) => {
  const SuggestionBox=styled.div`
  border:1px solid red;
  display:flex;
- width:100%;
- height:100%;
+ z-index:1;
+ position:absolute;
+ width:800px;
+ background:white;
+ color:black;
  flex-direction:column;
  max-height:${({len})=> `${len*38.667}px`};
  border-top-color:${({len})=> (len?"transparent":"black")};
