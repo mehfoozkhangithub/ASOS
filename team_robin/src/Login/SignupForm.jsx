@@ -33,7 +33,7 @@ const SignupForm = () => {
           })
       }
       else{
-          axios.post("https://lazy-rose-oyster-sock.cyclic.app/user/signup", { fname,lname,email,password,dateOfBirth})
+          axios.post("https://friendly-tam-tick.cyclic.app/user/signup", { fname,lname,email,password,dateOfBirth})
          .then((res) => {
           console.log(res)
           if(res.data.isRegisterd){
