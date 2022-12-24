@@ -24,7 +24,7 @@ import {
 import DropDown from "./NavbarDropDown";
 import MobNav from "./MobNav";
 import { useDispatch, useSelector } from "react-redux";
-import { UserLogout } from "../AuthReducer/action";
+import { UserLogoutSuccess } from "../AuthReducer/action";
 
 
 // div --> 3 div  
@@ -38,10 +38,10 @@ export default function NavbarTop() {
     const data = useSelector((state) => state.Auth);
     const { isAuth, userData } = data;
     console.log(isAuth)
-    console.log(userData)
+    // console.log(userData)
     const handleLogout = () => {
-        dispatch(UserLogout())
-        navigate("/login")
+        dispatch(UserLogoutSuccess())
+        navigate("user/login")
     }
 
 
@@ -127,8 +127,8 @@ export default function NavbarTop() {
                                 <div style={{ width: "auto", height: "35px", display: "flex", justifyContent: "flex-start", alignItems: "center", gap: "20px", position: "relative", backgroundColor: "white", color: "black", paddingLeft: "10px", zIndex: "2px" }}>
                                     {
                                         !isAuth ? <>
-                                            <Link to="/login"><p>Sign In</p></Link>
-                                            <Link to="/login"><p>Join</p></Link>
+                                            <Link to="/user/login"><p>Sign In</p></Link>
+                                            <Link to="/user/signup"><p>Join</p></Link>
                                         </> :
                                             <>
                                                 <p>Hi {userData.fname.toUpperCase()}</p>

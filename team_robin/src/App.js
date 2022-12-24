@@ -22,6 +22,7 @@ import {Cart} from "./CartPage/Cart"
 import Checkout from './CheckOut/Checkout';
 // import MenPage from './pages/MenPage';
 import {Footer} from "./components/Footer"
+import Signup from './Login/Signup';
 
 
 function App() {
@@ -35,12 +36,13 @@ function App() {
         <Route path ="/products/shoes" element ={<Shoes/>}/>
         <Route path ="/products/mensclothing" element ={<MensClothing/>}/>
         <Route path ="/products/womensclothing" element ={<WomensClothing/>}/>
-        <Route path ="/login" element ={<Login/>}/>
+        <Route path ="/user/login" element ={<Login/>}/>
+        <Route path ="/user/signup" element ={<Signup/>}/>
         <Route path ="/product/:id" element ={<ProductDetails/>}/>
         <Route path ="/myaccount" element ={<PrivateRoute><MyAccount/></PrivateRoute>}/>
         {/* <Route path ="/mydetails" element ={<Mydetails/>}/> */}
-        <Route path ="/cartpage" element ={<Cart/>}/>
-        <Route path ="/checkout" element ={<Checkout/>}/>
+        <Route path ="/cartpage" element ={<PrivateRoute><Cart/></PrivateRoute>}/>
+        <Route path ="/checkout" element ={<PrivateRoute><Checkout/></PrivateRoute>}/>
         <Route path ="/menpage" element ={<MenPage/>}/>
         <Route path="/addProduct" element={<AddProductPage />}/>
         <Route path="/editProduct/:id" element={<EditProductPage />}/>

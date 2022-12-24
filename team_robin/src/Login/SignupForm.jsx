@@ -1,30 +1,77 @@
-import { Radio, RadioGroup, Stack } from '@chakra-ui/react'
-import {useDispatch} from "react-redux"
+import { Radio, RadioGroup, Stack, useToast } from '@chakra-ui/react'
 import {useNavigate} from "react-router-dom"
 import React, { useState } from 'react'
-import { userSignUp } from "../AuthReducer/action"
 import styles from './login.module.css'
 import './login.css'
+import axios from 'axios'
 const SignupForm = () => {
     const [email,setEmail]=useState("");
     const [fname,SetName]=useState("");
-    const [pass,setPass]=useState();
+    const [password,setPassword]=useState("");
     const [lname, setSecondName] = useState("");
-    const [date,setDate]=useState("")
+    const [dateOfBirth,setDate]=useState("")
     const navigate=useNavigate();
-    const dispatch=useDispatch();
-    const handleFormEvent=(e)=>{
-        e.preventDefault();
-        const password=Number(pass)
-        let payload = {fname,lname,email,password,date}
-        console.log(payload)
-        dispatch(userSignUp(payload));
-        
-        navigate("/")
-        
-    }
+    const toast=useToast()
+
+    const signup = () => {
+      console.log("working")
+      if(!email || !fname || !lname || !password || !dateOfBirth){
+          toast({
+              title: 'All fields are required *',
+              status: 'error',
+              duration: 9000,
+              position: "top",
+              isClosable: true,
+          })
+      }else if(password.length<8){
+          toast({
+              title: 'Password should be minimum 8 character',
+              status: 'error',
+              duration: 9000,
+              position: "top",
+              isClosable: true,
+          })
+      }
+      else{
+          axios.post("http://localhost:8080/user/signup", { fname,lname,email,password,dateOfBirth})
+         .then((res) => {
+          console.log(res)
+          if(res.data.isRegisterd){
+              toast({
+                  title: 'User already exists',
+                  status: 'error',
+                  duration: 9000,
+                  position: "top",
+                  isClosable: true,
+              })
+          }else{
+              toast({
+                  title: 'Sign Up successfully ',
+                  status: 'success',
+                  duration: 9000,
+                  position: "top",
+                  isClosable: true,
+              })
+              navigate('/user/login')
+          }
+         
+   })
+  .catch((err) => {
+      
+  console.log(err)
+  toast({
+      title: 'something wrong 123435!',
+      status: 'error',
+      duration: 9000,
+      position: "top",
+      isClosable: true,
+  })
+  })
+      }
+
+  }
    return (
-    <form className={styles.form}>
+    <div className={styles.form}>
       <label>EMAIL ADDRESS:</label>
       <input type="text" className={styles.input} value={email}  onChange={(e)=>setEmail(e.target.value)} />
       <label>FIRST NAME:</label>
@@ -32,9 +79,9 @@ const SignupForm = () => {
       <label>LAST NAME:</label>
       <input type="text" className={styles.input} value={lname} onChange={(e)=>setSecondName(e.target.value)}/>
       <label>PASSWORD:</label>
-      <input type="password" className={styles.input} value={pass} onChange={(e)=>setPass(e.target.value)}/>
+      <input type="password" className={styles.input} value={password} onChange={(e)=>setPassword(e.target.value)}/>
       <label>DATE OF BIRTH:</label>
-      <input type="date" className={styles.inputDate} value={date} onChange={(e)=>setDate(e.target.value)} />
+      <input type="date" className={styles.inputDate} value={dateOfBirth} onChange={(e)=>setDate(e.target.value)} />
       <br></br>
       <label>MOSTLY INTERESTED IN</label>
       <div className={styles.radioBtn}>
@@ -49,8 +96,8 @@ const SignupForm = () => {
           </Stack>
         </RadioGroup>
       </div>
-      <button className={styles.signInBtn} onClick={handleFormEvent}>JOIN ASOS</button>
-    </form>
+      <button className={styles.signInBtn} onClick={signup}>JOIN ASOS</button>
+    </div>
   );
 };
 

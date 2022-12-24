@@ -6,7 +6,7 @@ import LoginForm from './Loginform'
 import SignupForm from './SignupForm'
 import { Link, useNavigate,Navigate} from 'react-router-dom'
 
-const Login = () => {
+const Signup = () => {
     const navigate=useNavigate()
     const handleTab1=()=>{
     navigate("/user/login")
@@ -21,10 +21,10 @@ const Login = () => {
                     <img src="https://my.asos.com/Content/images/asos-logo-2022-93x28.png" alt="ASOS Logo" loading="lazy" />
                 </div>
                 <div className={styles.container} >
-                    <Tabs defaultIndex={1} isFitted variant='enclosed' backgroundColor="white" >
+                    <Tabs defaultIndex={0} isFitted variant='enclosed' backgroundColor="white" >
                         <TabList mb='1em'>
-                            <Tab onClick={handleTab2} _selected={{ color: 'white', bg: 'blue.500' }}  >SIGN UP</Tab>
-                            <Tab onClick={handleTab1} _selected={{ color: 'white', bg: 'blue.500' }} >SIGN IN</Tab>
+                            <Tab onClick={handleTab2} _selected={{ color: 'white', bg: 'blue.500' }} >JOIN</Tab>
+                            <Tab onClick={handleTab1} _selected={{ color: 'white', bg: 'blue.500' }}>SIGN IN</Tab>
                         </TabList>
                         <TabPanels>
                             <TabPanel>
@@ -72,4 +72,4 @@ const Login = () => {
         )
     }
 
-export default Login
+export default Signup

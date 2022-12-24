@@ -1,12 +1,10 @@
 import * as type from "./actionTypes"
 const initialState = {
-  userData:JSON.parse(localStorage.getItem("user"))||{},
-  isAuth: localStorage.getItem("isAuth")||false,
+  userData: localStorage.getItem("user")!=""?JSON.parse(localStorage.getItem("user")):{},
+  isAuth: localStorage.getItem("isAuth")=="true"?true:false,
   token:localStorage.getItem("token")||"",
-  isLoadingLogin: false,
-  isErrorLogin: false,
-  isLoadingSignUp:false,
-  isErrorSignUp:false,
+  isLoading: false,
+  isError: false,
   isLogout:false,
 };
 
@@ -15,52 +13,37 @@ const reducer = (state = initialState,action) => {
             case type.LOGIN_REQUEST :
               return{
                 ...state,
-                isLoadingLogin:true,
+                isLoading:true,
                 isError:false,
                 isAuth:false,
               }
             case type.LOGIN_SUCCESS:
-              localStorage.setItem("user",JSON.stringify(action.payload.data))
+              localStorage.setItem("user",JSON.stringify(action.payload.userData))
               localStorage.setItem("token",action.payload.token)
               localStorage.setItem("isAuth",true)
               return{
                 ...state,
-                isLoadingLogin:false,
-                isErrorLogin:false,
+                isLoading:false,
+                isError:false,
                 isAuth:true,
                 token:action.payload.token,
-                userData:action.payload.data,
+                userData:action.payload.userData,
 
                 }
             case type.LOGIN_FAILURE:
+              localStorage.setItem("user",JSON.stringify({}))
+              localStorage.setItem("token","")
+              localStorage.setItem("isAuth",false)
               return {
                 ...state,
-                isLoadingLogin:false,
-                isErrorLogin:true,
+                isLoading:false,
+                isError:true,
                 isAuth:false,
                 userData:{}
               }
-            case type.SIGNUP_REQUEST:
-              return{
-                ...state,
-                isLoadingSignUp:true,
-                isErrorSignUp:false,
-
-              }
-            case type.SIGNUP_SUCCESS:
-              return{
-                ...state,
-                isLoadingSignUp:false,
-                isErrorSignUp:false,
-              }
-            case type.SIGNUP_FAILURE:
-              return{
-                ...state,
-                isLoadingSignUp:false,
-                isErrorSignUp:true,
-              }
+            
             case type.LOGOUT_SUCCESS:
-              localStorage.setItem("user",JSON.stringify({}))
+              localStorage.setItem("user","")
               localStorage.setItem("token","")
               localStorage.setItem("isAuth",false)
               return{
@@ -68,10 +51,8 @@ const reducer = (state = initialState,action) => {
                 userData:{},
                 isAuth:false,
                 token:"",
-                isLoadingLogin:false,
-                isLoadingSignUp:false,
-                isErrorLogin:false,
-                isErrorSignUp:false,
+                isLoading:false,
+                isError:false,
                 isLogout:true,
 
               }
