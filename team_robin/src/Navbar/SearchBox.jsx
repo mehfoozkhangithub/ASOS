@@ -89,45 +89,44 @@ const SearchBox =({ suggestions,queryHandler}) => {
 
 //wrap the country div in a link to coiuntry id for routing
  //max-height:200px
-const SuggestionBox=styled.div`
-${'' /* border:1px solid red; */}
-position:absolute;
-width:800px;
-margin:auto;
-margin-top:-5px;
-background:white;
-color:black;
-z-index:2;
-display:flex;
-flex-direction:column;
-max-height:${({len})=> `${len*38.667}px`};
-border-top-color:${({len})=> (len?"transparent":"black")};
-border-bottom-color:${({len})=> (len?"transparent":"black")};
-overflow:auto;
-& * {
-    flex:1;
-    text-align:left;
-    padding:8px;
-    padding-left:30px;
-}
-   && :nth-child(${({active}) => active}) {
-        background: rgba(0,0,0,0.09);
-        cursor:pointer;
-    };
-`
+ const SuggestionBox=styled.div`
+ border:1px solid red;
+ display:flex;
+ width:100%;
+ height:100%;
+ flex-direction:column;
+ max-height:${({len})=> `${len*38.667}px`};
+ border-top-color:${({len})=> (len?"transparent":"black")};
+ border-bottom-color:${({len})=> (len?"transparent":"black")};
+ margin:auto;
+ overflow:auto;
+ & * {
+     flex:1;
+     text-align:left;
+     padding:8px;
+     padding-left:30px;
+ }
+    && :nth-child(${({active}) => active}) {
+         background: rgba(0,0,0,0.09);
+         cursor:pointer;
+     };
+ `
+ 
+ const SearchBarWrapper = styled.div`
+ border:1px solid black;
+ display:flex;
+ padding:5px 10px;
+ align-items:center;`
 
-const SearchBarWrapper = styled.div`
-border:1px solid black;
-display:flex;
-padding:5px 10px;
-align-items:center;`
 
 const Input= styled.input`
 border:2px solid black;
 outline:none;
 font-size:20px;
 width:90%;
-height:20px;
+height:100%;
+color:black;
+text-align:left;
 padding:10px;
 font-size:15px;
 border-radius:25px;
