@@ -80,9 +80,9 @@ const LoginForm = () => {
 
     return (
         <>
-            <div className={styles.form}>
+            <div  className={styles.form} >
                 <label>EMAIL ADDRESS</label>
-                <input type="text" className={styles.input}
+                <input type="email" className={styles.input}
                     name="email"
                     value={email}
                     onChange={(e) => { setEmail(e.target.value) }}

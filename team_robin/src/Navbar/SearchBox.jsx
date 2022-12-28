@@ -27,7 +27,7 @@ const SearchBox =({ suggestions,queryHandler}) => {
 
 //    console.log(active)
     // useEffect(()=>{
-    //  queryHandler(text)
+    //  queryHandler(text) 
     // },[text,queryHandler])
     //prev use effect used when usthrottle is not there
      
